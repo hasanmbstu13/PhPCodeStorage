@@ -7,10 +7,11 @@
  */
 $firstNumber = 10;
 $secondNumber = 20;
+$thirdNumber = 5;
 
-$multiply = $firstNumber*$secondNumber;
+$multiply = $firstNumber*$secondNumber*$thirdNumber;
 
-echo 'The multiplication of two numbers is:'.$multiply;
+echo 'The multiplication of three numbers are:'.$multiply;
 
 
 ?>
