@@ -5,7 +5,7 @@
  Written by Mainul Hasan
  */
 
-$someNumber = array(8,5,6,7);
+$someNumber = array("one","two","three");
 
 foreach ($someNumber as $anotherArray)
 {
