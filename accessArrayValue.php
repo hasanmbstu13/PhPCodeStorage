@@ -30,6 +30,8 @@ for($i=0;$i<$counter;$i++)
         break;
     }
 }
+
+print_r($stringArray);
  
 
 ?>
