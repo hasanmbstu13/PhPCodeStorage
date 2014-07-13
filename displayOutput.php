@@ -15,12 +15,13 @@
             //$name = 'James bond';
             //$salary = '10000';
             //echo $id.' ',$name.' ',$salary;
-            if(isset($_POST))
-            $id = $_POST['idText'];
-            $name = $_POST['nameText'];
-            $salary = $_POST['salaryText'];
-            
-            echo $id.' '.$name.' '.$salary;
+            if(isset($_POST['submitButton']))
+            {
+                $id = $_POST['idText'];
+                $name = $_POST['nameText'];
+                $salary = $_POST['salaryText'];
+             echo $id.' '.$name.' '.$salary;
+            }
         ?>
     </body>
     
