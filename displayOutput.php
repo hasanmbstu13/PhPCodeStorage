@@ -20,7 +20,7 @@
         
             if(isset($_GET['submitButton']))
             {
-                $an_employee = new Employee();
+                $an_employee = new officeEmployee();
                 
                 $an_employee->id = $_GET['idText'];
                 $an_employee->name = $_GET['nameText'];

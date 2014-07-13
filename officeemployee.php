@@ -11,7 +11,7 @@
  *
  * @author LAB5PC18
  */
-class Employee {
+class officeEmployee {
     public $id;
     public $name;
     public $salary;
