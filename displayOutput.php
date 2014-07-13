@@ -4,7 +4,7 @@
         <title></title>
     </head>
     <body>
-        <form action="displayOutput.php" method="post">
+        <form action="displayOutput.php" method="get">
             <input type="text" name="idText"><br />
             <input type="text" name="nameText"><br />
             <input type="text" name="salaryText"><br />
@@ -15,12 +15,20 @@
             //$name = 'James bond';
             //$salary = '10000';
             //echo $id.' ',$name.' ',$salary;
-            if(isset($_POST['submitButton']))
+            
+            require 'employee.php';
+        
+            if(isset($_GET['submitButton']))
             {
-                $id = $_POST['idText'];
-                $name = $_POST['nameText'];
-                $salary = $_POST['salaryText'];
-             echo $id.' '.$name.' '.$salary;
+                $an_employee = new Employee();
+                
+                $an_employee->id = $_GET['idText'];
+                $an_employee->name = $_GET['nameText'];
+                $an_employee->salary= $_GET['salaryText'];
+                //$id = $_GET['idText'];
+                //$name = $_GET['nameText'];
+                //$salary = $_GET['salaryText'];
+             echo $an_employee->id.' '.$an_employee->name.' '.$an_employee->salary;
             }
         ?>
     </body>
