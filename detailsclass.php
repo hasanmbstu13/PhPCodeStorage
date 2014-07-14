@@ -7,7 +7,7 @@
  */
 
 /**
- * Description of Person
+ * Description of detailsclass
  *
  * @author LAB5PC18
  */
@@ -90,4 +90,5 @@ class Person {
         
     }
 }
-?>
+    //put your code here
+
