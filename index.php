@@ -12,8 +12,17 @@ and open the template in the editor.
     <body>
         <?php
             require_once 'person.php';
+            
             $a_person = new Person();
-            $a_person->first_name='james';
+            
+            $a_person->set_first_name('James');
+            $a_person->set_middle_name('Locus');
+            $a_person->set_last_name('Scott');
+            
+            //$a_person->first_name='james';
+            //$a_person->set_first_name('James');            
+            //$fn = $a_person->first_name;
+            
             $a_person->middle_name = 'Locus';
             $a_person->last_name= 'Scott';
             

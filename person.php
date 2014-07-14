@@ -12,10 +12,25 @@
  * @author LAB5PC18
  */
 class Person {
-    public $first_name;
-    public $middle_name;
-    public $last_name;
+    private $first_name;
+    private $middle_name;
+    private $last_name;
     
+    public function set_first_name($first_name)
+    {
+        $this->first_name = $first_name;
+    }
+    
+    public function get_first_name()
+    {
+        return $this->first_name;
+    }
+
+    public function set_middle_name($middle_name)
+    {
+        $this->middle_name = $middle_name;
+    }
+
     public function get_full_name()
     {
         return $this->first_name. ' '.$this->middle_name.' '.$this->last_name;
