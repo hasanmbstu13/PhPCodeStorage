@@ -11,10 +11,6 @@
             <input type="submit" value="Calculate" name="calculator">
         </form>
         <?php
-            //$id = '007';
-            //$name = 'James bond';
-            //$salary = '10000';
-            //echo $id.' ',$name.' ',$salary;
             
             require 'calculator.php';
         
@@ -27,10 +23,8 @@
                 $interestCalculation->timePeriod= $_GET['timePeriod'];
                 
                 $interestWithPrincipleAmount=$interestCalculation->totalAmountWithInterest();
-                //$id = $_GET['idText'];
-                //$name = $_GET['nameText'];
-                //$salary = $_GET['salaryText'];
-             echo "Result is:".$interestWithPrincipleAmount;
+                
+                echo "Result is:".$interestWithPrincipleAmount;
             }
         ?>
     </body>
