@@ -6,6 +6,7 @@
 </head>
 <body>
 	<?php 
+		//Boolean is a own type is always true or false.
 		$result1 = true;
 		$result2 = false;
 	 ?>
@@ -15,6 +16,7 @@
 	 <br/>
 
 	 result2 is boolean? <?php echo is_bool($result2); ?>
+	 
 	 <br/>
 	 <?php 
 	 	$number = 3.14;

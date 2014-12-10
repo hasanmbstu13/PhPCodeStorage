@@ -43,7 +43,7 @@ Explode: <?php print_r(explode(" * ", $num_string));
 //Explode split the string in divider place the object as a new element in array
 //Explode is extremly useful in comma separtor list ?>
 <br/>
-
+<!-- in_array()-->determines whether a element is present in array or not. -->
 5 in array?: 	<?php echo in_array(5, $numbers);//returns T/F ?><br/>
 19in array?:    <?php echo in_array(19, $numbers); //returns T/F?><br/>
 
