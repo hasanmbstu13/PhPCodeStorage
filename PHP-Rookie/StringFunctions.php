@@ -17,7 +17,7 @@
 	 <br/>
 	 Lowercase: <?php echo strtolower($third);//return the strings with all characters in lower Case format ?><br/> 
 	 Uppercase: <?php echo strtoupper($third);//return the strings with all characters in Upper Case format ?><br/>
-	 Uppercase first: <?php echo ucfirst($third); //return the strings with first characters of each word in Upper Case format?><br/>
+	 Uppercase first: <?php echo ucfirst($third); //return the strings with first characters in Upper Case format in a sentence?><br/>
 	 Uppercase words: <?php echo ucwords($third); //return the strings with first characters of each word in Upper Case format?><br/>
 	 <br/>
 	 Length: <?php echo strlen($third); //return the string lengths?><br/>
