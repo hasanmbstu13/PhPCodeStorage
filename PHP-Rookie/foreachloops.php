@@ -49,7 +49,7 @@
 	  		}else{
 	  			echo "priceless";
 	  		}
-	  		echo "<br/>";
+	  		echo "<br/>"; 
 	  	}
 	   ?>
 
