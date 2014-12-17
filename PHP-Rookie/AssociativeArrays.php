@@ -58,6 +58,8 @@
 
 	var_dump($moustaches);
 
+	//print_r($moustaches);
+
 	// echo $moustaches[0]['name']. "<br />";
 	// echo $moustaches[0]['class']. "<br />";
 	// echo $moustaches[0]['age']. "<br />";
