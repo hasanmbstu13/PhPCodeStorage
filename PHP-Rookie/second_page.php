@@ -6,5 +6,18 @@
 </head>
 <body>
 	
+	<pre>
+		<?php
+			//print_r($_GET);
+			//$id = $_GET['id'];
+			//echo $id; 
+		 ?>
+	</pre>
+
+	<?php
+		$id = $_GET['id'];
+		echo $id;  
+	 ?>
+
 </body>
 </html>
