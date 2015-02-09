@@ -55,11 +55,14 @@
 		}
 
 		$value = "nobody@nowhere.com";
+		//preg_match is most flexible
 		if(!preg_match("/@/", $value))
 		{
 			echo "Validation failed.<br/>";
 		}
 
+		//strpos is faster than preg_match
+		//use === to make exact match with false
 		if (strpos($value, "@") === false) {
 			echo "Validation failed.<br/>";
 		}

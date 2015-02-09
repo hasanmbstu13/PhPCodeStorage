@@ -8,7 +8,7 @@
 	<?php 
 		$ages = array(4,8,15,16,23,42);
 
-		//current: current pointer value
+		//current: current pointer value by default first element of the array
 		echo "1: " . current($ages) . "<br/>";
 
 		//next: move the pointer forward
