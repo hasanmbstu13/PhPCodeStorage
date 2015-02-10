@@ -18,7 +18,7 @@
  	$query  =  "SELECT * "; 
  	$query .= "FROM subjects ";
  	$query .= "WHERE visible = 1 ";
- 	$query .= "ORDER BY positon ASC";
+ 	$query .= "ORDER BY position ASC";
 
  	$result = mysqli_query($connection, $query);
  	//Test if there was a query error
@@ -36,10 +36,14 @@
  <body>
  	<?php 
  		//3. Use returned data (if any)
- 		while($row = mysqli_fetch_row($result))
+ 		#while($row = mysqli_fetch_array($result, MYSQL_ASSOC))
+ 		while($row = mysqli_fetch_assoc($result))
  		{
  			//output data from each row
- 			var_dump($row);
+ 			echo $row["id"] . "<br/>";
+ 			echo $row["menu_name"] . "<br/>";
+ 			echo $row["position"] . "<br/>";
+ 			echo $row["visible"] . "<br/>";
  			echo "<hr />";
  		}
  	 ?>
@@ -53,4 +57,4 @@
  <?php 
  	// 5. Close database connection
  	mysqli_close($connection);
-  ?>
+  ?> 
