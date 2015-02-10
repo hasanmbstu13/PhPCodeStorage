@@ -34,19 +34,18 @@
  	<title>Databases</title>
  </head>
  <body>
+ 	<ul>
  	<?php 
  		//3. Use returned data (if any)
  		#while($row = mysqli_fetch_array($result, MYSQL_ASSOC))
- 		while($row = mysqli_fetch_assoc($result))
- 		{
+ 		while($subject = mysqli_fetch_assoc($result)){
  			//output data from each row
- 			echo $row["id"] . "<br/>";
- 			echo $row["menu_name"] . "<br/>";
- 			echo $row["position"] . "<br/>";
- 			echo $row["visible"] . "<br/>";
- 			echo "<hr />";
+ 	?>
+ 	<li><?php echo $subject["menu_name"]; ?></li>
+ 	<?php
  		}
  	 ?>
+ 	 </ul>
  	 <?php 
  	 	//4. Release returned data
  	 	mysqli_free_result($result);
