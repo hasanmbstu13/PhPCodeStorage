@@ -1,5 +1,4 @@
 <?php 
-	//Steps 4 is important when we want to read data from databases
 	//1. Create a database connection
 	$dbhost = "localhost";
 	$dbuser = "widget_cms";
