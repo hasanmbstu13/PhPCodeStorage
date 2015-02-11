@@ -28,7 +28,7 @@
  	$query .= " '{$menu_name}', {$position}, {$visible}";
  	$query .= ")";
 
- 	echo $query; exit;		  
+ 	//echo $query; exit;		  
 
  	$result = mysqli_query($connection, $query);
  	//Test if there was a query error
