@@ -15,6 +15,7 @@
  ?>
  <?php 
  	//Often are form values in $_POST
+ 	$id = 
  	$menu_name = "Edit me";
  	$position = 4;
  	$visible = 1;
@@ -22,11 +23,11 @@
  	//2. Perform database query
  	// $query = "INSERT INTO subjects (menu_name, position, visible)
  	// 		  VALUES('{$menu_name}', {$position}, {visible})";
- 	$query  = "INSERT INTO subjects (";
- 	$query .= " menu_name, position, visible";
- 	$query .= ") VALUES (";
- 	$query .= " '{$menu_name}', {$position}, {$visible}";
- 	$query .= ")";
+ 	$query  = "UPDATE subjects SET ";
+ 	$query .= "menu_name = '{$menu_name}', ";
+ 	$query .= "position = {$position}, ";
+ 	$query .= "visible = {$visible} ";
+ 	$query .= "WHERE id = {$id}";
 
  	//echo $query; exit;		  
 
