@@ -29,9 +29,9 @@
 
 
 
-	for ($i=1; $i <=$row_cnt-6; $i++) { 
+	for ($id=1; $id <=$row_cnt; $id++) { 
 
-		$result = mysqli_query($link,"select books_no from books where id = $i");
+		$result = mysqli_query($link,"select books_no from books where id = $id");
 		
 		while ($row = mysqli_fetch_array($result))
 		{
@@ -59,7 +59,7 @@
 
 			$concat = mysqli_query($link,"update books 
 										  set books_no = $final_value 
-										  where id = $i");
+										  where id = $id");
 
 		}
 	}
