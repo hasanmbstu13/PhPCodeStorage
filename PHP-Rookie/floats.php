@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php $float = 3.14; ?>
-Round:	<?php echo round($float,1);//round the number with 1 decimel number after number ?><br/>
+Round:	<?php echo round($float,1);//round the number with 1 decimel number after floating point ?><br/>
 Ceiling:<?php echo ceil($float);//ceiling always round up ?><br/>
 Foor:	<?php echo floor($float);//floor always round low ?><br/>
 <br/>
