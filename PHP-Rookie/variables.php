@@ -17,6 +17,12 @@ echo $var1;
 
 echo "<br/>";
 
+//Use the backslash "\" to "escape" special characters 
+$stringValue = 'This is a string, isn\'t?';
+echo $stringValue;
+
+echo "<br/>";
+
 $greeting = "Hello";
 $target = "World";
 $phrase = $greeting. " " . $target;
