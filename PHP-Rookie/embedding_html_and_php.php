@@ -6,14 +6,18 @@
 </head>
 <body>
 
-<!-- 	<?php 
+<!-- Example: Embedding html inside php code -->
+
+<?php 
 	echo '<b><u>This is a test</u></b>';
 	echo '<br/>';
 	echo '<a href = "www.google.com">google</a>';
- ?> Embedding html inside php code-->
+ ?> 
 
 
-<!-- <?php 	
+<!-- Example: Embedding PHP inside HTML -->
+ 
+<?php 	
 	
 	$names = array('Mainul', 'Mehedi', 'Mahmudul');
 
@@ -24,13 +28,15 @@
 
 <?php
 	}
- ?> Embedding PHP inside HTML-->
+ ?> 
 
-<!-- <?php 
+<!-- Example: Embedding php into html attribute. -->
+
+<?php 
  	$color = $_GET['color'];
 ?>
 
-<b><font color = "<?php echo $color ; ?>">Welcome to the website</font></b> Embedding php into html attribute.-->
+<b><font color = "<?php echo $color ; ?>">Welcome to the website</font></b> 
 
 
 
