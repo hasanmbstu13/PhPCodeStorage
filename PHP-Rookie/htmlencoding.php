@@ -6,14 +6,14 @@
 </head>
 <body>
 	
-<!-- <p>&lt;</p>
+<p>&lt;</p>
 <p>&gt;</p>
 <p>&amp;</p>
 <p>&quot;</p>
 
 <?php 
 	$linktext = "<click> & learn more";
-	$linktext1 = "€¢£¥₩₪฿";
+	$linktext1 = "€¢£¥₩₪฿S$<>&?&lt";
  ?>
 <?php echo $linktext1; ?> <br>
 <?php echo htmlentities($linktext1); ?> <br>
@@ -22,8 +22,6 @@
 	<?php echo htmlspecialchars($linktext); ?> <br>
 	<?php echo htmlentities($linktext); ?>
 </a>
- -->
-
 <?php //what to use when
 	
 	$url_page = "php/created/page/url.php";

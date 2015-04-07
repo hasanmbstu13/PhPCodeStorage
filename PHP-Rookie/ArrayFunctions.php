@@ -29,7 +29,15 @@ Min value: <?php echo min($numbers); ?><br/>
 Sort: 			<?php sort($numbers);  print_r($numbers); //Sort()Sort the array in ascending order?><br/>
 Reverse sort: 	<?php rsort($numbers); print_r($numbers); //Rsort()Sort the array in descending order?><br/>
 </pre>
+
 <br/>
+
+<pre>
+	Sort Associative Arrays in Ascending Order: <?php $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43"); asort($age); print_r($age); //sort associative arrays in ascending order, according to the value?> <br>
+	Sort Associative Arrays in Ascending Order: <?php $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43"); ksort($age); print_r($age); //sort associative arrays in ascending order, according to the key?> <br>
+	Sort Associative Arrays in Descending Order: <?php $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43"); arsort($age); print_r($age); //sort associative arrays in descending order, according to the value?> <br>
+	Sort Associative Arrays in Descending Order: <?php $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43"); krsort($age); print_r($age); //sort associative arrays in descending order, according to the key?> <br>
+</pre>
 
 Implode:<?php   
 //implode turn an array into string In other words combined values together to get a string

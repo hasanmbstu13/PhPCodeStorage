@@ -6,6 +6,12 @@
 </head>
 <body>
 	<?php 
+	//The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.
+	//Syntax
+	//foreach ($array as $value) {
+	//     code to be executed;
+	//} 
+	//For every loop iteration, the value of the current array element is assigned to $value and the array pointer is moved by one, until it reaches the last array element.
 		$ages = array(4,8,15,16,23,42);
 
 		foreach ($ages as $age) {
