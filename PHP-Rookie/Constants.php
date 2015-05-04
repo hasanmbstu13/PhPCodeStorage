@@ -15,7 +15,12 @@
 
 	 <br>
 
-	 <?php //can't change the value
+	 <?php 
+	 	// Syntax
+		// define(name, value, case-insensitive)
+	 	//case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false
+	 	//example: define("GREETING", "Welcome to W3Schools.com!", true);
+	 	//can't change the value
 	 	// MAX_WIDTH = MAX_WIDTH + 1;
 	 	// echo MAX_WIDTH;
 	 	// Constants are like variables but never change
@@ -25,6 +30,15 @@
 	 	// Constants can be assigned to variables
 	 	// Constants can be echoed
 		// Predefined constants are assigned when php is installed
+	 	//Unlike variables, constants are automatically global across the entire script.
+	 	//The example below uses a constant inside a function, even if it is defined outside the function:
+	 define("GREETING", "Welcome to W3Schools.com!");
+
+	 function myTest() {
+	 	echo GREETING;
+	 }
+
+	 myTest();
 		// Some examples:
 
 		 //version of PHP
