@@ -46,6 +46,8 @@
 	<?php 
 		// The value of a magic constant is defined when our php program starts running
 		// magic constants start and end with "__"
+		//There are five magical constants that change depending on where they are used.
+		//__LINE__ __FILE__ __FUNCTION__ __CLASS__ __METHOD__
 
 		//some examples:
 
