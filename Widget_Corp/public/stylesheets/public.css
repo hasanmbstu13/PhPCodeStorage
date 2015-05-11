@@ -25,8 +25,8 @@ a { color: #8D0D19;}
 /* Navigation */
 #navigation { float: left; width: 150px; height: 100%; margin: 0; padding: 0 2em; color: #D4E6F4; background: #8D0D19; }
 #navigation a { color: #D4E6F4; text-decoration: none; }
-ul.subjects { padding-left: 0; list-style: none; }
-ul.pages { padding-left: 2em; list-style: square; }
+ul.subjects { margin: 1em 0; padding-left: 0; list-style: none; }
+ul.pages { padding-left: 2em; list-style: square; font-weight: normal;}
 .selected { font-weight: bold; }
 
 /* Page Content */

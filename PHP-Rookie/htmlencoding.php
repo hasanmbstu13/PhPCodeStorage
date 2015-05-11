@@ -22,6 +22,10 @@
 	<?php echo htmlspecialchars($linktext); ?> <br>
 	<?php echo htmlentities($linktext); ?>
 </a>
+<?php 
+	//The htmlspecialchars() function converts special characters to HTML entities.
+	//This means that it will replace HTML characters like < and > with &lt; and &gt;.
+ ?>
 <?php //what to use when
 	
 	$url_page = "php/created/page/url.php";

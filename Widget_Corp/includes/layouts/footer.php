@@ -2,7 +2,8 @@
 </body>
 </html>
 <?php 
- 	// 5. Close database connection
+ 	global $connection;
+ 	
 	if ($connection) {
 		mysqli_close($connection);
 	}	

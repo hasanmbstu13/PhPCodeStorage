@@ -1,16 +1,13 @@
-input
+.div
 {
-    margin-bottom: 5px;
-    margin-right: 20px;
-    margin-left: 40px;
+	margin-top: 100px;
+	margin-left: 250px;
+	width : 600px;
+	height: 350px;
+	background-color: #FFFF99
 }
 
 
-
-div 
-{
-    width: 500px;
-    padding: 25px;
-    border: 4px solid aqua;
-    margin: 25px;
+.error {
+    color: #FF0000;
 }
