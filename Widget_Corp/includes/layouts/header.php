@@ -3,7 +3,7 @@
 <head>
 	<title>Widget Corp</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/public.css">
-	<!-- <meta charset="UTF-8"> -->
+	<meta charset="UTF-8">
 </head>
 <body>
 	<div id="header">

@@ -30,9 +30,9 @@
 		return $page_set;
 	}
 
-		//navigation takes 2 arguments
+		 //navigation takes 2 arguments
 		// - the currently selected subject ID (if any)
-		// - the currently selected page ID (if any)
+	   // - the currently selected page ID (if any)
 	function navigation($subject_id, $page_id){
 		$output = "<ul class=\"subjects\">";
 		$subject_set = find_all_subjects(); 
