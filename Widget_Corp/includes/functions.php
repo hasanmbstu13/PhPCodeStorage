@@ -10,7 +10,7 @@
 
 		$query  = "SELECT * ";  
 		$query .= "FROM subjects ";  
-		$query .= "WHERE visible = 1 ";
+		//$query .= "WHERE visible = 1 ";
 		$query .= "ORDER BY position ASC";
 		$subject_set = mysqli_query($connection, $query); 
 		confirm_query($subject_set);
@@ -28,6 +28,18 @@
 		$page_set = mysqli_query($connection, $query); 
 		confirm_query($page_set);
 		return $page_set;
+	}
+
+	function find_subject_by_id($subject_id){
+		global $connection;
+
+		$query  = "SELECT * ";  
+		$query .= "FROM subjects ";  
+		$query .= "WHERE id = {$subject_id} ";
+		$query .= "LIMIT 1";
+		$subject_set = mysqli_query($connection, $query); 
+		confirm_query($subject_set);
+		return $subject_set;
 	}
 
 		 //navigation takes 2 arguments
