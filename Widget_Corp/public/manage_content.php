@@ -6,6 +6,8 @@
  <div id="main">
    <div id="navigation">
     <?php echo navigation($current_subject, $current_page); //here $current_subject or $current_page may be associative array or null.?>	
+  <br>
+  <a href="new_subject.php">+ Add a subject</a>
   </div>
   <div id="page">
     <?php if($current_subject){ ?>
