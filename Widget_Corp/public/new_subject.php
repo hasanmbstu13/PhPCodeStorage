@@ -23,7 +23,7 @@
         <?php
           $Subject_set = find_all_subjects(); 
           $Subject_count = mysqli_num_rows($Subject_set);
-          for($count; $count <= ($Subject_count + 1); $count++) {
+          for($count=1; $count <= ($Subject_count + 1); $count++) {
            echo "<option value=\"{$count}\">{$count}</option>";
           }
          ?>  
