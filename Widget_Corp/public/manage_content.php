@@ -4,6 +4,12 @@
   <?php include("../includes/layouts/header.php"); ?>
   <?php find_selected_page();?>
 
+
+  <?php 
+    #just remainder
+    //When $current_subject or $current_page is null then only show the navigation bar.
+   ?>
+
  <div id="main">
    <div id="navigation">
     <?php echo navigation($current_subject, $current_page); //here $current_subject or $current_page may be associative array or null.?>	

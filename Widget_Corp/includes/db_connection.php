@@ -6,7 +6,7 @@ define("DB_PASS","secretpassword");
 define("DB_NAME","widget_corp");
 
 $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
-	//Test if connection occured
+	//Test if connection occured error
 if (mysqli_connect_errno()) {
 	die("Databse connection failed: " .
 		mysqli_connect_error() .

@@ -10,8 +10,11 @@
 		return $escaped_string;
 	}
 	function confirm_query($result_set){
+		global $connection;
+
 		if(!$result_set){
-			die("Database query failed.");  
+			//die("Database query failed.");  
+			die("Database query failed:".mysqli_error($connection). __LINE__ .' in ' .__FILE__ );  
 		}
 	}
 	function form_errors($errors = array()){
