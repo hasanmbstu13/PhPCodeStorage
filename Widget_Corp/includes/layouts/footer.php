@@ -1,4 +1,4 @@
-<div id="footer">Copyright 2007, Widget Corp</div>
+<div id="footer">Copyright <?php echo date("Y"); //This will return the current date in year?>, Widget Corp</div>
 </body>
 </html>
 <?php 
