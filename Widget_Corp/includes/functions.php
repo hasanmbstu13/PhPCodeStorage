@@ -9,7 +9,7 @@
 		$escaped_string = mysqli_real_escape_string($connection,$string);
 		return $escaped_string;
 	}
-	function confirm_query($result_set){
+	function confirm_query($result_set){ //This function confirm whether a database query is successful or not
 		global $connection;
 
 		if(!$result_set){
@@ -32,7 +32,7 @@
 		return $output;
 	}
 
-	function find_all_subjects(){
+	function find_all_subjects(){ //find all subjects from database.
 		global $connection;
 
 		$query  = "SELECT * ";  
@@ -44,7 +44,7 @@
 		return $subject_set;
 	}
 
-	function find_pages_for_subject($subject_id){
+	function find_pages_for_subject($subject_id){ //find pages for a subject
 		global $connection;
 
 		$safe_subject_id = mysqli_real_escape_string($connection,$subject_id);

@@ -120,7 +120,7 @@
 
 	 <?php //can't even redefine it
 	 define("MAX_WIDTH", 981);
-	 //echo MAX_WIDTH;
+	 echo MAX_WIDTH;
 	  ?>
 </body>
 </html>

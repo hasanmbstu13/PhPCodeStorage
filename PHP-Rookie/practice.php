@@ -1,4 +1,51 @@
 <?php
+		
+	function test_me()
+	{
+	    // static $a = 0;
+	    $a = 0;
+	    echo $a."<br/>";
+	    $a++;
+	}
+
+	test_me();
+	test_me();
+	test_me();
+
+	exit;
+
+	
+
+
+
+	static $count;
+
+	$count++;
+	echo $count;
+	exit;
+
+	function test()
+	{
+	    static $count = 0;
+
+	    $count++;
+	    echo $count;
+	    echo $count."<br/>";
+	    if ($count < 10) {
+	        test();
+	    }
+	    $count--;
+
+	    echo "Last value of count".$count;
+	}
+
+	test(); 
+
+	die();
+	
+
+
+
 		$a = "<li";
 		$b = "class=\"selected\"";
 		$c = ">";
