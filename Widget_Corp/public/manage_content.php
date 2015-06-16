@@ -12,6 +12,8 @@
 
  <div id="main">
    <div id="navigation">
+   <br>
+   <a href="admin.php">&laquo; Main menu</a><br> <!-- This will give &laquo; << in output -->
     <?php echo navigation($current_subject, $current_page); //here $current_subject or $current_page may be associative array or null.?>	
   <br>
   <a href="new_subject.php">+ Add a subject</a>
@@ -23,7 +25,8 @@
       Menu name: <?php echo htmlentities($current_subject["menu_name"]); ?><br>
       Position: <?php echo $current_subject["position"]; ?><br>
       Visible: <?php echo $current_subject["visible"]==1?'yes':'no'; ?><br>
-      <a href="edit_subject.php?subject=<?php echo $current_subject["id"];?>">Edit Subject</a>
+      <br>
+      <a href="edit_subject.php?subject=<?php echo urldecode($current_subject["id"]);?>">Edit Subject</a>
 
     <?php } elseif($current_page){ ?>
      <h2>Manage Page</h2>

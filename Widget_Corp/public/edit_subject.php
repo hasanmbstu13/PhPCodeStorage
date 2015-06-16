@@ -41,7 +41,8 @@
     $query .= "LIMIT 1";//it is going to only one that is for safetyness    
     $result = mysqli_query($connection, $query);
     
-    if($result && mysqli_affected_rows($connection) == 1){
+    //if($result && mysqli_affected_rows($connection) == 1){ if we use this condition then data will not be updated when if don't change anything of the data.
+    if($result && mysqli_affected_rows($connection) >= 0){ //This is more conveninent even is not changed then it will also allow to update the database.
       //Success
       $_SESSION["message"] = "Subject updated";
       redirect_to("manage_content.php");
@@ -63,15 +64,15 @@
   <div id="page">
     <?php //$message is just a variable, does't use the SESSION
       if(!empty($message)){
-        echo "<div class =\"message\">".$message."</div>";
+        echo "<div class =\"message\">".htmlentities($message)."</div>";
       } 
       ?>
     <?php echo form_errors($errors); ?>
       
-     <h2>Edit Subject: <?php echo $current_subject["menu_name"]; ?></h2>
-     <form action="edit_subject.php?subject=<?php echo $current_subject["id"]; ?>" method="post">
+     <h2>Edit Subject: <?php echo htmlentities($current_subject["menu_name"]); ?></h2>
+     <form action="edit_subject.php?subject=<?php echo urlencode($current_subject["id"]); ?>" method="post">
       <p>Menu name: 
-        <input type="text" name="menu_name" value="<?php echo $current_subject["menu_name"]; ?>" id="menu_name" />
+        <input type="text" name="menu_name" value="<?php echo htmlentities($current_subject["menu_name"]); ?>" id="menu_name" />
       </p>
       <p>Position: 
         <select name="position">
@@ -100,7 +101,7 @@
      <a href="manage_content.php">Cancel</a>
      &nbsp;
      &nbsp;
-     <a href="delete_subject.php?subject=<?php echo $current_subject["id"]; ?>" onclick = "return confirm('Are you sure?');">Delete subject</a>
+     <a href="delete_subject.php?subject=<?php echo urlencode($current_subject["id"]); ?>" onclick = "return confirm('Are you sure?');">Delete subject</a>
   </div>
 </div>
 
