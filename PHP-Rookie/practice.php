@@ -1,4 +1,9 @@
 <?php
+		
+		$details = "Hi I am Mohammad Mainul Hasan"."\n"."I am from Noakhali.";
+		echo $details;
+
+
 		$a = "<li";
 		$b = "class=\"selected\"";
 		$c = ">";
