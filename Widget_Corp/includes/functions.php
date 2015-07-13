@@ -1,4 +1,5 @@
 <?php 
+	// This function page is imported from bbs
 	function redirect_to($new_location){
 		header("Location: " . $new_location);
 		exit;
@@ -17,6 +18,7 @@
 			die("Database query failed:".mysqli_error($connection). __LINE__ .' in ' .__FILE__ );  
 		}
 	}
+	
 	function form_errors($errors = array()){
 		$output = "";
 		if(!empty($errors)){
