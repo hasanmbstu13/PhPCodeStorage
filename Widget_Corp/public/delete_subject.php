@@ -10,6 +10,13 @@
 		redirect_to("manage_content.php");
 	}
 
+	// There is a problem if we delete the subject what happen's of the pages.
+	// We have two choices delete all page automatically when delete a subject 
+	// or first delete all pages then the subject.
+	// second one is more inconvenient but first one will better for more safety. 
+
+	// Determine whether a subject has page or not 
+	// If subject has page subject deletion will not possible
 	$page_set = find_pages_for_subject($current_subject["id"]);
 	if(mysqli_num_rows($page_set) > 0){
 		$_SESSION["message"] = "Can't delete a subject with pages.";

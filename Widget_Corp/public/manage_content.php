@@ -22,8 +22,15 @@
     <?php echo message();?>  
     <?php if($current_subject){ ?>
      <h2>Manage Subject</h2>
+     <!-- Here menu name is coming from the database trusted string is something admin created
+     We'll not worried about hacker's not give that value.
+     However anything anytime in html we need to concern even its trusted value.
+     An admin very innocently uses special characters that will cause for problem for html
+     So we should encoding in html.
+     We will always use htmlspecialchars() or htmlentities() -->
       Menu name: <?php echo htmlentities($current_subject["menu_name"]); ?><br>
       Position: <?php echo $current_subject["position"]; ?><br>
+      <!-- Visible will be 0 or one it will better to show yes or no -->
       Visible: <?php echo $current_subject["visible"]==1?'yes':'no'; ?><br>
       <br>
       <a href="edit_subject.php?subject=<?php echo urldecode($current_subject["id"]);?>">Edit Subject</a>
@@ -35,6 +42,7 @@
       Visible: <?php echo $current_page["visible"]==1?'yes':'no'; ?><br>
       Content: <br>
       <div class="view-content">
+        <!-- Always careful when anything in html shoule be use htmlentities() or htmlspecialchars() -->
         <?php echo htmlentities($current_page["content"]); ?>
       </div>
       
