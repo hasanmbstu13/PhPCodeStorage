@@ -34,7 +34,31 @@
       Visible: <?php echo $current_subject["visible"]==1?'yes':'no'; ?><br>
       <br>
       <a href="edit_subject.php?subject=<?php echo urldecode($current_subject["id"]);?>">Edit Subject</a>
+      
+      <br>
+      <br>
+      <br>
 
+      <hr>
+      <br>
+
+      <!-- Following code for show related page of a subject. -->
+      <h2>Pages in this subject:</h2>
+      <?php $page_set = find_pages_for_subject($current_subject["id"]); 
+            echo "<ul>";
+            while($page = mysqli_fetch_assoc($page_set)){ 
+              echo "<li>";
+              echo "<a href=\"\">";
+              echo htmlentities($page["menu_name"]);
+              echo "</a>";
+              echo "</li>";
+            }
+            echo "</ul>";
+            mysqli_free_result($page_set); 
+      ?> 
+      <br>
+      + <a href="new_page.php?subject=<?php echo urlencode($current_subject["id"]); //pass subject id to the new page for getting id in the new page for further use.?>">Add a new page to this subject</a>
+        
     <?php } elseif($current_page){ ?>
      <h2>Manage Page</h2>
       Menu name: <?php echo htmlentities($current_page["menu_name"]); ?><br>
