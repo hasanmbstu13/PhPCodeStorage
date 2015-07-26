@@ -48,8 +48,8 @@
     if($result && mysqli_affected_rows($connection) >= 0){ //This is more conveninent even is not changed then it will also allow to update the database.
       //Success
       $_SESSION["message"] = "Page updated";
-      $link = $current_page["id"]; //pass id to the url for further use using query string
-      redirect_to("manage_content.php?page=$link");
+      $page_id = $current_page["id"]; //pass id to the url for further use using query string
+      redirect_to("manage_content.php?page={$page_id}");
     } else {
       //Failure
       $message = "Page update failed.";

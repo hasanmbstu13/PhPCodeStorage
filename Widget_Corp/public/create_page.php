@@ -3,6 +3,15 @@
 <?php require_once("../includes/functions.php"); ?>
 <?php require_once("../includes/validation_functions.php"); ?>
 
+<?php 
+	//can't add a new page unless we hava a subject as a parent!
+	if(!$current_subject) { //because i use subject id in the query string so we get 
+		// subject ID was missing or invalid or
+	   //  subject couldn't be found in database
+	   redirect_to("manage_content.php");
+	}
+ ?>
+
 <?php
 	if(isset($_POST['submit'])){
 		//Process the form
@@ -34,7 +43,8 @@
 		if($result){
 		 	//Success
 		 	$_SESSION["message"] = "page created";
-		 	redirect_to("manage_content.php");
+		 	redirect_to("manage_content.php?subject={$subject_id}");
+		 	// redirect_to("manage_content.php?subject = {$subject_id}");//never use space between query string variable and = sign.
 		} else {
 			//Failure
 			$_SESSION["message"] = "page creation failed.";

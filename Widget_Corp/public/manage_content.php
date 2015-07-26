@@ -35,16 +35,11 @@
       <br>
       <a href="edit_subject.php?subject=<?php echo urldecode($current_subject["id"]);?>">Edit Subject</a>
       
-      <br>
-      <br>
-      <br>
-
-      <hr>
-      <br>
-
+      <div style="margin-top: 2em; border-top: 1px solid #000000">
       <!-- Following code for show related page of a subject. -->
       <h2>Pages in this subject:</h2>
-      <?php $page_set = find_pages_for_subject($current_subject["id"]); 
+      <!-- My Code -->
+      <!-- <?php $page_set = find_pages_for_subject($current_subject["id"]); 
             echo "<ul>";
             while($page = mysqli_fetch_assoc($page_set)){ 
               echo "<li>";
@@ -55,10 +50,24 @@
             }
             echo "</ul>";
             mysqli_free_result($page_set); 
-      ?> 
+      ?>  -->
+
+      <?php $subject_pages = find_pages_for_subject($current_subject["id"]); 
+            echo "<ul>";
+            while($page = mysqli_fetch_assoc($subject_pages)){ 
+              echo "<li>";
+              $safe_page_id = urlencode($page["id"]);
+              echo "<a href=\"manage_content.php?page={$safe_page_id}\">";
+              echo htmlentities($page["menu_name"]);
+              echo "</a>";
+              echo "</li>";
+            }
+            echo "</ul>";
+            mysqli_free_result($subject_pages); 
+      ?>       
       <br>
       + <a href="new_page.php?subject=<?php echo urlencode($current_subject["id"]); //pass subject id to the new page for getting id in the new page for further use.?>">Add a new page to this subject</a>
-        
+    </div> 
     <?php } elseif($current_page){ ?>
      <h2>Manage Page</h2>
       Menu name: <?php echo htmlentities($current_page["menu_name"]); ?><br>
