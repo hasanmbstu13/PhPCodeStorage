@@ -69,6 +69,11 @@
         <!-- Always careful when anything in html shoule be use htmlentities() or htmlspecialchars() -->
         <?php echo htmlentities($current_page["content"]); ?>
       </div>
+
+      <br>
+      <br>
+
+      <a href="edit_page.php?page=<?php echo urlencode($current_page["id"]); ?>">Edit Page</a>
       
     <?php } else { ?>
       please select a subject or a page.
