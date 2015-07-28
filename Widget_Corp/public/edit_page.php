@@ -12,7 +12,6 @@
       redirect_to("manage_content.php");
     } 
    ?>
-  <?php include("../includes/layouts/header.php"); ?>
  
  <?php
   if(isset($_POST['submit'])){
@@ -60,7 +59,8 @@
     
   }//end: if(isset($_POST['submit']))
   ?>
-
+<?php $layout_context = "admin"; ?>
+<?php include("../includes/layouts/header.php") ?>
  <div id="main">
    <div id="navigation">
     <?php echo navigation($current_subject, $current_page); //here $current_subject or $current_page may be associative array or null.?>	
