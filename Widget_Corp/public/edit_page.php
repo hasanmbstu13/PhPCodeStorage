@@ -6,20 +6,26 @@
   <?php find_selected_page();?>
 
   <?php
+    // Unlike new_page.php, we don't need a subject_id to be sent
+   //  We already have it stored in pages.subject_id
     if(!$current_page){
-      //subject ID was missing or invalid or
-      //subject couldn't be found in database
+      //page ID was missing or invalid or
+      //page couldn't be found in database
       redirect_to("manage_content.php");
     } 
    ?>
-  <?php include("../includes/layouts/header.php"); ?>
  
  <?php
   if(isset($_POST['submit'])){
     //Process the form
+    $id = $current_page["id"];
+    $menu_name = mysql_prep($_POST["menu_name"]);
+    $position = (int) $_POST["position"];
+    $visible = (int) $_POST["visible"];
+    $content = mysql_prep($_POST["content"]);
 
     //validations
-    $required_fields = array("menu_name","position","visible");
+    $required_fields = array("menu_name","position","visible","content");
     validate_presences($required_fields);
 
     $fields_with_max_lengths = array("menu_name" => 30);
@@ -27,14 +33,6 @@
 
     if(empty($errors)){
       //perform update
-
-    $id = $current_page["id"];
-    $menu_name = mysql_prep($_POST["menu_name"]);
-    $position = (int) $_POST["position"];
-    $visible = (int) $_POST["visible"];
-    $content = mysql_prep($_POST["content"]);
-
-
     $query  = "UPDATE pages SET ";
     $query .= "menu_name = '{$menu_name}', "; 
     $query .= "position = {$position}, ";
@@ -52,7 +50,7 @@
       redirect_to("manage_content.php?page={$page_id}");
     } else {
       //Failure
-      $message = "Page update failed.";
+      $_SESSION["message"] = "Page update failed.";
     }
 }
   } else {
@@ -61,16 +59,14 @@
   }//end: if(isset($_POST['submit']))
   ?>
 
+  <?php include("../includes/layouts/header.php"); ?>
+
  <div id="main">
    <div id="navigation">
     <?php echo navigation($current_subject, $current_page); //here $current_subject or $current_page may be associative array or null.?>	
   </div>
   <div id="page">
-    <?php //$message is just a variable, does't use the SESSION
-      if(!empty($message)){
-        echo "<div class =\"message\">".htmlentities($message)."</div>";
-      } 
-      ?>
+    <?php echo message(); ?>
     <?php echo form_errors($errors); ?>
       
      <h2>Edit Page: <?php echo htmlentities($current_page["menu_name"]); ?></h2>
@@ -103,13 +99,11 @@
       <!-- <p>Content: 
         <input type="text" name="content" value="<?php echo htmlentities($current_page["content"]); ?>" id="content" />
       </p> -->
-      Content:
-      <br>
+      <p>Content:<br>
       <textarea rows="15" cols="80" name = "content">
         <?php echo htmlentities($current_page["content"]); ?>
-      </textarea> 
-      <br>
-      <br>
+      </textarea>
+      </p> 
       <input type="submit" name = "submit" value="Edit page" />
      </form>
      <br />
