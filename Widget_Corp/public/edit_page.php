@@ -58,9 +58,14 @@
     
   }//end: if(isset($_POST['submit']))
   ?>
+<<<<<<< HEAD
 
   <?php include("../includes/layouts/header.php"); ?>
 
+=======
+<?php $layout_context = "admin"; ?>
+<?php include("../includes/layouts/header.php") ?>
+>>>>>>> 18e47ad5605b2a1c0ef940d1a54470ba9a4ab828
  <div id="main">
    <div id="navigation">
     <?php echo navigation($current_subject, $current_page); //here $current_subject or $current_page may be associative array or null.?>	
