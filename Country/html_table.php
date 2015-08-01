@@ -15,19 +15,16 @@
 		<tr>
 			<td>Chittagong</td>
 			<td>
-				Noakhali <br>
-				Comilla <br>
-				Chandpur
-				<!-- <td>Noakhali</td> -->
-				<!-- <tr><td>Noakhali</td></tr>
-				<tr><td>Chittagong</td></tr>
-				<tr><td>Comilla</td></tr> -->
-			</td>
+				Noakhali
 			<td>
-				<!-- <tr><td>Companiganj</td></tr> -->
-				<!-- <td>Companiganj</td> -->
 				Companigonj
 			</td>
+				Comilla <br>
+				Chandpur
+			</td>
+			<!-- <td>
+				Companigonj
+			</td> -->
 		</tr>
 	</table>
 </body>

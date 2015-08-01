@@ -68,4 +68,18 @@
 		confirm_query($districts);
 		return $districts;
 	}
+
+	function get_upazilas_for_district($district_id)
+	{
+		global $connection;
+
+		$query =  "SELECT name ";
+		$query .= "FROM upazilas ";
+		$query .= "Where district_id = {$district_id} ";
+		$query .= "ORDER BY name";
+		$upazilas = mysqli_query($connection,$query);
+		confirm_query($upazilas);
+		return $upazilas;
+	}
+
 ?>

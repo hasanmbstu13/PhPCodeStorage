@@ -13,7 +13,8 @@
 	<title>Home Page</title>
 </head>
 <body>
-	<table style="width: 100%">
+	<table style="width: 100%;height: auto;">
+	<!-- <table> -->
 		<tr>
 			<th>Divisions</th>
 			<th colspan="3">Districts</th>
@@ -22,20 +23,15 @@
 		<?php while($division = mysqli_fetch_assoc($division_set)){ ?>
 		<tr>
 			<td><?php echo $division["name"]; ?></td>
+			<?php $district_array = find_district_for_division($division["id"]); ?>	
+			<?php while($district = mysqli_fetch_assoc($district_array)){ ?>
 			<td>
-			<?php //while($district = mysqli_fetch_assoc($district_set)){ ?>
-			<!-- <pre><?php //print_r($district);exit; ?></pre> -->
-			<?php //if($division["id"] == $district["division_id"]){ ?>
-			<?php $district_array = find_district_for_division($division["id"]); 
-				// print_r($district_array);exit;
-			?>	
-			<?php while($district_name = mysqli_fetch_assoc($district_array)){ ?>		    
-			<?php //print_r($district_name);exit;
-			echo $district_name["name"]; ?> <br>
-				<?php //} ?>	
-				<?php// } ?>	
-			<?php } ?>			
+			<?php echo $district["name"]; ?> <br>
+			<?php //echo nl2br("<br>"); ?>
 			</td>
+			<?php } ?>
+			<!-- <td>Barisal <br>Rajshai <br> Khulna <br></td> 		 -->
+			
 		</tr>
 	<?php  } ?>
 	</table>
