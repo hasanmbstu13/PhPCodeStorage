@@ -61,9 +61,9 @@
       }
     }  
   }
-   else {
+   else {//else will execute if $_POST["submit"] is not submitted or submission is not proper submission.
       //This is probably a GET request
-      // redirect_to("new_page.php");
+      // redirect_to("new_page.php"); This is not needed because redirection is occured in below.
     }//end: if (isset($_POST['submit']))
   
   
