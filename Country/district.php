@@ -1,5 +1,5 @@
 <?php require_once("db_connection.php"); ?>
-<?php require_once("functions.php"); ?>
+<?php require_once("country_functions.php"); ?>
 <?php
 	if(isset($_POST['submit'])){
 		$division_id = $_POST["division_name"];

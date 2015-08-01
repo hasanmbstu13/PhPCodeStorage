@@ -5,26 +5,24 @@
 	<title>Table Structure</title>
 </head>
 <body>
-	<!-- <table style="width: 100%;border:1px solid Aqua;"> -->
-	<table>
+	<table border="1" style="border-color:Aqua;height=100%;width=100%">
 		<tr>
-			<th>Divisions</th>
+			<th>Division</th>
 			<th>District</th>
-			<th>Upazilas</th>
+			<th>Upazila</th>
+		</tr>
+		<tr>
+			<td rowspan="3">Chittagong</td>
+			<td>Noakhali</td>
+			<td>Compaingonj <br> Chatkil <br> Begumganj </td>
 		</tr>
 		<tr>
 			<td>Chittagong</td>
-			<td>
-				Noakhali
-			<td>
-				Companigonj
-			</td>
-				Comilla <br>
-				Chandpur
-			</td>
-			<!-- <td>
-				Companigonj
-			</td> -->
+			<td>Raujan <br> Bashkali <br> Doublemouring </td>
+		</tr>
+		<tr>
+			<td>Comilla</td>
+			<td>Buricahng <br> Chauddagram <br> Padua </td>
 		</tr>
 	</table>
 </body>
