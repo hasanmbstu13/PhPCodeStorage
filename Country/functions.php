@@ -42,4 +42,30 @@
 		confirm_query($districts);
 		return $districts;
 	}
+
+	function find_district_for_division($division_id)
+	{
+		global $connection;
+
+		$query =  "SELECT  name ";
+		$query .= "FROM districts ";
+		$query .= "Where division_id = {$division_id} ";
+		$query .= "ORDER BY name";
+		$districts = mysqli_query($connection,$query);
+		confirm_query($districts);
+		return $districts;
+
+	}
+
+	function get_all_upazilas()
+	{
+		global $connection;
+
+		$query =  "SELECT * ";
+		$query .= "FROM upazilas ";
+		$query .= "ORDER BY name";
+		$districts = mysqli_query($connection,$query);
+		confirm_query($districts);
+		return $districts;
+	}
 ?>
