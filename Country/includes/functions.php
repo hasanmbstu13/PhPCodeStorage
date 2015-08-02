@@ -19,7 +19,7 @@
 		}
 	}
 
-	function get_division_name()
+	function get_all_division()
 	{
 		global $connection;
 
@@ -77,9 +77,9 @@
 		$query .= "FROM upazilas ";
 		$query .= "Where district_id = {$district_id} ";
 		$query .= "ORDER BY name";
-		$districts = mysqli_query($connection,$query);
-		confirm_query($districts);
-		return $districts;
+		$upazilas = mysqli_query($connection,$query);
+		confirm_query($upazilas);
+		return $upazilas;
 
 	}
 

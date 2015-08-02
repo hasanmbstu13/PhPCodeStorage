@@ -1,8 +1,9 @@
-<?php require_once("db_connection.php"); ?>
-<?php require_once("country_functions.php"); ?>
+<?php require_once("./includes/session.php"); ?>
+<?php require_once("./includes/db_connection.php"); ?>
+<?php require_once("./includes/functions.php"); ?>
 <?php
 	if(isset($_POST['submit'])){
-		$district_id = $_POST["district_id"];
+		$district_id = $_POST["district"];
 		$upazila_name = mysql_prep($_POST["upazila_name"]);
 
 		$query =  "INSERT INTO upazilas (";
@@ -13,8 +14,8 @@
 		$result = mysqli_query($connection, $query);
 
 		if($result){
-			header("Location: index.php");
-			exit;
+			$_SESSION["message"] = "New upazila added successfully";
+			redirect_to("index.php");
 		} else {
 			echo "Upazila creation failed";
 		}
@@ -22,31 +23,30 @@
 
 	} 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Upazila Table</title>
-</head>
-<body>
-	<div>
+<?php include("./includes/layouts/header.php"); ?>
+<div id = "main">
+	<div id = "navigation">
+
+	</div>
+	<div id = "page">
 		<h2>Create Upazila</h2>
 		<form action="upazila.php" method="post">
 			<p>District:
-				<select name="district_id">
-				  <?php
-				  	$districts = get_all_districts();
+				<select name="district">
+					<?php
+					$districts = get_all_districts();
 					while($district = mysqli_fetch_assoc($districts)){
 						echo "<option value=".$district["id"].">".$district["name"]."</option>";						
 					}
-				  ?>
+					?>
 				</select>
 			</p>
-			<p>Add Upazila Name With District:
-			  <input type="text" name="upazila_name" value="" />
+			<p>Enter New Upazila:
+				<input type="text" name="upazila_name" value="" />
 			</p>
-			<input type="submit" name="submit" value="Create Upazila" />
+			<input type="submit" name="submit" value="Create Upazila" />&nbsp;
+			<button formaction="index.php">Cancel</button>
 		</form>
 	</div>
-</body>
-</html>
+</div>
+<?php include("./includes/layouts/footer.php") ?> 
