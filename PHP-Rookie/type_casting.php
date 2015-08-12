@@ -6,10 +6,12 @@
 </head>
 <body>
 	Type Juggling<br/>
-	<?php $count = "2 peoples"; ?>
-	Type: <?php echo gettype($count); ?><br/>
+	<?php $count = "3"; ?>
+	Type: <?php //echo gettype($count); ?><br/>
 
-	<?php $count += 3; //data type automatically changes from string to integer?>
+	<?php //$count += 3; //data type automatically changes from string to integer?>
+	<?php $count = $count + '2 peoples'; //data type automatically changes from string to integer?>
+	<?php echo $count;exit; ?>
 	Type: <?php echo gettype($count); ?><br>
 
 	<?php $cats = "I have" . $count . "cats.";////data type automatically changes from integer to string ?>
