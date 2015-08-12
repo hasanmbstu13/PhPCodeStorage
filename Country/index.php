@@ -27,10 +27,6 @@ $total_district = mysqli_num_rows($district_array);
 		<?php $total_district = mysqli_num_rows($district_array); ?>
 		<tr>
 			<td rowspan="<?php echo $total_district+1;?>" colspan="3"><?php echo $division["name"]; ?></td>
-	<!-- 		<td style="border:none;"></td>
-			<td style="border:none;"></td> -->
-			<!-- <td></td> -->
-			<!-- <td></td> -->
 		</tr>
 		<?php while($district = mysqli_fetch_assoc($district_array)){ ?>
 		<tr>
