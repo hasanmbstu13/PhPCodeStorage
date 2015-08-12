@@ -1,7 +1,6 @@
 <?php 
 	session_start();
 
-	// This session page is imported from bbs
 	function message(){
 	  if(isset($_SESSION["message"])){
 	    $output = "<div class =\"message\">";

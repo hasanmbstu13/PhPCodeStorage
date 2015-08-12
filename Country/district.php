@@ -1,5 +1,6 @@
-<?php require_once("db_connection.php"); ?>
-<?php require_once("country_functions.php"); ?>
+<?php require_once("./includes/session.php"); ?>
+<?php require_once("./includes/db_connection.php"); ?>
+<?php require_once("./includes/functions.php"); ?>
 <?php
 	if(isset($_POST['submit'])){
 		$division_id = $_POST["division_name"];
@@ -13,40 +14,39 @@
 		$result = mysqli_query($connection, $query);
 
 		if($result){
-			header("Location: index.php");
-			exit;
+			$_SESSION["message"] = "New district added successfully";
+			redirect_to("index.php");
 		} else {
 			echo "District creation failed";
 		}
-	}else {
+    }else {
 
-	} 
+    } 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Division Table</title>
-</head>
-<body>
-	<div>
+<?php include("./includes/layouts/header.php"); ?>
+<div id = "main">
+	<div id = "navigation">
+		
+	</div>
+	<div id = "page">
 		<h2>Create District</h2>
 		<form action="district.php" method="post">
-			<p>Division:
+			<p>Division List:
 				<select name="division_name">
-				  <?php
-				  	$division_set = get_division_name();
+					<?php
+					$division_set = get_all_division();
 					while($division = mysqli_fetch_assoc($division_set)){
 						echo "<option value=".$division["id"].">".$division["name"]."</option>";						
 					}
-				  ?>
+					?>
 				</select>
 			</p>
-			<p>Add District Name With Division:
-			  <input type="text" name="district_name" value="" />
+			<p>Enter New District:
+				<input type="text" name="district_name" value="" />
 			</p>
-			<input type="submit" name="submit" value="Create District" />
+			<input type="submit" name="submit" value="Create District" />&nbsp;
+			<button formaction="index.php">Cancel</button>
 		</form>
 	</div>
-</body>
-</html>
+</div>
+<?php include("./includes/layouts/footer.php") ?> 

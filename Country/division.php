@@ -1,5 +1,6 @@
-<?php require_once("db_connection.php"); ?>
-<?php require_once("country_functions.php"); ?>
+<?php require_once("./includes/session.php"); ?>
+<?php require_once("./includes/db_connection.php"); ?>
+<?php require_once("./includes/functions.php"); ?>
 <?php
 	if(isset($_POST['submit'])){
 		$division_name = mysql_prep($_POST["division_name"]);
@@ -12,8 +13,8 @@
 		$result = mysqli_query($connection, $query);
 
 		if($result){
-			header("Location: district.php");
-			exit;
+			$_SESSION["message"] = "New division added successfully";
+			redirect_to("index.php");
 		} else {
 			echo "Division creation failed";
 		}
@@ -21,21 +22,20 @@
 
 	} 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Division Table</title>
-</head>
-<body>
-	<div>
+<?php include("./includes/layouts/header.php"); ?>
+<div id = "main">
+	<div id = "navigation">
+		
+	</div>
+	<div id = "page">
 		<h2>Create Division</h2>
 		<form action="division.php" method="post">
 			<p>Division Name:
-			  <input type="text" name="division_name" value="" />
+				<input type="text" name="division_name" value="" />
 			</p>
-			<input type="submit" name="submit" value="Create Division" />
+			<input type="submit" name="submit" value="Create Division" />&nbsp;
+			<button formaction="index.php">Cancel</button>
 		</form>
 	</div>
-</body>
-</html>
+</div>
+<?php include("./includes/layouts/footer.php") ?> 
