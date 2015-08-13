@@ -17,7 +17,16 @@
 		 echo "<br />";
 
 		 $unix_timestamp = strtotime("now");
-		 echo $unix_timestamp . "<br />";	 
+		 echo $unix_timestamp . "<br />";
+
+		 $unix_timestamp = strtotime("15 September 2004");
+		 echo $unix_timestamp . "<br />";	
+		 $unix_timestamp = strtotime("15 September, 2004");
+		 echo $unix_timestamp . "<br />";	
+		 $unix_timestamp = strtotime("+1 day");
+		 echo $unix_timestamp . "<br />";	
+		 $unix_timestamp = strtotime("last Monday");
+		 echo $unix_timestamp . "<br />";		 
 	 ?>
 </body>
 </html>
