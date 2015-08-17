@@ -4,7 +4,8 @@
 		var $doors = 4;
 
 		function wheelsdoors(){
-			return $this->wheels + $this->doors;
+			$window = 6;
+			return $this->wheels + $this->doors + $window;
 		}
 	}
 
