@@ -7,14 +7,18 @@
 <body>
 	<?php 
 		$numbers = array(1,2,3,4,5,6);
+		echo "<pre>";
 		print_r($numbers);
+		echo "</pre>";
 		echo "<br /><br />";
 
 		// shifts first element out of an array
 		// and returns it.
 		$a = array_shift($numbers);
 		echo "a:".$a."<br />";
+		echo "<pre>";
 		print_r($numbers);
+		echo "</pre>";
 		echo "<br /><br />";
 
 		// prepends an element to an array,
