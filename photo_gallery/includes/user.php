@@ -19,6 +19,10 @@ class User {
 		global $database;
 		$result_array = self::find_by_sql("SELECT * FROM users WHERE id={$id} LIMIT 1");
 		// $result_array = $database->fetch_array($result_array);
+		// echo "<pre>";
+		// print_r($result_array);
+		// echo "</pre>";
+		// exit;
 		return !empty($result_array) ? array_shift($result_array) : false;
 	}
 

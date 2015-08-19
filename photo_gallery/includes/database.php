@@ -1,7 +1,7 @@
 <?php 
 require_once("../includes/config.php");
 
-class MySQLDatabase {
+class MySQLDatabase { // class name MySQLDatabase because of easily swapping the database or identify the database related class.
 
 	private $connection;
 	public $last_query;
@@ -9,7 +9,7 @@ class MySQLDatabase {
 	private $real_escape_string_exists;
 
 	function __construct(){
-		$this->open_connection();
+		$this->open_connection(); // we call the open_connection() in construct because as soon as object is created then database connection is opened up.
 		$this->magic_quotes_active = get_magic_quotes_gpc();
 		$this->real_escape_string_exists = function_exists( "mysql_real_escape_string" ); // i.e. PHP >= v4.3.0
 	}
@@ -53,6 +53,7 @@ class MySQLDatabase {
 		return $value;
 	}
 
+	//"database-neutral" methods
 	public function fetch_array($result_set){
 		return mysql_fetch_array($result_set);
 	}
