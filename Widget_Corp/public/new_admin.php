@@ -23,7 +23,7 @@
       $query  = "INSERT INTO admins(";
         $query .= "username, hashed_password";
         $query .= ") VALUES (";
-        $query .= " '{$user_name}', '{$password}'";
+        $query .= " '{$user_name}', '{$hashed_password}'";
         $query .= ")";   
   $result = mysqli_query($connection, $query);
 
