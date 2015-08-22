@@ -12,7 +12,7 @@
 		$name = "test";
 		$value = 45;
 		$expire = time() + (60*60*24*7);
-		setcookie($name, $value, $expire);
+		//setcookie($name, $value, $expire);
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +22,12 @@
 	<title>Cookies</title>
 </head>
 <body>
-	<pre>
+	<!-- <pre>
 		<?php print_r($_COOKIE);?>
-	</pre>
+	</pre> -->
+	<?php 
+		$test = $_COOKIE["test"];
+		echo $test;
+	 ?>
 </body>
 </html>

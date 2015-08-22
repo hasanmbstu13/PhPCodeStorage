@@ -10,9 +10,9 @@
         //Process the form
 
 
-        //validations
-    // $required_fields = array("user_name","password");
-    // validate_presences($required_fields);
+    //validations
+    $required_fields = array("user_name","password");
+    validate_presences($required_fields);
 
     if(empty($errors)){
       // Attempt Login
@@ -20,15 +20,16 @@
       $username = $_POST["user_name"];
       $password = $_POST["password"];
 
-      $found_admin = attempt_login($user_name, $password);
+      $found_admin = attempt_login($username, $password);
 
       if($found_admin){
         // Success
        //  Mark user as logged in
+        // $_COOKIE["admin_id"] = $found_admin["id"];
         $_SESSION["admin_id"] = $found_admin["id"];
-        $_SESSION["user_name"] = $found_admin["user_name"];
-        redirect_to("admin.php");
-      } else {
+        $_SESSION["user_name"] = $found_admin["username"]; // This is useful because of if want to use it in header,where username required
+        redirect_to("admin.php");                          // I can used to it as text or refer to them I always know to person name
+      } else {                                             // And I don't back to go database for know person's user name.
         //Failure
         $_SESSION["message"] = "Username/password not found.";
       }
