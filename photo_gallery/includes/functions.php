@@ -10,7 +10,7 @@
 
 	function redirect_to($location = NULL){
 		if($location != NULL){
-			header("Location: " . $new_location);
+			header("Location: " . $location);
 			exit;
 		}
 	}
