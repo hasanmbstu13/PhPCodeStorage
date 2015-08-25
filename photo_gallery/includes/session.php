@@ -24,7 +24,7 @@ class Session {
 		return $this->logged_in; // public way to check that whether person is logged in or not.
 	}							 // is logged_in() access the private variable logged_in but we don't directly access the logged_in attribute.
 								// we can read the value but we don't write the value to the variable only the class session write the variable.
-	public function login($user){
+	public function login($user){ // call the session mark the user logged in now.
 		// database should find user based on username/password
 		if($user){
 			$this->user_id = $_SESSION['user_id'] = $user->id;

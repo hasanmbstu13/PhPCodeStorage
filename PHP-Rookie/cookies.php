@@ -12,17 +12,7 @@
 		$name = "test";
 		$value = 45;
 		$expire = time() + (60*60*24*7); //add seconds
-		//setcookie($name, $value, $expire);
-
-		//Unsetting Cookie
-		// Wrong way
-		// -unset($_COODIE["user_id"]);
-
-		// Right ways
-		// setcookie($name);
-		// setcookie($name, null);
-		// setcookie($name,$value,(time()-3600))
-
+		//setcookie($name, $value, $expire);    
 ?>
 
 <!DOCTYPE html>
