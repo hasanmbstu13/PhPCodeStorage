@@ -318,4 +318,14 @@
 			return false;
 		}
 	}
+
+	function logged_in() { //This is just for simple are we logged in or not.
+		return isset($_SESSION['admin_id']);
+	}
+
+	function confirm_logged_in() { //This method is enforcement make sure logged in.
+		if(!logged_in()) {
+			redirect_to("login.php");
+		}
+	}
 ?>
