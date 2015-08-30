@@ -39,4 +39,4 @@
 	}
 
 	//passwprd: GRANT ALL PRIVILEGES ON photo_gallery.* TO 'gallery'@'localhost' IDENTIFIED BY 'php0TL123';
-?>
+?> 
