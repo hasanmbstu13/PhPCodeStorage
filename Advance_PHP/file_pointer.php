@@ -15,7 +15,7 @@ if($handle = fopen($file, 'w+')) {
 	fclose($handle);
 }
 
-// Beware, it will OVERTYPE!!!
+// Beaware, it will OVERTYPE!!!
 // NOTE: a and a+ modes will not let you move the pointer
 
 ?>

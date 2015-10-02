@@ -38,5 +38,19 @@
 		include(SITE_ROOT.DS.'public'.DS.'layouts'.DS.$template);
 	}
 
+	function log_action($action, $message="") {
+		$logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
+		$new = file_exists($logfile) ? false : true;
+		if($handle = fopen($logfile,'a')) { // append - will create a file first if the file will not exists and after appending with the file
+			$timestamp = strftime("%Y-%m-%d %H:%M:%S",time());
+			$content = "{$timestamp} | {$action}: {$message}\n";
+			fwrite($handle,$content);
+			fclose($handle);
+			if($new) { chmod($logfile, 0755);}
+		} else {
+			echo "Could not open log file for writing.";
+		}
+	}
+
 	//passwprd: GRANT ALL PRIVILEGES ON photo_gallery.* TO 'gallery'@'localhost' IDENTIFIED BY 'php0TL123';
 ?> 

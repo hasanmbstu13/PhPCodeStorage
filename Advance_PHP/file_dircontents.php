@@ -18,7 +18,7 @@ if(is_dir($dir)) {
 
 echo "<hr />";
 
-//scamdir(): reads all filenmaes into an array
+//scamdir(): reads all filenames into an array
 if(is_dir($dir)) {
 	$dir_array = scandir($dir);
 	foreach ($dir_array as $file) {
