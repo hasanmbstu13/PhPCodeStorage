@@ -16,7 +16,11 @@ if(isset($_POST['submit'])) { // Form has been submitted.
 
 	if($found_user) {
 		$session->login($found_user);
+<<<<<<< HEAD
 		log_action('Login',"{$found_user->username} logged in.");
+=======
+		log_action('Login', "{$found_user->username} logged in.");
+>>>>>>> 06f4633031aaf9b5c042c711e42bc703e2c2e439
 		redirect_to("index.php");
 	} else {
 		// username/password combo was not found in the database

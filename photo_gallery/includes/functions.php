@@ -41,6 +41,7 @@
 	function log_action($action, $message="") {
 		$logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
 		$new = file_exists($logfile) ? false : true;
+<<<<<<< HEAD
 		if($handle = fopen($logfile,'a')) { // append - will create a file first if the file will not exists and after appending with the file
 			$timestamp = strftime("%Y-%m-%d %H:%M:%S",time());
 			$content = "{$timestamp} | {$action}: {$message}\n";
@@ -49,6 +50,16 @@
 			if($new) { chmod($logfile, 0755);}
 		} else {
 			echo "Could not open log file for writing.";
+=======
+		if($handle = fopen($logfile, 'a+')) { // append
+		  $timestamp = strftime("%Y-%m-%d %H:%M:%S", time());
+		  $content = "{$timestamp} | {$action} : {$message}\n";
+		  fwrite($handle, $content);
+		  fclose($handle);
+		  if($new) { chmod($logfile, 0755);}
+		} else {
+			echo "Could not open lof file for writing.";
+>>>>>>> 06f4633031aaf9b5c042c711e42bc703e2c2e439
 		}
 	}
 
