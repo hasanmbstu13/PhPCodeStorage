@@ -91,7 +91,7 @@ class User extends DatabaseObject {
 				$attributes[$field] = $this->$field;
 			}
 		}
-		// return get_object_vars($this);
+		// return get_object_vars($this); // get_object_vars return an associative array of all attributes of the class; all attributes may not related with the database; some are may have protected or private 
 		return $attributes;
 	}
 
