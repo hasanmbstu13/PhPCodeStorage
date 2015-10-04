@@ -13,6 +13,45 @@ class User extends DatabaseObject {
 	public $size;
 	public $caption;
 
+	private $temp_path;
+	protected $upload_dir = "images";
+	public $errors = array();
+
+	protected $upload_errors = array(
+		//http://www.php.net/manual/en/features.file-upload.errors.php
+		UPLOAD_ERR_OK  			=> "no errors.",
+		UPLOAD_ERR_INI_SIZE 	=> "Larger than upload_max_filesize.",
+		UPLOAD_ERR_FORM_SIZE 	=> "Larger than form MAX_FILE_SIZE.",
+		UPLOAD_ERR_PARTIAL 		=> "Partial upload.",
+		UPLOAD_ERR_NO_FILE		=> "No file.",
+		UPLOAD_ERR_NO_TMP_DIR	=> "No temporary directory.",
+		UPLOAD_ERR_CANT_WRITE	=> "Can't write to disk.",
+		UPLOAD_ERR_EXTENSION	=> "File upload stopped by extension."
+	);	
+
+	// Pass in $_FILES(['uploaded_file']) as an argument
+	public function attach_file($file) {
+		// Perform error checking on the form parameters
+		if($file || empty($file) || !is_array($file)) {
+			// error:: nothing uploaded or wrong argument usage
+			$this->errors[] = "No file was uploaded.";
+			return false;
+		} elseif($file['error'] != 0) {
+			//error: report what PHP says went wrong
+			$this->errors[] = $this->upload_errors[$file['error']];
+			return false;
+		} else {
+		// Set object attributes to the form parameters.
+			$this->temp_path = $file['tmp_name'];
+			$this->filename  = basename($file['name']);
+			$this->type      = $file['type'];
+			$this->size  	 = $file['size'];
+			// Don't worry about saving anything to the database yet.
+			return true;
+	   }
+		
+	}
+
 	// Common Database Methods
 	public static function find_all() {
 		return self::find_by_sql("SELECT * FROM ".self::$table_name);
@@ -108,55 +147,55 @@ class User extends DatabaseObject {
 			// $sql .= $database->escape_value($this->last_name) ."')";
 			$sql .= join("', '",array_values($attributes));
 			$sql .= "')";
-if($database->query($sql)) {
-	$this->id = $database->insert_id();
-	return true;
-} else {
-	return false;
-}
-}
-
-public function update() {
-	global $database;
-			// Don't forget your SQL syntax and good habits:
-			// - UPDATE table SET key='value', key='value' WHERE condition
-			// - single-quotes around all values
-			// - escape all values to prevent SQL injection
-			// $attributes = $this->attributes();
-	$attributes = $this->sanitized_attributes();
-	$attributes_pairs = array();
-	foreach($attributes as $key => $value) {
-		$attributes_pairs[] = "{$key}='{$value}'";
+		if($database->query($sql)) {
+			$this->id = $database->insert_id();
+			return true;
+		} else {
+			return false;
+		}
 	}
-	$sql  = "UPDATE ".self::$table_name." SET ";
-	$sql .= join(", ", $attributes_pairs);
-			// $sql .= "username='".$database->escape_value($this->username) ."', ";
-			// $sql .= "password='".$database->escape_value($this->password) ."', ";
-			// $sql .= "first_name='".$database->escape_value($this->first_name) ."', ";
-			// $sql .= "last_name='".$database->escape_value($this->last_name) ."'";
-	$sql .= " WHERE id=". $database->escape_value($this->id);
-	$database->query($sql);
-	return ($database->affeected_rows() == 1) ? true : false;
-}
 
-public function delete() {
-	global $database;
-			// Don't forget your SQL syntax and good habits:
-			// - DELETE FROM table WHERE condition LIMIT 1
-			// - escape all values to prevent SQL injection
-			// - use LIMIT 1
-	$sql  = "DELETE FROM ".self::$table_name;
-	$sql .= " WHERE id=".$database->escape_value($this->id);
-	$sql .= " LIMIT 1";
-	$database->query($sql);
-	return ($database->affeected_rows() == 1) ? true : false;
+	public function update() {
+		global $database;
+				// Don't forget your SQL syntax and good habits:
+				// - UPDATE table SET key='value', key='value' WHERE condition
+				// - single-quotes around all values
+				// - escape all values to prevent SQL injection
+				// $attributes = $this->attributes();
+		$attributes = $this->sanitized_attributes();
+		$attributes_pairs = array();
+		foreach($attributes as $key => $value) {
+			$attributes_pairs[] = "{$key}='{$value}'";
+		}
+		$sql  = "UPDATE ".self::$table_name." SET ";
+		$sql .= join(", ", $attributes_pairs);
+				// $sql .= "username='".$database->escape_value($this->username) ."', ";
+				// $sql .= "password='".$database->escape_value($this->password) ."', ";
+				// $sql .= "first_name='".$database->escape_value($this->first_name) ."', ";
+				// $sql .= "last_name='".$database->escape_value($this->last_name) ."'";
+		$sql .= " WHERE id=". $database->escape_value($this->id);
+		$database->query($sql);
+		return ($database->affeected_rows() == 1) ? true : false;
+	}
 
-			// NB: After deleting, the instance of User still
-			// exists, even though the database entry does not.
-			// echo $user->first_name . " was deleted";
-			// but, for example, we can't call $user->update)()
-			// after calling $user->delete().
-}
+	public function delete() {
+		global $database;
+				// Don't forget your SQL syntax and good habits:
+				// - DELETE FROM table WHERE condition LIMIT 1
+				// - escape all values to prevent SQL injection
+				// - use LIMIT 1
+		$sql  = "DELETE FROM ".self::$table_name;
+		$sql .= " WHERE id=".$database->escape_value($this->id);
+		$sql .= " LIMIT 1";
+		$database->query($sql);
+		return ($database->affeected_rows() == 1) ? true : false;
+
+				// NB: After deleting, the instance of User still
+				// exists, even though the database entry does not.
+				// echo $user->first_name . " was deleted";
+				// but, for example, we can't call $user->update)()
+				// after calling $user->delete().
+	}
 
 } 
 
