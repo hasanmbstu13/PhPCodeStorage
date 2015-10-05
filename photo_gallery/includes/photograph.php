@@ -52,6 +52,27 @@ class User extends DatabaseObject {
 		
 	}
 
+	public function save() {
+		// A new record won't have an id yet.
+		if(isset($this->id)) {
+			// Really just to update the caption
+			$this->update();
+		} else {
+			// Make sure there are no errors
+
+			// Can't save it there are pre-existing errors
+			if(!empty($this->errors)) { return false; }
+			// Make sure the captin is not too long for the DB
+			if(strlen($this->capton) <= 255) {
+				$this->errors[] = "The caption can only be 255 characters";
+				return false; 
+			}
+			// Attempt to move the file
+			// Save a corresponding entry to the database
+			$this->create();
+		}
+	}
+
 	// Common Database Methods
 	public static function find_all() {
 		return self::find_by_sql("SELECT * FROM ".self::$table_name);
@@ -124,10 +145,11 @@ class User extends DatabaseObject {
 		return $clean_attributes;
 	}
 
-	public function save() {
-			// A new record won't have an id yet.
-		return isset($this->id) ? $this->update() : $this->create();
-	}
+	// replaced with a custom save()
+	// public function save() {
+	// 		// A new record won't have an id yet.
+	// 	return isset($this->id) ? $this->update() : $this->create();
+	// }
 
 	public function create() {
 		global $database;
