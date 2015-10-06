@@ -32,7 +32,7 @@ class Photograph extends DatabaseObject {
 	// Pass in $_FILES(['uploaded_file']) as an argument
 	public function attach_file($file) {
 		// Perform error checking on the form parameters
-		if($file || empty($file) || !is_array($file)) {
+		if(!$file || empty($file) || !is_array($file)) {
 			// error:: nothing uploaded or wrong argument usage
 			$this->errors[] = "No file was uploaded.";
 			return false;
@@ -64,7 +64,7 @@ class Photograph extends DatabaseObject {
 			if(!empty($this->errors)) { return false; }
 
 			// Make sure the captin is not too long for the DB
-			if(strlen($this->capton) <= 255) {
+			if(strlen($this->caption) > 255) {
 				$this->errors[] = "The caption can only be 255 characters";
 				return false; 
 			}
@@ -98,6 +98,23 @@ class Photograph extends DatabaseObject {
 			}
 		}
 	}
+
+	public function image_path() {
+		return $this->upload_dir.DS.$this->filename;
+	}
+
+	public function size_as_text() {
+		if($this->size < 1024) {
+			return "{$this->size} bytes";
+		} elseif ($this->size < 1048576) {
+			$size_kb = round($this->size/1024);
+			return "{$size_kb} KB";
+		} else {
+			$size_mb = round($this->size/1048576, 1);
+			return "{$size_mb} MB";
+		}
+	}
+
 
 	// Common Database Methods
 	public static function find_all() {
