@@ -99,6 +99,21 @@ class Photograph extends DatabaseObject {
 		}
 	}
 
+	public function destroy() {
+		// First remove the database entry
+		if($this->delete()) {
+			// then remove the file from the site
+			// we should remove the file otherwise it will gives error in future when we upload the same file again
+			// Note that even though the database entry is gone, this object
+			// is still around (which lets us use $this->image_path()).
+			$target_path = SITE_ROOT.DS.'public'.DS.$this->image_path();
+			return unlink($target_path) ? true : false; // The unlink() function deletes a file.
+		} else {
+			// database delete failed
+			return false; // didn't destroy the file successfully
+		}
+	}
+
 	public function image_path() {
 		return $this->upload_dir.DS.$this->filename;
 	}
@@ -122,7 +137,9 @@ class Photograph extends DatabaseObject {
 	}
 
 	public static function find_by_id($id=0) {
-		$result_array = self::find_by_sql("SELECT * FROM ".self::$table_name." WHERE id={$id} LIMIT 1");
+		global $database;
+
+		$result_array = self::find_by_sql("SELECT * FROM ".self::$table_name." WHERE id=".$database->escape_value($id)." LIMIT 1");
 		return !empty($result_array) ? array_shift($result_array) : false;
 	}
 
