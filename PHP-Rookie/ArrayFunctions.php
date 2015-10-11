@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<!-- 	<?php $myArray = ['1' => '12',['name' => 'Mainul'],3,34,6]; ?>
+<!-- <?php $myArray = ['1' => '12',['name' => 'Mainul'],3,34,6]; ?>
 	<?php //php automatically convert a string into integer value like in this php script will convert '12' into integer number ?>
 	<pre>
 		<?php print_r($myArray); ?>
