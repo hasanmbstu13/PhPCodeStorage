@@ -6,18 +6,24 @@ if(!$session->is_logged_in()) { redirect_to("login.php");}
 <?php 
 	$max_file_size = 1048576; // in bytes
 
-	$message = "";
+	// $message = "";
 	if(isset($_POST['submit'])) {
 		$photo = new Photograph(); 
 		$photo->caption = $_POST['caption'];
 		$photo->attach_file($_FILES['file_upload']);
 	
 	if($photo->save()) {
+<<<<<<< HEAD
 		$message = "Photograph uploaded successfully.";
+=======
+		// Success
+		// $message = "Photograph uploaded successfully.";
+		$session->message("Photograph uploaded successfully.");
+>>>>>>> f9dd6e9787d296356f4dc61c9ade9007505266bf
 		redirect_to('list_photos.php');
 	} else {
 		// Failure
-		$message = join("<br />", $photo->errors);
+		$message = join("<br />", $photo->errors); // overriding the message attributes it's not sesssion variable
 	}
 }
 ?>
