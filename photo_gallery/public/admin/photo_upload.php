@@ -14,6 +14,7 @@ if(!$session->is_logged_in()) { redirect_to("login.php");}
 	
 	if($photo->save()) {
 		$message = "Photograph uploaded successfully.";
+		redirect_to('list_photos.php');
 	} else {
 		// Failure
 		$message = join("<br />", $photo->errors);
