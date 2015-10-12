@@ -13,6 +13,7 @@ if(!$session->is_logged_in()) { redirect_to("login.php");}
 		$photo->attach_file($_FILES['file_upload']);
 	
 	if($photo->save()) {
+
 		// Success
 		// $message = "Photograph uploaded successfully.";
 		$session->message("Photograph uploaded successfully.");
