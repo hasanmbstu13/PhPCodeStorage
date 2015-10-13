@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{	
+			"follow_symlinks": true,
+			"path": "C:\\xampp\\htdocs\\PhPCodeStorage"
+		}
+	],
+	"settings": {
+	        "xdebug": {
+	            "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
+	        }
+	    }
+}
