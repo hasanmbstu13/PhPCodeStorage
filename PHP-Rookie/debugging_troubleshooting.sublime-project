@@ -1,6 +1,7 @@
 {
 	"folders":
 	[
+<<<<<<< HEAD
 		{
 			"follow_symlinks": true,
 			"path": "D:\\xampp\\htdocs\\ec2014"
@@ -19,4 +20,16 @@
          "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
     }
   }
+=======
+		{	
+			"follow_symlinks": true,
+			"path": "C:\\xampp\\htdocs\\PhPCodeStorage"
+		}
+	],
+	"settings": {
+	        "xdebug": {
+	            "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
+	        }
+	    }
+>>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
 }

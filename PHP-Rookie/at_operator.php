@@ -1,6 +1,6 @@
 <?php 
 	
-	@mysqli_connect('localhost','root','1') or die('could not connected to the database');
+	mysqli_connect('localhost','root','1') or die('could not connected to the database');
 	mysqli_connect('localhost','root','1');
 	die('could not connected to the database');
 	echo "connected";
