@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "D:\\xampp\\htdocs\\ec2014"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "D:\\xampp\\htdocs\\unit_size_update"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "D:\\xampp\\htdocs\\PhPCodeStorage"
+		}
+	],
+	"settings": {
+    "xdebug": {
+         "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
+    }
+  }
+}
