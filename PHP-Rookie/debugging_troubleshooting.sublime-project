@@ -1,14 +1,18 @@
 {
 	"folders":
 	[
-		{	
-			"follow_symlinks": true,
+		{
 			"path": "C:\\xampp\\htdocs\\PhPCodeStorage"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\Object-Oriented-PHP"
 		}
 	],
-	"settings": {
-	        "xdebug": {
-	            "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
-	        }
-	    }
+	"settings":
+	{
+		"xdebug":
+		{
+			"url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php"
+		}
+	}
 }
