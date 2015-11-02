@@ -1,52 +1,23 @@
 {
 	"folders":
 	[
-<<<<<<< HEAD
 		{
-=======
-<<<<<<< HEAD
-		{
-			"follow_symlinks": true,
-			"path": "D:\\xampp\\htdocs\\ec2014"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "D:\\xampp\\htdocs\\unit_size_update"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "D:\\xampp\\htdocs\\PhPCodeStorage"
-		}
-	],
-	"settings": {
-    "xdebug": {
-         "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
-    }
-  }
-=======
-		{	
-			"follow_symlinks": true,
->>>>>>> 8bc78c7f232b469ef24353e41a0876906260a2b9
 			"path": "C:\\xampp\\htdocs\\PhPCodeStorage"
 		},
 		{
 			"path": "C:\\xampp\\htdocs\\Object-Oriented-PHP"
-		}
-	],
-<<<<<<< HEAD
-	"settings":
-	{
-		"xdebug":
+		},
 		{
-			"url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php"
+			"path": "C:\\xampp\\htdocs\\Ajax"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\ec2014"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\jQuery"
+		},
+		{
+			"path": "E:\\Web Programming\\JavaScript\\Lynda - javascript_ Enhancing the DOM\\Exercise Files\\02\\dom"
 		}
-	}
-=======
-	"settings": {
-	        "xdebug": {
-	            "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
-	        }
-	    }
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
->>>>>>> 8bc78c7f232b469ef24353e41a0876906260a2b9
+	]
 }

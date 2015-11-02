@@ -72,7 +72,7 @@ class MySQLDatabase { // class name MySQLDatabase because of easily swapping the
 	}
 
 	// Here fetch_array,num_rows,insert_id,affected_rows,escape_value these functions are 
-	// database neutral methods
+	// database neutral user defined methods
 
 	private function confirm_query($result){
 		if(!$result){

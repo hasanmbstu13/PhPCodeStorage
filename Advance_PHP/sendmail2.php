@@ -5,7 +5,7 @@
 	require_once("../photo_gallery/includes/phpMailer/language/phpmailer.lang-en.php");
 
 	$to = "Mainul Hasan"; 
-	$to = "hasanmbstu13@gmail"; 
+	$to = "hasanmbstu13@gmail.com"; 
 	$subject = "Mail Test at ".strftime("%T", time());
 	$message = "This is a test."; 
 	$message = wordwrap($message,70);
