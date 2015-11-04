@@ -3,513 +3,144 @@
 	{
 		"selected_items":
 		[
-<<<<<<< HEAD
-=======
 			[
-				"Ex",
-				"Exception〔class〕"
-			],
-			[
-				"tar",
-				"target_path"
-			],
-			[
-				"es",
-				"escape_value"
-			],
-			[
-				"fin",
-				"find_by_id〔function〕"
-			],
-			[
-				"up",
-				"upload_dir〔variable〕"
-			],
-			[
-				"Photo",
-				"Photograph"
-			],
-			[
-				"max",
-				"$max_file_size〔variable〕"
-			],
-			[
-				"target",
-				"$target_file〔variable〕"
-			],
-			[
-				"tmp_",
-				"$tmp_file〔variable〕"
-			],
-			[
-				"move",
-				"move_uploaded_file〔function〕"
-			],
-			[
-				"base",
-				"basename〔function〕"
-			],
-			[
-				"time",
-				"timestamp"
-			],
-			[
-				"S",
-				"SITE_ROOT"
-			],
-			[
-				"ha",
-				"hasanmbstu13@gmail"
-			],
-			[
-				"issue",
-				"issue_number〔variable〕"
-			],
-			[
-				"publication",
-				"publication_id"
-			],
-			[
-				"D",
-				"DB_TABLE_PK〔constant〕"
-			],
-			[
-				"file",
-				"file_permissions"
-			],
-			[
-				"posix_getpw",
-				"posix_getpwuid〔function〕"
-			],
-			[
-				"dir",
-				"dirname〔function〕"
-			],
-			[
-				"log",
-				"login"
-			],
-			[
-				"logge",
-				"logged_in"
-			],
-			[
-				"user",
-				"user_id"
-			],
-			[
-				"_S",
-				"$_SESSION〔variable〕"
-			],
-			[
-				"is",
-				"isset"
-			],
-			[
-				"C",
-				"CompactCar"
-			],
-			[
-				"doors",
-				"doors"
-			],
-			[
-				"var",
-				"$var〔variable〕"
+				"i",
+				"img	Tag"
 			],
 			[
 				"new",
-				"new_person"
+				"$newphrase〔variable〕"
 			],
 			[
-				"get_class",
-				"get_class_methods〔function〕"
+				"div",
+				"div1"
 			],
 			[
-				"SE",
-				"SERVER_NAME"
+				"8",
+				"imap_8bit"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"c",
+				"checked"
 			],
 			[
 				"ch",
-				"checkdate"
+				"checkbox"
 			],
 			[
-				"exis",
-				"$existing_hash〔variable〕"
+				"che",
+				"checked"
 			],
 			[
-				"ba",
-				"$base64_string〔variable〕"
-			],
-			[
-				"un",
-				"$unique_random_string〔variable〕"
-			],
-			[
-				"base64",
-				"base64_encode〔function〕"
+				"floa",
+				"float: 〔property〕"
 			],
 			[
 				"s",
 				"style	Attr"
 			],
 			[
-				"total",
-				"$total_district〔variable〕"
-			],
-			[
-				"bo",
-				"border"
-			],
-			[
-				"dis",
-				"district_id"
-			],
-			[
-				"distri",
-				"districts"
-			],
-			[
-				"U",
-				"Upazila"
-			],
-			[
-				"division",
-				"division_id"
-			],
-			[
-				"divi",
-				"$division〔variable〕"
-			],
-			[
-				"di",
-				"$divisions〔variable〕"
-			],
-			[
-				"conn",
-				"$connection〔variable〕"
-			],
-			[
-				"ac",
+				"a",
 				"action	Attr"
 			],
 			[
-				"mysqli_connect_e",
-				"mysqli_connect_error〔function〕"
-			],
-			[
-				"mysqli_conn",
-				"mysqli_connect_errno〔function〕"
-			],
-			[
-				"DB",
-				"DB_NAME"
-			],
-			[
-				"mysqli_real",
-				"mysqli_real_escape_string〔function〕"
-			],
-			[
-				"a",
-				"arsort"
-			],
-			[
-				"has",
-				"hashed_password"
-			],
-			[
-				"us",
-				"username"
-			],
-			[
-				"my",
-				"mysql_prep"
-			],
-			[
-				"pa",
-				"password"
-			],
-			[
-				"ad",
-				"$admins〔variable〕"
-			],
-			[
-				"wi",
-				"width: 〔property〕"
-			],
-			[
-				"_SE",
-				"$_SESSION〔variable〕"
-			],
-			[
-				"current_",
-				"current_page"
-			],
-			[
-				"url",
-				"urlencode"
-			],
-			[
-				"str_r",
-				"str_replace"
-			],
-			[
-				"sho",
-				"showDog〔function〕"
-			],
-			[
-				"show",
-				"showTitle〔function〕"
-			],
-			[
-				"ge",
-				"getBreed〔function〕"
-			],
-			[
 				"get",
-				"getSpecies〔function〕"
+				"getJSON〔function〕"
 			],
 			[
-				"se",
-				"setSpecies〔function〕"
+				"loa",
+				"loadAJAX〔function〕"
 			],
 			[
-				"retur",
-				"return"
+				"onmo",
+				"onmouseover	Attr"
 			],
 			[
-				"myD",
-				"$myDog〔variable〕"
+				"on",
+				"onclick	Attr"
 			],
 			[
-				"do",
-				"dogname"
+				"resp",
+				"responseXML〔variable〕"
 			],
 			[
-				"cu",
-				"current_page"
+				"var",
+				"var_dump"
 			],
 			[
-				"error_",
-				"error_reporting"
+				"var_",
+				"var_export"
 			],
 			[
-				"val",
-				"validatie_presences"
+				"print",
+				"print_r"
 			],
 			[
-				"requ",
-				"required_fields"
-			],
-			[
-				"fi",
-				"field"
-			],
-			[
-				"field",
-				"fieldname"
-			],
-			[
-				"uc",
-				"ucfirst"
-			],
-			[
-				"htm",
-				"htmlentities"
-			],
-			[
-				"m",
-				"menu_name"
-			],
-			[
-				"position",
-				"position"
-			],
-			[
-				"redir",
-				"redirect_to"
-			],
-			[
-				"sub",
-				"Subject_set"
-			],
-			[
-				"subj",
-				"Subject_count"
-			],
-			[
-				"su",
-				"Subject"
-			],
-			[
-				"current_su",
-				"current_subject"
-			],
-			[
-				"mysqli_fet",
-				"mysqli_fetch_assoc"
-			],
-			[
-				"first",
-				"firstName"
-			],
-			[
-				"u",
-				"upazilaName"
-			],
-			[
-				"strlow",
-				"strtolower"
-			],
-			[
-				"refe",
-				"reference"
-			],
-			[
-				"defin",
-				"defined"
-			],
-			[
-				"Const",
-				"Constants"
-			],
-			[
-				"string",
-				"stringValue"
-			],
-			[
-				"IN",
-				"INSERT"
-			],
-			[
-				"con",
-				"connection"
-			],
-			[
-				"mysqli_conne",
-				"mysqli_connect_errno"
-			],
-			[
-				"mysql_num",
-				"mysql_num_rows"
-			],
-			[
-				"books",
-				"books_no"
-			],
-			[
-				"row",
-				"rowcount"
-			],
-			[
-				"an",
-				"an_array"
-			],
-			[
-				"set",
-				"set"
-			],
-			[
-				"num",
-				"num1"
-			],
-			[
-				"lin",
-				"linktext"
-			],
-			[
-				"echo",
-				"echo"
-			],
-			[
-				"ht",
-				"htmlentities"
-			],
-			[
-				"html",
-				"htmlspecialchars"
-			],
-			[
-				"p",
-				"Page"
-			],
-			[
-				"get_defined",
-				"get_defined_vars"
-			],
-			[
-				"co",
-				"color"
-			],
-			[
-				"add",
-				"add_result"
-			],
-			[
-				"age",
-				"ages"
-			],
-			[
-				"array",
-				"array"
-			],
-			[
-				"at",
-				"attr_nice"
-			],
-			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
-				"e",
-				"e"
-			],
-			[
-				"ec",
-				"echo"
-			],
-			[
-				"nu",
-				"num_string"
-			],
-			[
-				"arra",
-				"array"
-			],
-			[
-				"h",
-				"h1	Tag"
+				"er",
+				"errorInfo〔function〕"
 			]
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
 		]
 	},
 	"buffers":
 	[
 		{
-<<<<<<< HEAD
-			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Debugging and TroubleShooting</title>\n</head>\n<body>\n	\n	<?php \n		// Debugging ways\n		echo $variable; 	// variable value\n		print_r($array);	// print readable array\n		gettype($variable);	// variable type\n		var_dump($variable);// variable type and value\n		get_defined_vars();	// array of defined variables\n		debug_backtrace();	// show backtrace\n	 ?> \n\n\n\n	<?php \n		$number = 99;\n		$string = \"Bug?\";\n		$array = array(1=> \"Homepage\", 2=>  \"About Us\", 3=>\"Services\");\n		//var_dump($array);\n		//var_dump($number); //var_dump return variable type and value\n		//var_dump($string);\n\n	 ?>\n	 <pre>\n	    <?php var_export($array); ?>\n	 </pre>\n\n	 <pre>\n	 	<?php \n	 		var_dump($array);\n	 	 ?>\n	 </pre>\n\n	 <br>\n<pre>\n	<?php \n		print_r(get_defined_vars());//return the array of defined variables.\n	 ?>\n</pre>  \n	\n<!-- 	<?php \n 	print_r(get_defined_vars());\n ?> -->\n\n <?php \n 	// A backtrace is a summary of how your program got where it is. \n 	// It shows one line per frame, for many frames, starting with the currently executing frame (frame zero), \n 	// followed by its caller (frame one), and on up the stack.\n 	// The debug_backtrace() function generates a PHP backtrace.\n 	// This function displays data from the code that led up to the debug_backtrace() function.\n 	// Returns an array of associative arrays. The possible returned elements are\n\n 	// The possible returned elements are: \n 	// Name 	 Type 	    Description\n 	// function string 	The current function name\n 	// line 	 integer 	The current line number\n 	// file 	 string 	The current file name\n 	// class 	 string 	The current class name\n 	// object 	 object 	The current object\n 	// type 	 string 	The current call type. Possible calls:\n\n 	//     Returns: \"->\"  - Method call\n 	//     Returns: \"::\"  - Static method call\n 	//     Returns nothing - Function call\n\n 	// args 	array 	If inside a function, it lists the functions arguments. If inside an included file, it lists the included file names \n\n 	function say_hello_to($word) {\n 		echo \"Hello {$word}\";\n 		var_dump(debug_backtrace());\n 	}\n\n 	say_hello_to('Everyone');\n  ?>\n\n</body>\n</html>",
-			"file": "debugging_troubleshooting.php",
-			"file_size": 2248,
-			"file_write_time": 130891251503604176,
+			"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q16_Q17_Q19.php",
 			"settings":
 			{
-				"buffer_size": 2167,
+				"buffer_size": 7333,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/xampp/htdocs/ec2014/app/Config/core.php",
+			"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q11.1_Q16_Q17.php",
 			"settings":
 			{
-				"buffer_size": 10326,
-=======
-			"file": "debugging_troubleshooting.sublime-project",
+				"buffer_size": 7324,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4_Q6_Q9_Q16_Q19.php",
 			"settings":
 			{
-				"buffer_size": 257,
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
-				"line_ending": "Unix"
+				"buffer_size": 4997,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q9_Q16.php",
+			"settings":
+			{
+				"buffer_size": 4612,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/unit_size_update/Q25.php",
+			"settings":
+			{
+				"buffer_size": 4028,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/unit_size_update/Q5_Q6_Q9_Q21.php",
+			"settings":
+			{
+				"buffer_size": 4903,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/PhPCodeStorage/photo_gallery/logs/log.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -520,11 +151,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-<<<<<<< HEAD
-		"height": 219.0,
+		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax jast",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax javas",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -546,86 +192,6 @@
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
-=======
-		"height": 490.0,
-		"last_filter": "Package Control: ",
-		"selected_items":
-		[
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"IN",
-				"Package Control: Install Package"
-			],
-			[
-				"REMOVE",
-				"Package Control: Remove Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: inst",
-				"Package Control: Install Package"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
-				"Install",
-				"Package Control: Install Package"
-			],
-			[
-				"In",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: IN",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: In",
-				"Package Control: Install Package"
-			],
-			[
-				"php",
-				"Set Syntax: PHP"
-			],
-			[
-				"html",
-				"Snippet: html"
-			],
-			[
-				"Package Control: I",
-				"Package Control: Install Package"
-			],
-			[
-				"c",
-				"Set Syntax: C"
-			],
-			[
-				"ru",
-				"Set Syntax: Ruby"
-			],
-			[
-				"H",
-				"Set Syntax: HTML"
-			]
-		],
-		"width": 725.0
-	},
-	"console":
-	{
-		"height": 351.0,
-		"history":
-		[
-			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
-			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
 		]
 	},
 	"distraction_free":
@@ -639,169 +205,147 @@
 	},
 	"expanded_folders":
 	[
-<<<<<<< HEAD
-		"/D/xampp/htdocs/ec2014",
-		"/D/xampp/htdocs/ec2014/app",
-		"/D/xampp/htdocs/ec2014/app/Config",
-		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie"
+		"/D/xampp/htdocs/unit_size_update",
+		"/D/xampp/htdocs/unit_size_update/simple-xlsx",
+		"/D/xampp/htdocs/PhPCodeStorage",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/includes",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/logs",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/public",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/public/images",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/public/javascripts",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/public/layouts",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/public/stylesheets"
 	],
 	"file_history":
 	[
-		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.sublime-project",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/database.php",
+		"/D/xampp/htdocs/jQuery/FormSelectors-5.html",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q16_Q17_Q19_1.php",
+		"/D/xampp/htdocs/PhPCodeStorage/Widget_Corp/includes/functions.php",
+		"/D/xampp/htdocs/JavascriptCodeStorage/DOM/SelectID-1/_/css/style.css",
+		"/D/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/edit_subject.php",
+		"/D/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/database_object.php",
+		"/D/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/delete_subject.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q16_Q17_Q19_Q25.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q16_Q17_Q19.php",
+		"/D/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/delete_page.php",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q5_Q6_Q9_Q11_Q11.1_Q16.php",
+		"/D/xampp/htdocs/unit_size_update/Q6_Q9_Q16_Q17.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q5_Q6_Q9_Q16.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q5_Q6_Q9_Q11_Q11.1_Q16_Q19.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q11.1_Q16_Q17.php",
+		"/D/xampp/htdocs/unit_size_update/Q19.php",
+		"/D/xampp/htdocs/unit_size_update/Q16_Q19.php",
+		"/D/xampp/htdocs/unit_size_update/Q5_Q6_Q9_Q21.php",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/StringFunctions.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q11.1_Q16_Q17_1.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4_Q6_Q9_Q16_Q19.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q5_Q6_Q9_Q11.1_Q16_Q17.php",
+		"/D/xampp/htdocs/unit_size_update/Q5_Q6_Q19.php",
+		"/D/xampp/htdocs/jQuery/HierCombinationSelectors-8.html",
+		"/D/xampp/htdocs/jQuery/Data14.html",
+		"/D/xampp/htdocs/jQuery/Attributes-10.html",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q9_Q16.php",
+		"/D/xampp/htdocs/unit_size_update/Q19_Q21_Q25.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q5_Q6_Q9_Q16_Q17_1.php",
+		"/D/xampp/htdocs/unit_size_update/Q9_Q19_Q21.php",
+		"/D/xampp/htdocs/unit_size_update/Q9_Q25.php",
+		"/D/xampp/htdocs/Ajax/JSON/data.json",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q16_Q17.php",
+		"/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q5_Q6_Q9_Q11_Q11.1_Q16_Q17.php",
+		"/D/xampp/htdocs/unit_size_update/Data14.html",
+		"/D/xampp/htdocs/jQuery/WrappingContent-12.html",
+		"/D/xampp/htdocs/jQuery/ChildVisibilityContentFilters-4.html",
+		"/D/xampp/htdocs/unit_size_update/Update_Q4_Q4_Org_type_Q6_Q9_Q11_Q11.1_Q16.php",
+		"/D/xampp/htdocs/unit_size_update/Q9_Q19_Q21_Q25.php",
+		"/D/xampp/htdocs/unit_size_update/LegalEntityFCTPEUpdate.php",
+		"/D/xampp/htdocs/unit_size_update/Q9_Q21_Q25.php",
+		"/D/xampp/htdocs/unit_size_update/Update_Q9_Q16.php",
+		"/D/xampp/htdocs/unit_size_update/bsic_code_update.php",
+		"/D/xampp/htdocs/jQuery/AutoPDFIconsAnnotatingPageLinks-7.html",
+		"/D/ec2013_27-5-2015/database.php",
+		"/D/xampp/htdocs/ec2014/app/Controller/ReportsSevenController.php",
+		"/D/xampp/htdocs/unit_size_update/legal_entity_update.php",
+		"/D/xampp/htdocs/unit_size_update/Update_Q5_Org_Q6_Q9_Q11.1_Q16.php",
+		"/D/xampp/htdocs/ec2014/app/View/ReportsSeven/tpe_tbl_seven_three.ctp",
+		"/D/xampp/htdocs/Ajax/LiveSearch/script.js",
+		"/D/xampp/htdocs/Ajax/LiveSearch/jquery.js",
+		"/D/xampp/htdocs/Ajax/LiveSearch/index.html",
+		"/D/xampp/htdocs/Ajax/LiveSearch/mystyle.css",
+		"/D/xampp/htdocs/Ajax/LiveSearch/data.json",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_fetch.php",
+		"/D/xampp/htdocs/jQuery/FormSelectors.html",
+		"/D/xampp/htdocs/jQuery/FormSelectors-Original.html",
+		"/D/xampp/htdocs/Ajax/LiveSearch/data.txt",
+		"/D/xampp/htdocs/Ajax/ReadingDataWithjQuery/index.html",
+		"/D/xampp/htdocs/Ajax/Ajax-Basics/script.js",
+		"/D/xampp/htdocs/Ajax/ReadingDataWithjQuery/script.js",
+		"/D/xampp/htdocs/Ajax/jQueryAjax/index.html",
+		"/D/xampp/htdocs/Ajax/jQueryAjax/data.txt",
+		"/D/xampp/htdocs/Ajax/jQueryAjax/script.js",
+		"/D/xampp/htdocs/Ajax/jQueryAjax/jquery.js",
+		"/D/xampp/htdocs/Ajax/Event-Driven-Ajax/index.html",
+		"/D/xampp/htdocs/Ajax/Event-Driven-Ajax/script.js",
+		"/D/xampp/htdocs/Ajax/Event-Driven-Ajax/data.json",
+		"/D/xampp/htdocs/ec2014/app/View/Reports/index.ctp",
+		"/D/xampp/htdocs/ec2014/app/View/ReportsSix/tpe_tbl_six_ten.ctp",
+		"/D/xampp/htdocs/Ajax/JSON/script.js",
+		"/D/xampp/htdocs/Ajax/JSON/index.html",
+		"/D/xampp/htdocs/Ajax/XML/data.xml",
+		"/D/xampp/htdocs/Ajax/XML/index.html",
+		"/D/xampp/htdocs/Ajax/XML/script.js",
+		"/D/xampp/htdocs/ec2014/app/View/ReportsSeven/tpe_tbl_seven_six.ctp",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/NonSelect_Queries/exec_delete.php",
+		"/D/xampp/htdocs/ec2014/app/Controller/.subl550.tmp",
+		"/D/xampp/htdocs/ec2014/app/View/ReportsSeven/tpe_tbl_seven_one.ctp",
+		"/D/xampp/htdocs/ec2014/app/View/Reports/tpe_tbl_five_three.ctp",
+		"/D/xampp/htdocs/ec2014/app/Controller/ReportsController.php",
+		"/D/xampp/htdocs/ec2014/app/View/ReportsSevenFiveModified/tpe_tbl_seven_five_modified.ctp",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/integers.php",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/floats.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/NamedParameters/pdo_named.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/ErrorMessage/pdo_error.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/NonSelect_Queries/exec_insert.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/NonSelect_Queries/query_insert.php",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/databases_insert.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_checkrow.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_foreach.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_rowcount.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_fetchColumn.php",
+		"/D/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_fetchAll.php",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/Logical_Expression.php",
+		"/D/xampp/htdocs/ec2014/app/View/ReportsEight/tpe_tbl_eight_six.ctp",
+		"/D/xampp/htdocs/ec2014/app/Controller/ReportsEightController.php",
+		"/D/xampp/htdocs/ec2014/app/View/Reports/tpe_tbl_four_three.ctp",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/form_validation.php",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/ControlStructureInPHP.php",
+		"/D/xampp/htdocs/ec2014/app/Controller/FindingsController.php",
+		"/D/xampp/htdocs/ec2014/app/View/ReportsSeven/tpe_tbl_seven_eight.ctp",
+		"/D/xampp/htdocs/ec2014/app/Controller/ReportsRandomController.php",
+		"/D/xampp/htdocs/unit_size_update/Update_Q4_Q4_Org_type_Q6_Q9_Q11_Q11.1_Q16_Q17.php",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/first_page.php",
 		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/D/xampp/htdocs/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.sublime-project",
+		"/D/xampp/htdocs/ec2014/app/Config/core.php",
 		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings"
 	],
 	"find":
 	{
-		"height": 45.0
+		"height": 50.0
 	},
 	"find_in_files":
 	{
 		"height": 147.0,
-=======
-		"/C/xampp/htdocs/PhPCodeStorage"
-	],
-	"file_history":
-	[
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.sublime-project",
-		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/at_operator.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/try_catch.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/photograph.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_test.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_connect.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/initialize.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/index.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/delete_photo.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/list_photos.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/session.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/photo_upload.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/return_boolean_inside_conditional_op.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/lynda.com - Accessing Databases with Object-Oriented PHP Tutorial/Exercise Files/styles/styles.css",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter06/06_13_photo_gallery-final/includes/database_object.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter07/07_13_photo_gallery/includes/database_object.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter12/12_04_photo_gallery/includes/photograph.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/index.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/functions.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/user.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/database.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/test.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/login.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/upload.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter09/09_01_photo_gallery/includes/user.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/mainul-post-notice/mainul-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/mainul-post-notice/class-mainul-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/mainul-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/class-mainul-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/post-notice/post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/new-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/assests/js/admin.js",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/assests/css/admin.css",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/assests/css/public.css",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/my-post-notice/my-post-notice.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_pointer.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_delete.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_dircontents.php",
-		"/E/Web Programming/CI/Vedio Tutorial/Lynda. Up and Running with PHP CodeIgniter/Exercise Files/Exercise Files/02_04/application/core/my_model.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/sendmail2.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/sendmail.php",
-		"/C/xampp/htdocs/Codeigniter/MyApp/application/views/magazines.php",
-		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/autoload.php",
-		"/C/xampp/htdocs/Codeigniter/MyApp/system/core/Model.php",
-		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/database.php",
-		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/routes.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_write.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_changer.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_access.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/filetest.txt",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_basics.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_permissions.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/database_object.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/layouts/header.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/layouts/footer.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/layouts/admin_footer.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/stylesheets/main.css",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/manage_admins.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/logout.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/includes/functions.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/login.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/admin.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/cookies.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/parent.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/static_modifier.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/access_modifiers2.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter05/05_03_photo_gallery/public/stylesheets/main.css",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/inheritence.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/class_example5.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/references_args.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/references_returns.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/references.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/class_example.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/variable_scope.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/server_variables.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/date_time_unix.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/edit_admin.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/new_admin.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Country/index-recent.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Country/index-experiment.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Country/index.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Country/district.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Country/division.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/create_admin.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/delete_admin.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/create_subject.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/new_page.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/index.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/delete_subject.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/edit_page.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/delete_page.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/edit_subject.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/manage_content.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/create_page.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/FilePath.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/includes/session.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Others/IdentifyClassName.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Others/ThisVersusSelf.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Class/ClassAlias.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Others/SelfVersusStatic.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Override/OverrideAnimalParent.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Override/OverrideAnimal.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/ControllingAccesstoProperties/GenerateAnimalProtected.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/ControllingAccesstoProperties/GenerateAnimalPrivate.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/ControllingAccesstoProperties/GenerateAnimal.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Abstract/AbstractAnimal.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/ExampleofInheritence/Animal.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/ExampleofInheritence/index.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/Inheritence.php",
-		"/C/xampp/htdocs/Object-Oriented-PHP/CalculatorWebApp/calculator.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/practice.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/PHP OOP - Jeffrey Way/Object_Oriented_Programming_with_PHP_1-4/Screencasts 1-4/4 - Encapsulation/Chapter 4 - Source/Myclass.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/PHP OOP - Jeffrey Way/Object_Oriented_Programming_with_PHP_1-4/Screencasts 1-4/4 - Encapsulation/Chapter 4 - Source/index.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/stylesheets/public.css",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/databases_update.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/includes/layouts/footer.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/public/new_subject.php",
-		"/C/Users/Mainul Hasan/Downloads/go4shop/index.php",
-		"/C/Users/Mainul Hasan/Downloads/go4shop/adminlogout.php",
-		"/C/Users/Mainul Hasan/Downloads/go4shop/bar.php",
-		"/C/Users/Mainul Hasan/Downloads/go4shop/login.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Widget_Corp/includes/validation_functions.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/databases_select.php",
-		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
-		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings"
-	],
-	"find":
-	{
-		"height": 49.0
-	},
-	"find_in_files":
-	{
-		"height": 108.0,
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
 		"where_history":
 		[
+			"D:\\xampp\\htdocs\\JavascriptCodeStorage\\DOM\\SelectID-1",
 			""
 		]
 	},
@@ -810,84 +354,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-<<<<<<< HEAD
-			"launch_browser"
-=======
-			"escape_value",
-			"output_message",
-			"filename",
-			"upload_dir",
-			"insert_id",
-			".\",\n",
-			"1",
-			"publication",
-			"Publication",
-			"Publicaion",
-			"file",
-			"file_exists",
-			"yse",
-			"self",
-			"a",
-			"A",
-			"a",
-			"1",
-			"L",
-			"REFERER",
-			"SERVER_NAME",
-			"METHOD",
-			"SERVER_NAME",
-			"SERVER_PORT",
-			"NAME",
-			"collapse",
-			"district_name",
-			"division_id",
-			"division",
-			"division_set",
-			"district_name",
-			"division",
-			"divisions",
-			"division_name",
-			"row",
-			"manage_content",
-			"current_page",
-			"menu_name",
-			"Subject",
-			"content",
-			"menu_name",
-			"subject_set",
-			"subject_id",
-			"subject_set",
-			"position",
-			"menu_name",
-			"subject",
-			"find_pages_subjects",
-			"subject",
-			"Subject",
-			"subject",
-			"Subject",
-			"subject",
-			"Subject",
-			"subject",
-			"connection",
-			"subject",
-			"htmlentities(",
-			"message",
-			"ucfirst",
-			";",
-			"result",
-			"row",
-			"query",
-			"mysql",
-			"var_dump",
-			"is_equal",
-			"numeric",
-			"Var1",
-			"annual",
-			"annual_interest_rate",
-			"principle_amount",
 			"5",
-			">\n"
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+			"rows()",
+			"7",
+			"99",
+			"35",
+			"NOT",
+			"OR (TO_NUMBER(SUBSTR(Q6_IND_CODE_CLASS_CODE,1,2)) BETWEEN 05 AND 09)",
+			"6",
+			"background_buildings",
+			"find_pages_for_subject",
+			"8",
+			"6",
+			"8",
+			"6",
+			"8",
+			"6",
+			"7",
+			"The",
+			"the",
+			"The",
+			"the",
+			"the name",
+			"connection",
+			"conneciton",
+			"connection",
+			"5",
+			"list",
+			"append",
+			"TOTAL_REGISTERED_PT",
+			"$TOTAL_EST",
+			"urban",
+			"_prepate_result",
+			"interger",
+			"br",
+			"launch_browser"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -895,11 +396,9 @@
 		"regex": false,
 		"replace_history":
 		[
-<<<<<<< HEAD
-=======
-			"\nannual_interest_rate",
-			"annual"
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+			"conn",
+			"",
+			"conn"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -910,104 +409,57 @@
 	"groups":
 	[
 		{
-<<<<<<< HEAD
-			"selected": 1,
-=======
-			"selected": 0,
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-<<<<<<< HEAD
-					"file": "debugging_troubleshooting.php",
+					"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q16_Q17_Q19.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2167,
-=======
-					"file": "debugging_troubleshooting.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 257,
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+						"buffer_size": 7333,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								419,
-								419
-=======
-								119,
-								119
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+								525,
+								525
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-<<<<<<< HEAD
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-=======
-							"auto_complete": true,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-<<<<<<< HEAD
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-=======
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-<<<<<<< HEAD
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1018,27 +470,120 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-=======
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q11.1_Q16_Q17.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								270
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content",
-<<<<<<< HEAD
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1048,20 +593,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/D/xampp/htdocs/ec2014/app/Config/core.php",
+					"buffer": 2,
+					"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4_Q6_Q9_Q16_Q19.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10326,
+						"buffer_size": 4997,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2146,
-								2146
+								3393,
+								3393
 							]
 						],
 						"settings":
@@ -1070,51 +615,31 @@
 							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-=======
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-<<<<<<< HEAD
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-=======
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1124,35 +649,394 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-<<<<<<< HEAD
 								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q9_Q16.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								691,
+								691
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1998.0,
-=======
-								"bh_round_content"
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/xampp/htdocs/unit_size_update/Q25.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2425,
+								2425
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": -0.0,
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/xampp/htdocs/unit_size_update/Q5_Q6_Q9_Q21.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2346.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/xampp/htdocs/PhPCodeStorage/photo_gallery/logs/log.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1160,19 +1044,11 @@
 	],
 	"incremental_find":
 	{
-<<<<<<< HEAD
-		"height": 45.0
+		"height": 50.0
 	},
 	"input":
 	{
 		"height": 50.0
-=======
-		"height": 39.0
-	},
-	"input":
-	{
-		"height": 39.0
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
 	},
 	"layout":
 	{
@@ -1197,27 +1073,23 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 214.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"output.xdebug":
 	{
-<<<<<<< HEAD
 		"height": 0.0
-=======
-		"height": 196.0
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
 	},
 	"pinned_build_system": "",
 	"project": "debugging_troubleshooting.sublime-project",
 	"replace":
 	{
-<<<<<<< HEAD
-		"height": 86.0
-=======
-		"height": 74.0
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1226,6 +1098,22 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"q4_q",
+				"unit_size_update\\Q4_Q4.1_Q6_Q9_Q11_Q16_Q17_Q19_Q25.php"
+			],
+			[
+				"edit_subject",
+				"PhPCodeStorage\\Widget_Corp\\public\\edit_subject.php"
+			],
+			[
+				"widget_corp/public/del",
+				"PhPCodeStorage\\Widget_Corp\\public\\delete_subject.php"
+			],
+			[
+				"",
+				"ec2014\\app\\View\\ReportsEight\\tpe_tbl_eight_six.ctp"
+			]
 		],
 		"width": 0.0
 	},
@@ -1259,14 +1147,16 @@
 				{
 					"group": 0,
 					"index": 0
-<<<<<<< HEAD
 				},
 				"16":
 				{
 					"group": 0,
 					"index": 1
-=======
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 2
 				}
 			},
 			"restore_layout":
@@ -1294,17 +1184,10 @@
 		}
 	},
 	"show_minimap": true,
-<<<<<<< HEAD
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 297.0,
-=======
-	"show_open_files": true,
-	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 274.0,
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+	"side_bar_width": 271.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

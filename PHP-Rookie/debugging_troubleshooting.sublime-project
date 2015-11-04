@@ -1,35 +1,33 @@
 {
 	"folders":
 	[
-<<<<<<< HEAD
 		{
-			"follow_symlinks": true,
 			"path": "D:\\xampp\\htdocs\\ec2014"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "D:\\xampp\\htdocs\\unit_size_update"
 		},
 		{
-			"follow_symlinks": true,
 			"path": "D:\\xampp\\htdocs\\PhPCodeStorage"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\Object-Oriented-PHP"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\Ajax"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\jQuery"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\JavascriptCodeStorage"
 		}
 	],
-	"settings": {
-    "xdebug": {
-         "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
-    }
-  }
-=======
-		{	
-			"follow_symlinks": true,
-			"path": "C:\\xampp\\htdocs\\PhPCodeStorage"
+	"settings":
+	{
+		"xdebug":
+		{
+			"url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php"
 		}
-	],
-	"settings": {
-	        "xdebug": {
-	            "url": "http://localhost/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.php",
-	        }
-	    }
->>>>>>> 32cc8a1d4cb2b55d6ea7aa29648e7ff7299bb874
+	}
 }

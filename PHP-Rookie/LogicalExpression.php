@@ -6,7 +6,7 @@
 </head>
 <body>
 	<?php //Only welcome new users
-		$new_user = false;
+		$new_user = true;
 		if ($new_user) {
 		 	echo "<h1>Welcome!</h1>";
 		 	echo "<p>We are glad you decided to join us.</p>";

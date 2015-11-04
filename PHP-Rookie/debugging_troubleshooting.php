@@ -14,7 +14,7 @@
 		var_dump($variable);// variable type and value
 		get_defined_vars();	// array of defined variables
 		debug_backtrace();	// show backtrace
-	 ?>
+	 ?> 
 
 
 

@@ -4,7 +4,7 @@
 
 <?php 
 	$current_page = find_page_by_id($_GET["page"],false);
-	if(!current_page){
+	if(!$current_page){
 		//page ID was missing or invalid or
 		//page couldn't found in database
 		redirect_to("manage_content.php");
