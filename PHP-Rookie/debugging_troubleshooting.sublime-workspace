@@ -3,17 +3,85 @@
 	{
 		"selected_items":
 		[
+<<<<<<< HEAD
+=======
+			[
+				"myA",
+				"$myArray〔variable〕"
+			],
+			[
+				"new",
+				"newItem"
+			],
+			[
+				"para",
+				"paragraph"
+			],
+			[
+				"left",
+				"leftmargin"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"get",
+				"getElementsByTagName('li"
+			],
+			[
+				"serach",
+				"$searchterm〔variable〕"
+			],
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 			[
 				"i",
 				"img	Tag"
 			],
 			[
+<<<<<<< HEAD
 				"new",
 				"$newphrase〔variable〕"
 			],
 			[
 				"div",
 				"div1"
+=======
+				"get_class",
+				"get_class_methods〔function〕"
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 			],
 			[
 				"8",
@@ -44,12 +112,141 @@
 				"style	Attr"
 			],
 			[
+<<<<<<< HEAD
 				"a",
 				"action	Attr"
 			],
 			[
 				"get",
 				"getJSON〔function〕"
+=======
+				"total",
+				"$total_district〔variable〕"
+			],
+			[
+				"dis",
+				"district_id"
+			],
+			[
+				"distri",
+				"districts"
+			],
+			[
+				"U",
+				"Upazila"
+			],
+			[
+				"division",
+				"division_id"
+			],
+			[
+				"divi",
+				"$division〔variable〕"
+			],
+			[
+				"di",
+				"$divisions〔variable〕"
+			],
+			[
+				"conn",
+				"$connection〔variable〕"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"mysqli_connect_e",
+				"mysqli_connect_error〔function〕"
+			],
+			[
+				"mysqli_conn",
+				"mysqli_connect_errno〔function〕"
+			],
+			[
+				"DB",
+				"DB_NAME"
+			],
+			[
+				"mysqli_real",
+				"mysqli_real_escape_string〔function〕"
+			],
+			[
+				"a",
+				"arsort"
+			],
+			[
+				"has",
+				"hashed_password"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"my",
+				"mysql_prep"
+			],
+			[
+				"ad",
+				"$admins〔variable〕"
+			],
+			[
+				"_SE",
+				"$_SESSION〔variable〕"
+			],
+			[
+				"current_",
+				"current_page"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"sho",
+				"showDog〔function〕"
+			],
+			[
+				"show",
+				"showTitle〔function〕"
+			],
+			[
+				"ge",
+				"getBreed〔function〕"
+			],
+			[
+				"se",
+				"setSpecies〔function〕"
+			],
+			[
+				"retur",
+				"return"
+			],
+			[
+				"myD",
+				"$myDog〔variable〕"
+			],
+			[
+				"do",
+				"dogname"
+			],
+			[
+				"cu",
+				"current_page"
+			],
+			[
+				"error_",
+				"error_reporting"
+			],
+			[
+				"val",
+				"validatie_presences"
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 			],
 			[
 				"loa",
@@ -76,17 +273,23 @@
 				"var_export"
 			],
 			[
+<<<<<<< HEAD
 				"print",
 				"print_r"
 			],
 			[
 				"er",
 				"errorInfo〔function〕"
+=======
+				"arra",
+				"array"
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 			]
 		]
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
 		{
 			"file": "/D/xampp/htdocs/unit_size_update/Q4_Q4.1_Q6_Q9_Q11_Q16_Q17_Q19.php",
 			"settings":
@@ -143,6 +346,8 @@
 				"line_ending": "Windows"
 			}
 		}
+=======
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -151,6 +356,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
+<<<<<<< HEAD
 		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
@@ -192,6 +398,86 @@
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+=======
+		"height": 490.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"IN",
+				"Package Control: Install Package"
+			],
+			[
+				"REMOVE",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"In",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: IN",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"Package Control: I",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Set Syntax: C"
+			],
+			[
+				"ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"H",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 725.0
+	},
+	"console":
+	{
+		"height": 351.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 		]
 	},
 	"distraction_free":
@@ -205,6 +491,7 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
 		"/D/xampp/htdocs/unit_size_update",
 		"/D/xampp/htdocs/unit_size_update/simple-xlsx",
 		"/D/xampp/htdocs/PhPCodeStorage",
@@ -343,6 +630,148 @@
 	"find_in_files":
 	{
 		"height": 147.0,
+=======
+		"/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/images"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/Ajax/Raw-Ajax/js/main.js",
+		"/C/xampp/htdocs/Ajax/Raw-Ajax/index.html",
+		"/C/xampp/htdocs/Ajax/DOM/getElementsByTagName/script.js",
+		"/C/xampp/htdocs/Ajax/LiveSearch/script.js",
+		"/C/xampp/htdocs/Ajax/Raw-Ajax/files/ajax.txt",
+		"/C/xampp/htdocs/Ajax/LiveSearch/index.html",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/pass_reference.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/sendmail2.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/database.php",
+		"/C/xampp/htdocs/Ajax/JSON/json.html",
+		"/C/xampp/htdocs/jQuery/CssSizing-13.html",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/tests/TestCase.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/tests/ExampleTest.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/lang/en/reminders.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/lang/en/pagination.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/lang/en/validation.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/start/global.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/start/artisan.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/routes.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/filters.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/views/hello.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/views/emails/auth/reminder.blade.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/views/layouts/main.blade.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/models/User.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/database/seeds/UsersTableSeeder.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/database/seeds/DatabaseSeeder.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/database/migrations/2013_06_30_221158_create_users_table.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/config/mail.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/config/cache.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/config/session.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/config/view.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/config/database.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/controllers/HomeController.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/controllers/BaseController.php",
+		"/E/Web Programming/AJAX/Tutsplus - Learning Ajax/TL.912.Learning Ajax/laravel-ajax/app/controllers/UsersController.php",
+		"/C/xampp/htdocs/jQuery/CreatingStart.html",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/print (2).php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/print.php",
+		"/C/xampp/htdocs/jQuery/AutoPDFIcons.html",
+		"/C/xampp/htdocs/Ajax/LiveSearch/mystyle.css",
+		"/C/xampp/htdocs/jQuery/BasicSelectors.html",
+		"/C/xampp/htdocs/jQuery/FirstjQueryPage.html",
+		"/C/xampp/htdocs/jQuery/traversing.html",
+		"/C/xampp/htdocs/ec2014/ec2014/app/Controller/ReportsController.php",
+		"/C/xampp/htdocs/Ajax/LiveSearch/data.json",
+		"/C/xampp/htdocs/Ajax/JSON/script.js",
+		"/C/xampp/htdocs/Ajax/JSON/index.html",
+		"/C/xampp/htdocs/Ajax/JSON/data.json",
+		"/C/xampp/htdocs/Ajax/XML/script.js",
+		"/C/xampp/htdocs/Ajax/XML/index.html",
+		"/C/xampp/htdocs/Ajax/XML/data.xml",
+		"/C/xampp/htdocs/Ajax/DOM/data.txt",
+		"/C/xampp/htdocs/Ajax/DOM/getElementsById/script.js",
+		"/C/xampp/htdocs/Ajax/DOM/getElementsById/index.html",
+		"/C/xampp/htdocs/Ajax/DOM/script.js",
+		"/C/xampp/htdocs/Ajax/DOM/index.html",
+		"/C/xampp/htdocs/Ajax/script.js",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/PreparedStatement/pdo_anonymous.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/ErrorMessage/pdo_exception.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/PreparedStatement/pdo_named_execute.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/PreparedStatement/pdo_anonymous_execute.php",
+		"/F/Web Programming/PHP/PHP Video Tutorial/lynda.com - Accessing Databases with Object-Oriented PHP Tutorial/Exercise Files/ch03/03_02/pdo_named_end.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/PreparedStatement/pdo_named.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/QuoteMethod/pdo_quote.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/ErrorMessage/pdo_error.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_fetchAll.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_fetch.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_loop.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_connect.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/Accessing_Database_In_OOP_Way/oophp/includes/pdo_test.php",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/07/09/SERIALIZE_ARRAY.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/07/10/DATE_SELECTION.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/10/04/ROW_RETRIEVAL.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/10/04/MYSQL_QUERY.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/11/03/SESSION1.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/11/03/SESSION2.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/11/04/MANAGE_SESSION_DB.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/RTFM/INDEX.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/03/11/SOLUTION_A_PHP.PHP",
+		"/F/Web Programming/PHP/PHP Video Tutorial/lynda.com - Accessing Databases with Object-Oriented PHP Tutorial/Exercise Files/ch02/02_03/pdo_loop.php",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.sublime-project",
+		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/at_operator.php",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/try_catch.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/photograph.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/initialize.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/index.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/delete_photo.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/list_photos.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/session.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/photo_upload.php",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/return_boolean_inside_conditional_op.php",
+		"/F/Web Programming/PHP/PHP Video Tutorial/lynda.com - Accessing Databases with Object-Oriented PHP Tutorial/Exercise Files/styles/styles.css",
+		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter06/06_13_photo_gallery-final/includes/database_object.php",
+		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter07/07_13_photo_gallery/includes/database_object.php",
+		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter12/12_04_photo_gallery/includes/photograph.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/index.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/functions.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/user.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/test.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/login.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/upload.php",
+		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter09/09_01_photo_gallery/includes/user.php",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/mainul-post-notice/mainul-post-notice.php",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/mainul-post-notice/class-mainul-post-notice.php",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/mainul-post-notice.php",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/class-mainul-post-notice.php",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/post-notice/post-notice.php",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/new-post-notice.php",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/assests/js/admin.js",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/assests/css/admin.css",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/assests/css/public.css",
+		"/C/xampp/htdocs/wordpress/wp-content/plugins/my-post-notice/my-post-notice.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_pointer.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_delete.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_dircontents.php",
+		"/E/Web Programming/CI/Vedio Tutorial/Lynda. Up and Running with PHP CodeIgniter/Exercise Files/Exercise Files/02_04/application/core/my_model.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/sendmail.php",
+		"/C/xampp/htdocs/Codeigniter/MyApp/application/views/magazines.php",
+		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/autoload.php",
+		"/C/xampp/htdocs/Codeigniter/MyApp/system/core/Model.php",
+		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/database.php",
+		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/routes.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_write.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_changer.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_access.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/filetest.txt",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_basics.php"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 		"where_history":
 		[
 			"D:\\xampp\\htdocs\\JavascriptCodeStorage\\DOM\\SelectID-1",
@@ -355,6 +784,7 @@
 		"find_history":
 		[
 			"5",
+<<<<<<< HEAD
 			"rows()",
 			"7",
 			"99",
@@ -378,8 +808,73 @@
 			"the name",
 			"connection",
 			"conneciton",
+=======
+			"html5",
+			"5",
+			"html5",
+			"5",
+			"-]\").",
+			"setAttribute",
+			"yearmade",
+			"escape_value",
+			"output_message",
+			"filename",
+			"upload_dir",
+			"insert_id",
+			".\",\n",
+			"1",
+			"publication",
+			"Publication",
+			"Publicaion",
+			"file",
+			"file_exists",
+			"yse",
+			"self",
+			"a",
+			"A",
+			"a",
+			"1",
+			"L",
+			"REFERER",
+			"SERVER_NAME",
+			"METHOD",
+			"SERVER_NAME",
+			"SERVER_PORT",
+			"NAME",
+			"collapse",
+			"district_name",
+			"division_id",
+			"division",
+			"division_set",
+			"district_name",
+			"division",
+			"divisions",
+			"division_name",
+			"row",
+			"manage_content",
+			"current_page",
+			"menu_name",
+			"Subject",
+			"content",
+			"menu_name",
+			"subject_set",
+			"subject_id",
+			"subject_set",
+			"position",
+			"menu_name",
+			"subject",
+			"find_pages_subjects",
+			"subject",
+			"Subject",
+			"subject",
+			"Subject",
+			"subject",
+			"Subject",
+			"subject",
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 			"connection",
 			"5",
+<<<<<<< HEAD
 			"list",
 			"append",
 			"TOTAL_REGISTERED_PT",
@@ -389,6 +884,9 @@
 			"interger",
 			"br",
 			"launch_browser"
+=======
+			">\n"
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -396,9 +894,14 @@
 		"regex": false,
 		"replace_history":
 		[
+<<<<<<< HEAD
 			"conn",
 			"",
 			"conn"
+=======
+			"\nannual_interest_rate",
+			"annual"
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 		],
 		"reverse": false,
 		"show_context": true,
@@ -409,6 +912,7 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 5,
 			"sheets":
 			[
@@ -1038,17 +1542,35 @@
 					},
 					"stack_index": 6,
 					"type": "text"
+=======
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"file": "/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/images/hotel_contempo.jpg",
+					"semi_transient": true,
+					"stack_index": 0,
+					"type": "image"
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
+<<<<<<< HEAD
 		"height": 50.0
 	},
 	"input":
 	{
 		"height": 50.0
+=======
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 39.0
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 	},
 	"layout":
 	{
@@ -1083,13 +1605,21 @@
 	},
 	"output.xdebug":
 	{
+<<<<<<< HEAD
 		"height": 0.0
+=======
+		"height": 196.0
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 	},
 	"pinned_build_system": "",
 	"project": "debugging_troubleshooting.sublime-project",
 	"replace":
 	{
+<<<<<<< HEAD
 		"height": 94.0
+=======
+		"height": 74.0
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1152,11 +1682,14 @@
 				{
 					"group": 0,
 					"index": 1
+<<<<<<< HEAD
 				},
 				"17":
 				{
 					"group": 0,
 					"index": 2
+=======
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 				}
 			},
 			"restore_layout":
@@ -1184,10 +1717,17 @@
 		}
 	},
 	"show_minimap": true,
+<<<<<<< HEAD
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 271.0,
+=======
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 274.0,
+>>>>>>> 8f36aad75ad4b639691e7b6af1728544c369dbff
 	"status_bar_visible": true,
 	"template_settings":
 	{
