@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"say",
+				"saySomething"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"se",
+				"secondDog"
+			],
+			[
+				"a",
+				"arguments"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
 				"myA",
 				"$myArray〔variable〕"
 			],
@@ -260,10 +280,6 @@
 				"mysqli_real_escape_string〔function〕"
 			],
 			[
-				"a",
-				"arsort"
-			],
-			[
 				"has",
 				"hashed_password"
 			],
@@ -306,10 +322,6 @@
 			[
 				"ge",
 				"getBreed〔function〕"
-			],
-			[
-				"se",
-				"setSpecies〔function〕"
 			],
 			[
 				"retur",
@@ -420,10 +432,6 @@
 				"INSERT"
 			],
 			[
-				"con",
-				"connection"
-			],
-			[
 				"mysqli_conne",
 				"mysqli_connect_errno"
 			],
@@ -506,19 +514,27 @@
 			[
 				"ec",
 				"echo"
-			],
-			[
-				"nu",
-				"num_string"
-			],
-			[
-				"arra",
-				"array"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/index.html",
+			"settings":
+			{
+				"buffer_size": 6344,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/array_functions.php",
+			"settings":
+			{
+				"buffer_size": 7607,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -618,10 +634,19 @@
 	},
 	"expanded_folders":
 	[
-		"/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/images"
+		"/C/xampp/htdocs/PhPCodeStorage",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP",
+		"/C/xampp/htdocs/JavascriptCodeStorage"
 	],
 	"file_history":
 	[
+		"/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/artists.html",
+		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction/script.js",
+		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction/index.html",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/initialize.php",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/Sum_of_1_100.php",
+		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/xampp/htdocs/Ajax/Raw-Ajax/js/main.js",
 		"/C/xampp/htdocs/Ajax/Raw-Ajax/index.html",
 		"/C/xampp/htdocs/Ajax/DOM/getElementsByTagName/script.js",
@@ -707,7 +732,6 @@
 		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/at_operator.php",
 		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/try_catch.php",
 		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/photograph.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/initialize.php",
 		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/index.php",
 		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/delete_photo.php",
 		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/list_photos.php",
@@ -743,17 +767,11 @@
 		"/C/xampp/htdocs/Codeigniter/MyApp/application/views/magazines.php",
 		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/autoload.php",
 		"/C/xampp/htdocs/Codeigniter/MyApp/system/core/Model.php",
-		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/database.php",
-		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/routes.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_write.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_changer.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_access.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/filetest.txt",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/file_basics.php"
+		"/C/xampp/htdocs/Codeigniter/MyApp/application/config/database.php"
 	],
 	"find":
 	{
-		"height": 49.0
+		"height": 54.0
 	},
 	"find_in_files":
 	{
@@ -768,6 +786,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Dog",
+			"f",
+			"\"},\n",
 			"5",
 			"html5",
 			"5",
@@ -869,14 +890,184 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"file": "/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/images/hotel_contempo.jpg",
+					"buffer": 0,
+					"file": "/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3122,
+								3122
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/array_functions.php",
 					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2455,
+								2455
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7344.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
-					"type": "image"
+					"type": "text"
 				}
 			]
 		}
@@ -1000,8 +1191,8 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 274.0,
+	"side_bar_visible": true,
+	"side_bar_width": 152.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
