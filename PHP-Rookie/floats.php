@@ -11,19 +11,19 @@ Ceiling:<?php echo ceil($float);//ceiling always round up ?><br/>
 Foor:	<?php echo floor($float);//floor always round low ?><br/>
 <br/>
 
-<?php $interger = 3; ?>
+<?php $integer = 3; ?>
 
-<?php echo "Is {$interger} interger? " .is_int($interger); ?><br/>
-<?php echo "Is {$float} interger? " .is_int($float); ?><br/>
+<?php echo "Is {$integer} integer? " .is_int($integer); ?><br/>
+<?php echo "Is {$float} integer? " .is_int($float); ?><br/>
 
 <br/>
 
-<?php echo "Is {$interger} float? " .is_float($interger); ?><br/>
+<?php echo "Is {$integer} float? " .is_float($integer); ?><br/>
 <?php echo "Is {$float} float? " .is_float($float); ?><br/>
 
 <br/>
 
-<?php echo "Is {$interger} numeric? " .is_numeric($interger); ?><br/>
+<?php echo "Is {$integer} numeric? " .is_numeric($integer); ?><br/>
 <?php echo "Is {$float} numeric? " .is_numeric($float); ?><br/>
 
 

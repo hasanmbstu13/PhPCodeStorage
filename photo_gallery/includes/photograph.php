@@ -118,6 +118,10 @@ class Photograph extends DatabaseObject {
 		return $this->upload_dir.DS.$this->filename;
 	}
 
+	// public function image_path() {
+	// 	return $this->filename;
+	// }
+
 	public function size_as_text() {
 		if($this->size < 1024) {
 			return "{$this->size} bytes";

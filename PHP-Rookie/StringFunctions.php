@@ -26,6 +26,64 @@ Tip: The first character position in a string is 0 (not 1). -->
 
 	<br>
 
+<?php 
+		// str_replace()
+		// The str_replace() function replaces some characters with some other characters in a string.
+		// This function works by the following rules:
+	 	//  If the string to be searched is an array, it returns an array
+	 //    If the string to be searched is an array, find and replace is performed with every array element
+	 //    If both find and replace are arrays, and replace has fewer elements than find, an empty string will be used as replace
+	 //    If find is an array and replace is a string, the replace string will be used for every find value
+
+	// str_replace(<search>,<replace>,<string/array>,[<count>]);
+	// Explanation :
+	// Search : It is mandatory . The string or value to be searched comes here.
+	// Replace : It is mandatory. The string or value to be replaced comes here.
+	// String/Array : It is mandatory. The string or array in which the value is to be found out comes here.
+	// Count : It is optional. It counts the number of replacements to be done.
+
+	$arr = array("blue","red","green","yellow");
+	print_r(str_replace("red","pink",$arr,$i));
+	echo "Replacements: $i";
+
+	echo "<br>";
+
+	 $phrase  = "You should eat fruits, vegetables, and fiber every day.";
+	 $healthy = array("fruits", "vegetables", "fiber");
+	 $yummy   = array("pizza", "beer", "ice cream");
+	 $newphrase = str_replace($healthy, $yummy, $phrase);
+?>
+
+<strong><?php echo $newphrase; ?></strong>
+
+<br>
+
+<?php 
+	// explode() - This function breaks the string into array on the basis of delimiter passed.
+	// syntax : explode(delimeter,string,limit)
+	// Explanation:
+	// Delimeter: It is mandatory field. It specifies where to break the string.
+	// String: It is mandatory. It specifies the string to split.
+	// Limit : It is optional. It specifies the maximum number of array elements to return.
+	
+	$str = "Hello world. It's a beautiful day.";
+	 print_r (explode(" ",$str));
+?>
+ <br>
+
+<?php 
+	// implode()
+	// This function join array elements with a string on the basis of delimiter passed.
+	// syntax: implode(delim,array)
+	// Explanation:
+	// Delimiter: It is mandatory field. It specifies what to put between the array elements. Default is “” (an empty string).
+	// Array: It is mandatory field. It specifies the array to join to a string.
+	 $arr = array('Hello','World!','Beautiful','Day!');
+	 echo implode(" ",$arr);
+?>
+
+ <br>
+
 	<?php 
 		//first part of a string = start with 0
 
@@ -78,6 +136,8 @@ Tip: The first character position in a string is 0 (not 1). -->
 	 Length: <?php echo strlen($third); //return the string lengths?><br/>
 	 Count The Number of Words in a string: <?php echo str_word_count("Hello world!"); // outputs 2 ?><br>
 	 Trim: <?php echo trim("      A       ") . trim("    B C D      ").trim("          E    "); //remove all whithespace before and after of the string?><br/>
+	 Ltrim: <?php echo ltrim("           A     "); //This function removes the whitespaces from the left part of the string. ?>  <br>
+	 Rtrim: <?php echo rtrim("           A     "); //This function removes the whitespaces from the right part of the string. ?>  <br>
 	 Find: <?php $var =  strstr("The color is brown color","brown");//search the string if matching the string with the desired string return desired string with the ending of the strings
 	 			echo $var; ?><br/>
 	 Replace by string: <?php echo str_replace("quick", "super-fast", $third); //replace the string with desired string in a string?><br/>

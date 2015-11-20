@@ -1,5 +1,5 @@
 <?php
-	// define variables and initialize with empty values
+// define variables and initialize with empty values
 $nameErr = $addrErr = $emailErr = $howManyErr = $favFruitErr = "";
 $name = $address = $email = $howMany = "";
 $favFruit = array();
