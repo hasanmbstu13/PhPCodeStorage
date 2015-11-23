@@ -40,7 +40,7 @@
 		echo "</pre>";
 		echo "<br /><br />";
 
-		// shifts first element out of an array
+	// shifts first element out of an array
 		// and returns it.
 		$a = array_shift($numbers);
 		echo "a:".$a."<br />";
@@ -205,6 +205,16 @@
 		echo $third_value;         // output - python
 
 
+		// array_key_exists — Checks if the given key or index exists in the array
+		$a=array("Volvo"=>"XC90","BMW"=>"X5");
+		if (array_key_exists("Volvo",$a))
+		  {
+		  	echo "Key exists!";
+		  }
+		else
+		  {
+		  	echo "Key does not exist!";
+		  }
 
 
 

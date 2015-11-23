@@ -13,8 +13,10 @@ class Session {
 
 	function __construct() {
 		session_start();
-		$this->check_message(); // check previously either set a message or not.
-		$this->check_login(); // This method is useful to check the person is already logged in or not.
+		// check previously either set a message or not.
+		$this->check_message(); 
+		 // This method is useful to check the person is already logged in or not.
+		$this->check_login();
 		if($this->logged_in){
 			// actions to take right away if user is logged in
 		} else {
@@ -22,10 +24,13 @@ class Session {
 		}
 	}
 
-	public function is_logged_in() { // is logged in access this class class will set the attribute value.
-		return $this->logged_in; // public way to check that whether person is logged in or not.
-	}							 // is logged_in() access the private variable logged_in but we don't directly access the logged_in attribute.
-								// we can read the value but we don't write the value to the variable only the class session write the variable.
+	// is logged in access this class will set the attribute value.
+	// public way to check that whether person is logged in or not.
+	// is logged_in() access the private variable logged_in but we don't directly access the logged_in attribute.
+	// we can read the value but we don't write the value to the variable only the class session write the variable. 							
+	public function is_logged_in() { 
+		return $this->logged_in; 
+	}							 
 	public function login($user){ // call the session mark the user logged in now.
 		// database should find user based on username/password
 		if($user){

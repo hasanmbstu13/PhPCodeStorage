@@ -3,6 +3,7 @@
 // probably smart to require it before we start.
 require_once(LIB_PATH.DS.'database.php');
 
+// Model or Class handle all types of complexity related to model
 class User extends DatabaseObject {
 	
 	protected static $table_name="users";
@@ -41,7 +42,7 @@ class User extends DatabaseObject {
   
   public static function find_by_id($id=0) {
     $result_array = self::find_by_sql("SELECT * FROM ".self::$table_name." WHERE id={$id} LIMIT 1");
-		return !empty($result_array) ? array_shift($result_array) : false;
+	return !empty($result_array) ? array_shift($result_array) : false;
   }
   
   public static function find_by_sql($sql="") {
@@ -56,8 +57,12 @@ class User extends DatabaseObject {
 
 	private static function instantiate($record) {
 		// Could check that $record exists and is an array
+    // $object = new User();
+    // Create a new version of yourself
+	// And Instantiate yourself
     $object = new self;
 		// Simple, long-form approach:
+    	// which will tedious if we have 50 or 100 attributes 
 		// $object->id 				= $record['id'];
 		// $object->username 	= $record['username'];
 		// $object->password 	= $record['password'];
@@ -67,19 +72,24 @@ class User extends DatabaseObject {
 		// More dynamic, short-form approach:
 		foreach($record as $attribute=>$value){
 		  if($object->has_attribute($attribute)) {
+		   // feeding the object attribute
 		    $object->$attribute = $value;
 		  }
 		}
+		// print_r($object);
+		// exit;
 		return $object;
 	}
 	
 	private function has_attribute($attribute) {
 	  // get_object_vars returns an associative array with all attributes 
-	  // (incl. private ones!) as the keys and their current values as the value
+	  // (include private ones!) as the keys and their current values as the value
+	  // here $this looks at current instance with which we work on it.
 	  // $object_vars = get_object_vars($this);
 	  $object_vars = $this->attributes();
 	  // We don't care about the value, we just want to know if the key exists
 	  // Will return true or false
+	  // check key $attribute exists in $object_vars
 	  return array_key_exists($attribute, $object_vars);
 	}
 

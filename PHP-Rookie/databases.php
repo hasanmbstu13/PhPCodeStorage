@@ -40,12 +40,12 @@
  	<ul>
  	<?php 
  		//3. Use returned data (if any)
- 		// while ($row = mysqli_fetch_array($result)) { //fetching the row incrementing the array pointer for us php doesn't have to ability to increment the array pointer
+ 		while ($row = mysqli_fetch_array($result)) { //fetching the row incrementing the array pointer for us php doesn't have to ability to increment the array pointer
 
- 		// 	//output data from each row
- 		// 	var_dump($row);
- 		// 	echo "<hr/>";
- 		// }
+ 			//output data from each row
+ 			var_dump($row);
+ 			echo "<hr/>";
+ 		}
  		// die();
  		#while($row = mysqli_fetch_array($result, MYSQL_ASSOC))
  		while($subject = mysqli_fetch_assoc($result)){ //use 

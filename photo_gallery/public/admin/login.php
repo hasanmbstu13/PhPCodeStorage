@@ -1,6 +1,8 @@
 <?php 
 require_once("../../includes/initialize.php");
 
+// If person is already logged in redirect in index.php
+// Avoid wastage of time to load this page
 if($session->is_logged_in()) {
 	redirect_to("index.php");
 }
