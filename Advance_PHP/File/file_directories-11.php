@@ -14,11 +14,15 @@ mkdir('new', 0777); // 0777 is the PHP default
 // default may be 0022
 
 // recursive dir creation
-mkdir('new/test/test2',0777,true); // true is for recursive or not. i.e create test inside new and also test2 inside test.
-// mkdir('old/test/test2',0777,false);// if pass more than we must include true i.e new/test/test2 we must include true otherwise dir will not create
+// true is for recursive or not. 
+// create test inside new and also test2 inside test.
+mkdir('new/test/test2',0777,true); 
+// if pass more than one parameter we must include true 
+// new/test/test2 we must include true otherwise dir will not create
+// mkdir('old/test/test2',0777,false);
 // mkdir('new_one/test/test2',0777);// will not work.
 
-// changing dirs
+// changing directory
 chdir('new');
 echo getcwd() . "<br />";
 
