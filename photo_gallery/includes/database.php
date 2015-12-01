@@ -1,15 +1,20 @@
 <?php 
 require_once(LIB_PATH.DS."config.php");
 
-class MySQLDatabase { // class name MySQLDatabase because of easily swapping the database or identify the database related class.
+// class name MySQLDatabase because of easily swapping the database 
+// or identify the database related class.
+class MySQLDatabase { 
 
 	private $connection;
+	// it allows us to find what was the last query
 	public $last_query;
 	private $magic_quotes_active;
 	private $real_escape_string_exists;
 
 	function __construct(){
-		$this->open_connection(); // we call the open_connection() in construct because as soon as object is created then database connection is opened up.
+		// we call the open_connection() in construct because as soon as object is created 
+		// then database connection is opened up.
+		$this->open_connection(); 
 		$this->magic_quotes_active = get_magic_quotes_gpc();
 		$this->real_escape_string_exists = function_exists( "mysql_real_escape_string" ); // i.e. PHP >= v4.3.0
 	}
@@ -34,6 +39,7 @@ class MySQLDatabase { // class name MySQLDatabase because of easily swapping the
 	}
 
 	public function query($sql){
+		// set the query each and every time in last query
 		$this->last_query = $sql;
 		$result = mysql_query($sql, $this->connection);
 		$this->confirm_query($result);
@@ -67,6 +73,7 @@ class MySQLDatabase { // class name MySQLDatabase because of easily swapping the
 		return mysql_insert_id($this->connection);
 	}
 
+	// how many rows are affected in last time
 	public function affeected_rows(){
 		return mysql_affected_rows($this->connection);
 	}
@@ -74,11 +81,15 @@ class MySQLDatabase { // class name MySQLDatabase because of easily swapping the
 	// Here fetch_array,num_rows,insert_id,affected_rows,escape_value these functions are 
 	// database neutral user defined methods
 
+	// This method is private because it will not call from outside of the class
+	// Method and attribute will be private if it only be used inside the class
 	private function confirm_query($result){
 		if(!$result){
 			$output = "Databse query failed: ".mysql_error() . "<br /><br/>";
-			$output .= "Last SQL query: " . $this->last_query; // This is just for testing purpose
-			die($output);									   // but in production mode it must be commented
+			// This is just for testing purpose
+			// but in production mode it must be commented
+			$output .= "Last SQL query: " . $this->last_query; 
+			die($output);									   
 		}
 	}
 }
