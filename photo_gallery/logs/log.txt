@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+2015-11-17 05:38:31 | Logs Cleared : by User ID 1
+=======
+<<<<<<< HEAD
 2015-10-05 05:40:48 | Logs Cleared : by User ID 1
 2015-10-06 06:02:30 | Login : sabbir logged in.
 2015-10-06 07:12:35 | Login : sabbir logged in.
@@ -17,4 +20,8 @@
 2015-11-07 18:54:13 | Login : sabbir logged in.
 =======
 >>>>>>> a6d6fcf908f9e9791f00624ac22426e8a6f08111
+<<<<<<< HEAD
 2015-11-20 21:10:14 | Login : sabbir logged in.
+=======
+>>>>>>> 23fe916eb35c2cc57ed0f4e6fe13e70938c709b1
+>>>>>>> 2aa8d7967209a4d2baba42a5831da22d2fd8d181

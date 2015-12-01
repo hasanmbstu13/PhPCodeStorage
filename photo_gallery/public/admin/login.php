@@ -18,6 +18,7 @@ if(isset($_POST['submit'])) { // Form has been submitted.
 
 	if($found_user) {
 		$session->login($found_user);
+		// login information write in the log file
 		log_action('Login', "{$found_user->username} logged in.");
 		redirect_to("index.php");
 	} else {

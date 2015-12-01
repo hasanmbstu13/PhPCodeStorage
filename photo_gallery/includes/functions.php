@@ -34,7 +34,8 @@
 		}
 	}
 
-	function include_layout_template($template="") { // Helper method we write helper class for this such type of helper method.
+	// Helper method we write helper class for this such type of helper method.
+	function include_layout_template($template="") { 
 		include(SITE_ROOT.DS.'public'.DS.'layouts'.DS.$template);
 	}
 
@@ -42,7 +43,9 @@
 		$logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
 		$new = file_exists($logfile) ? false : true;
 
-		if($handle = fopen($logfile, 'a+')) { // append
+		// Write the file using append 
+		// append a+ append the contents in the file or open a new one.
+		if($handle = fopen($logfile, 'a')) { 
 		  $timestamp = strftime("%Y-%m-%d %H:%M:%S", time());
 		  $content = "{$timestamp} | {$action} : {$message}\n";
 		  fwrite($handle, $content);

@@ -1,6 +1,6 @@
 <?php 
 	
-	// print the full path of the file.
+	// print full path of the file.
 	echo __FILE__."<br />"; 
 
 	// Return the line numbers
@@ -27,7 +27,7 @@
 	echo is_file(__DIR__) ? 'yes' : 'no';
 	echo "<br />";
 
-	// Is it is directory or not?
+	// Is it directory or not?
 	// is_dir — Tells whether the filename is a directory
 	echo is_dir(__DIR__."/cloning.php") ? 'yes' : 'no';
 	echo "<br />";
