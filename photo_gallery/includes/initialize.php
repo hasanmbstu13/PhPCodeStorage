@@ -1,11 +1,21 @@
 <?php
 
+// This file initialize everything for us
+// take care about our required file
+// we think that why load every class in our page
+// which may be decreased efficiency but in this case 
+// php is very fast to load the class
+
+
 // Define the core paths
 // Define them as absolute paths to make sure that require_once works as expected
 
 // DIRECTORY_SEPERATOR is a PHP pre-defined constant
 // (\ for windows, / for Unix)
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
+
+// Define the SITE_ROOT that means the file path of the project
+// Defines File system absolute path not the web server path
 
 // defined('SITE_ROOT') ? null : define('SITE_ROOT','D:'.DS.'xampp'.DS.'htdocs'.DS.'PhPCodeStorage'.DS.'photo_gallery');
 defined('SITE_ROOT') ? null : define('SITE_ROOT','C:'.DS.'xampp'.DS.'htdocs'.DS.'PhPCodeStorage'.DS.'photo_gallery');

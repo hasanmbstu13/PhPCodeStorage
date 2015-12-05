@@ -35,6 +35,7 @@ class User extends DatabaseObject {
 		return !empty($result_array) ? array_shift($result_array) : false;
 	}
 
+	// Everything before those common method is unique but below is not
 	// Common Database Methods
 	public static function find_all() {
 		return self::find_by_sql("SELECT * FROM ".self::$table_name);

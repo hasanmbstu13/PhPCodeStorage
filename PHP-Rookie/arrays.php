@@ -5,7 +5,7 @@
 	<title>Arrays</title>
 </head>
 <body>
-	<?php $mixed = array(6,"fox","dog",array("x","y","z")); ?>
+	<?php $mixed = array('Num'=>'a6',"my","fox","dog",array("x","y","z")); ?>
 	<?php echo $mixed[2]; ?><br/>
 	<?php //echo $mixed[3]; ?><br/>
 	<?php //echo $mixed; ?><br/>

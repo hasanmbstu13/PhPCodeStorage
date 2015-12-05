@@ -1,5 +1,7 @@
 <?php 
 require_once("../../includes/initialize.php");
+// require_once(LIB_PATH.DS."initialize.php");
+// require_once(LIB_PATH.DS."../initialize.php");
 
 // If person is already logged in redirect in index.php
 // Avoid wastage of time to load this page

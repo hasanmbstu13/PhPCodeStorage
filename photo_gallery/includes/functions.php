@@ -35,6 +35,7 @@
 	}
 
 	// Helper method we write helper class for this such type of helper method.
+	// Method will help us to avoid write same code again and again.
 	function include_layout_template($template="") { 
 		include(SITE_ROOT.DS.'public'.DS.'layouts'.DS.$template);
 	}

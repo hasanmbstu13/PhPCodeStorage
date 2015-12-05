@@ -32,10 +32,10 @@ if(isset($_POST['submit'])) {
 }	
 
 
-// echo "<pre>";
-// print_r($_FILES['file_upload']);
-// echo "</pre>";
-// echo "<hr />";
+echo "<pre>";
+print_r($_FILES['file_upload']);
+echo "</pre>";
+echo "<hr />";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,6 +59,10 @@ if(isset($_POST['submit'])) {
  ?>
 
 	<?php if(!empty($message)) { echo "<p>{$message}</p>";} ?>
+	<!-- The enctype attribute specifies how the form-data should be encoded when submitting it to the server. 
+		 It also says that the sending data not only text data it also includes
+		 other types of data pdf etc.
+	-->
 	<form action="upload.php" enctype="multipart/form-data" method="POST">
 		<input type="hidden" name="MAX_FILE_SIZE" value="1000000">
 		<input type="file" name="file_upload" />
