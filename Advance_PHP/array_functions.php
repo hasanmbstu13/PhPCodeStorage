@@ -31,6 +31,7 @@
 		// This function accepts a PHP array and returns a new array containing only its keys (not its values). 
 		// Its counterpart is the array_values() function.
 		// Use this function to retrieve all the keys from an associative array.
+		echo "Array Keys"."<hr>";
 		$data = array("hero" => "Holmes", "villain" => "Moriarty");
 		print_r(array_keys($data));
 
@@ -216,8 +217,31 @@
 		  	echo "Key does not exist!";
 		  }
 
+	 ?>
 
+	 <?php 
+	 	// explode() - This function breaks the string into array on the basis of delimiter passed.
+	 	// syntax : explode(delimeter,string,limit)
+	 	// Explanation:
+	 	// Delimeter: It is mandatory field. It specifies where to break the string.
+	 	// String: It is mandatory. It specifies the string to split.
+	 	// Limit : It is optional. It specifies the maximum number of array elements to return.
+	 	
+	 	$str = "Hello world. It's a beautiful day.";
+	 	 print_r (explode(" ",$str));
+	 ?>
 
+	 <br>
+
+	 <?php 
+	 	// implode()
+	 	// This function join array elements with a string on the basis of delimiter passed.
+	 	// syntax: implode(delim,array)
+	 	// Explanation:
+	 	// Delimiter: It is mandatory field. It specifies what to put between the array elements. Default is “” (an empty string).
+	 	// Array: It is mandatory field. It specifies the array to join to a string.
+	 	 $arr = array('Hello','World!','Beautiful','Day!');
+	 	 echo implode(" ",$arr);
 	 ?>
 </body>
 </html>

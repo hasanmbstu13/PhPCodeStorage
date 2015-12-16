@@ -3,6 +3,8 @@
 // probably smart to require it before we start.
 require_once(LIB_PATH.DS."database.php");
 
+// All of the common database methods and properties should be
+// placed in the DatabaseObject class.
 class DatabaseObject {
 	protected static $table_name;
 

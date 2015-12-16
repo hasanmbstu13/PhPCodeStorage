@@ -4,7 +4,12 @@ if(!$session->is_logged_in()) { redirect_to("login.php");}
 ?>
 
 <?php 
-	$max_file_size = 1048576; // in bytes
+	$max_file_size = 1048576; // expressed in bytes
+							 // 	10240 	 =  10 KB
+							//		102400 	 = 100 KB
+							//		1048576	 =   1 MB
+							//		10485760 =  10 MB
+
 
 	// $message = "";
 	if(isset($_POST['submit'])) {
@@ -20,7 +25,8 @@ if(!$session->is_logged_in()) { redirect_to("login.php");}
 		redirect_to('list_photos.php');
 	} else {
 		// Failure
-		$message = join("<br />", $photo->errors); // overriding the message attributes it's not sesssion variable
+		// overriding the message attributes it's not sesssion variable
+		$message = join("<br />", $photo->errors); 
 	}
 }
 ?>
@@ -29,7 +35,11 @@ if(!$session->is_logged_in()) { redirect_to("login.php");}
 
 <h2>Photo Upload</h2>
 
-<?php echo output_message($message); ?>
+<?php 
+	// This will shows up the message if previously set up any message.
+	// or overriding the message attribute with error message if failure is occured
+	echo output_message($message);  
+?>
 <form action="photo_upload.php" enctype="multipart/form-data" method="POST">
 	<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size; ?>">
 	<p><input type="file" name="file_upload" /></p>

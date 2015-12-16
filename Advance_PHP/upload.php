@@ -15,6 +15,9 @@
 if(isset($_POST['submit'])) {
 	// process the form data
 	$tmp_file 	 = $_FILES['file_upload']['tmp_name'];
+	// We can give any name of our uploaded file
+	// Generally we give the file name as original file name
+	// basenmae return just the name of the file at the end
 	$target_file = basename($_FILES['file_upload']['name']);
 	$upload_dir  = "uploads";
 
@@ -23,6 +26,9 @@ if(isset($_POST['submit'])) {
 
 	// move_uploaded_file will return false if $tmp_file is not a valid upload file
 	// or if it cannot be moved for any other reason
+	// move_uploaded_file is only a php function for uploading a file
+	// move_uploaded_file — Moves an uploaded file to a new location
+	// function structure move_uploaded_file(file,newloc) 
 	if (move_uploaded_file($tmp_file,$upload_dir."/".$target_file)){
 		$message = "File uploaded successfully.";
 	} else {

@@ -19,7 +19,8 @@
 	echo $numbers[0]; 
 ?>
 
-Count: 	   <?php echo count($numbers); ?><br/> <!-- Count return length of the array -->
+<!-- Count return length of the array -->
+Count: 	   <?php echo count($numbers); ?><br/> 
 Max value: <?php echo max($numbers); ?><br/>
 Min value: <?php echo min($numbers); ?><br/>
 

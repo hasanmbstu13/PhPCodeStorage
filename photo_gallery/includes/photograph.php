@@ -52,19 +52,53 @@ class Photograph extends DatabaseObject {
 		
 	}
 
+	// For saving photograph in upload folder or in database we create
+	// public function save_with_file()
+	// or overridden parent method like
+	// public function save(){
+		// call the parent method as like
+		// if we want to call the original method or parent method
+		// Then call as like
+		// parent::save(); 
+	//}
+	// both are valid approach
+	// In our application we use override the save() method
+
+	// To save a record in database we just simply do following in user class
+	// public function save(){
+	// 	// A new record won't have an id yet.
+	// 	return isset($this->id) ? $this->update() : $this->create();
+	// }
+
+	// but in photograph class we want to give some more functionality
+	// so we create a custom save method in this photograph class
+	// public function save(){
+	// 	// A new record won't have an id yet.
+	// 	if(isset($this->id)) {
+	// 		$this->update();
+	// 	} else {
+	// 		// Make sure there are no errors
+	// 		// Attempt to move the file 
+	// 		// Save a corresponding entry to the database
+	// 		$this->create();
+	// 	}
+	// }
+	
 	public function save() {
 		// A new record won't have an id yet.
 		if(isset($this->id)) {
 			// Really just to update the caption
+			// not move the file again
 			$this->update();
 		} else {
 			// Make sure there are no errors
 
-			// Can't save it there are pre-existing errors
+			// Can't save if there are pre-existing errors
 			if(!empty($this->errors)) { return false; }
 
-			// Make sure the captin is not too long for the DB
-			if(strlen($this->caption) > 255) {
+			// Make sure the caption is not too long for the DB
+			// if(strlen($this->caption) < 10) {
+			if(strlen($this->caption) >= 255) {
 				$this->errors[] = "The caption can only be 255 characters";
 				return false; 
 			}
@@ -88,6 +122,7 @@ class Photograph extends DatabaseObject {
 				// Success
 				// Save a corresponding entry to the database
 				if($this->create()) {
+					// we are done with temp_path, the file isn't there anymore
 					unset($this->temp_path);
 					return true;
 				}
@@ -102,15 +137,18 @@ class Photograph extends DatabaseObject {
 	public function destroy() {
 		// First remove the database entry
 		if($this->delete()) {
+		// if($photo->delete()) {
 			// then remove the file from the site
-			// we should remove the file otherwise it will gives error in future when we upload the same file again
+			// we should remove the file otherwise it will gives error file exists in future when we upload the same file again
 			// Note that even though the database entry is gone, this object
 			// is still around (which lets us use $this->image_path()).
 			$target_path = SITE_ROOT.DS.'public'.DS.$this->image_path();
-			return unlink($target_path) ? true : false; // The unlink() function deletes a file.
+			// The unlink() function deletes a file.
+			return unlink($target_path) ? true : false; 
 		} else {
 			// database delete failed
-			return false; // didn't destroy the file successfully
+			// didn't destroy the file successfully
+			return false; 
 		}
 	}
 

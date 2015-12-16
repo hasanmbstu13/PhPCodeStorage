@@ -3,6 +3,9 @@
 <?php
   // Find all the photos
   $photos = Photograph::find_all();
+
+  // print_r($photos);
+  
 ?>
 <?php include_layout_template('admin_header.php'); ?>
 

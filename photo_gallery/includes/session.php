@@ -9,6 +9,8 @@ class Session {
 
 	private $logged_in=false;
 	public  $user_id;
+	// push the message from a page to see the output 
+	// when redirection happen
 	public  $message;
 
 	function __construct() {
@@ -45,11 +47,14 @@ class Session {
 		$this->logged_in = false;
 	}
 
-	public function message($msg="") { // this function work as both set or get
+	// this function work as both set or get
+	public function message($msg="") { 
 		if(!empty($msg)) {
 			// then this is "set message"
 			// make sure you understand why $this->message=$msg wouldn't work
-			$_SESSION['message'] = $msg; // we actually stored message in the session not as an attribute value otherwise will not get this as in real session only find as attribute value
+			// we actually stored message in the session not as an attribute value 
+			// otherwise will not get this as in real session only find as attribute value
+			$_SESSION['message'] = $msg; 
 		} else {
 			// then this is "get message"
 			return $this->message;
@@ -66,6 +71,8 @@ class Session {
 		}
 	}
 
+	// This method is checking for is any message stored in the session
+	// if it is then fedding attribute message and unset the session variable
 	private function check_message() {
 		// Is there a message stored in the session?
 		if(isset($_SESSION['message'])) {
@@ -73,6 +80,8 @@ class Session {
 			$this->message = $_SESSION['message'];
 			unset($_SESSION['message']);
 		} else {
+			// if not then initialize message as empty string
+			// avoid the error
 			$this->message = "";
 		}
 	}
@@ -80,6 +89,7 @@ class Session {
 }
 
 $session = new Session();
-$message = $session->message(); // for simplicity we never again again call this method in every page we simply this variable
+// for simplicity we never again again call this method in every page we simply use this variable
+$message = $session->message(); 
 
 ?>

@@ -7,6 +7,17 @@ require_once(LIB_PATH.DS.'database.php');
 class User extends DatabaseObject {
 	
 	protected static $table_name="users";
+	// This array is useful to work with only db fields
+	// because if we use get_object_vars which will return
+	// all of the class attributes including private and protected
+	// some of the public or private or protected attribute may not corresponding
+	// field in the database.
+	// The drawbacks of this process is 
+	// if the model or class is so big and db_fields is so many then 
+	// it may cucumbersome to list all of the db_fields listed manually
+	// in this case we make an array dynamically by using query show fileds 
+	// from users or realted database table.
+	// but in our case table is so simple so we listed the database field manually
 	protected static $db_fields = array('id', 'username', 'password' , 'first_name', 'last_name'); // all of the db fields list
 	public $id;
 	public $username;
@@ -94,18 +105,25 @@ class User extends DatabaseObject {
 	  return array_key_exists($attribute, $object_vars);
 	}
 
+	// We can use raw attributes() or either sainitzed_attributes()
+	// for getting the keys/attributes name/db_fields and values
+	// for escaping attributes values for submitting in the database 
 	protected function attributes() {
-		// return an array of attributes keys and their values
+		// return an array of attributes names/keys and their values
 		$attributes = array();
 		foreach (self::$db_fields as $field) {
 			if(property_exists($this, $field)) {
 				$attributes[$field] = $this->$field;
 			}
 		}
-		// return get_object_vars($this); // get_object_vars return an associative array of all attributes of the class; all attributes may not related with the database; some are may have protected or private 
+		// get_object_vars return an associative array of all attributes of the class; 
+		// all attributes may not related with the database; 
+		// some are may have protected or private 
+		// return get_object_vars($this); 
 		return $attributes;
 	}
 
+	// filtering the attributes value for submitting in the database
 	protected function sanitized_attributes() {
 		global $database;
 		$clean_attributes = array();
@@ -123,11 +141,17 @@ class User extends DatabaseObject {
 	}
 
 	public function create() {
+		// bring the database in this object
 		global $database;
 		// Don't forget your SQL syntax and good habits:
 		// - INSERT INTO table (key,key) VALUES ('value', 'value')
 		// - single-quotes around all values
 		// - escape all values to prevent SQL injection
+		// $attributes = $this->attributes();
+		// self::$table_name that means abstract table name
+		// We can use raw attributes() or either sainitzed_attributes()
+		// for getting the keys/attributes name/db_fields and values
+		// for escaping attributes values for submitting in the database 
 		// $attributes = $this->attributes();
 		$attributes = $this->sanitized_attributes();
 		$sql  = "INSERT INTO ".self::$table_name." (";
@@ -141,6 +165,9 @@ class User extends DatabaseObject {
 		$sql .= join("', '",array_values($attributes));
 		$sql .= "')";
 		if($database->query($sql)) {
+			// to update the id with recent id
+			// because our username, first_name, last_name, password already populated
+			// but id is not populated
 			$this->id = $database->insert_id();
 			return true;
 		} else {

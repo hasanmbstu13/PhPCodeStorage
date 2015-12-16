@@ -23,6 +23,9 @@
 		}
 	}
 
+	// Autoload will take we don't define include the definition of class 
+	// in a file which is required
+	// It may be useful if we include the file in initialize.php
 	function __autoload($class_name) {
 		$class_name = strtolower($class_name);
 		// $path = "../includes/{$class_name}.php";

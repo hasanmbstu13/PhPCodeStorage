@@ -4,12 +4,88 @@
 		"selected_items":
 		[
 			[
-				"C",
-				"COLS"
+				"E_USER",
+				"E_USER_ERROR〔constant〕"
+			],
+			[
+				"tri",
+				"trigger_error〔function〕"
+			],
+			[
+				"var_",
+				"var_dump〔function〕"
+			],
+			[
+				"obj",
+				"$object〔variable〕"
+			],
+			[
+				"display",
+				"display_errors"
+			],
+			[
+				"print",
+				"print_r($photo"
+			],
+			[
+				"prin",
+				"print〔function〕"
+			],
+			[
+				"my",
+				"myCar"
 			],
 			[
 				"w",
-				"width: 〔property〕"
+				"writeln〔function〕"
+			],
+			[
+				"Re",
+				"Recursive"
+			],
+			[
+				"fa",
+				"fact_number"
+			],
+			[
+				"fac",
+				"factorial"
+			],
+			[
+				"mul",
+				"multiply"
+			],
+			[
+				"mu",
+				"multiply"
+			],
+			[
+				"find",
+				"find_by_sql〔function〕"
+			],
+			[
+				"creat",
+				"created"
+			],
+			[
+				"pho",
+				"$photo_id〔variable〕"
+			],
+			[
+				"cre",
+				"created〔variable〕"
+			],
+			[
+				"up",
+				"update〔function〕"
+			],
+			[
+				"mo",
+				"move_uploaded_file"
+			],
+			[
+				"C",
+				"COLS"
 			],
 			[
 				"he",
@@ -110,10 +186,6 @@
 			[
 				"fin",
 				"find_by_id〔function〕"
-			],
-			[
-				"up",
-				"upload_dir〔variable〕"
 			],
 			[
 				"Photo",
@@ -296,10 +368,6 @@
 				"username"
 			],
 			[
-				"my",
-				"mysql_prep"
-			],
-			[
 				"ad",
 				"$admins〔variable〕"
 			],
@@ -446,84 +514,16 @@
 			[
 				"mysql_num",
 				"mysql_num_rows"
-			],
-			[
-				"books",
-				"books_no"
-			],
-			[
-				"row",
-				"rowcount"
-			],
-			[
-				"an",
-				"an_array"
-			],
-			[
-				"set",
-				"set"
-			],
-			[
-				"num",
-				"num1"
-			],
-			[
-				"lin",
-				"linktext"
-			],
-			[
-				"echo",
-				"echo"
-			],
-			[
-				"ht",
-				"htmlentities"
-			],
-			[
-				"html",
-				"htmlspecialchars"
-			],
-			[
-				"p",
-				"Page"
-			],
-			[
-				"get_defined",
-				"get_defined_vars"
-			],
-			[
-				"co",
-				"color"
-			],
-			[
-				"add",
-				"add_result"
-			],
-			[
-				"age",
-				"ages"
-			],
-			[
-				"array",
-				"array"
-			],
-			[
-				"at",
-				"attr_nice"
-			],
-			[
-				"for",
-				"foreach	foreach …"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction/script.js",
+			"file": "/C/xampp/htdocs/PhPCodeStorage/Debugging_in_PHP/handaling_fatal_error.php",
 			"settings":
 			{
-				"buffer_size": 2467,
+				"buffer_size": 178,
 				"line_ending": "Windows"
 			}
 		}
@@ -535,10 +535,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 490.0,
-		"last_filter": "Package Control: ",
+		"height": 465.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"syntax:jas",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -604,7 +608,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 725.0
+		"width": 501.0
 	},
 	"console":
 	{
@@ -626,20 +630,41 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie",
-		"/C/xampp/htdocs/JavascriptCodeStorage",
-		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions",
-		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction"
+		"/C/xampp/htdocs/PhPCodeStorage",
+		"/C/xampp/htdocs/PhPCodeStorage/Debugging_in_PHP"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/PhPCodeStorage/Debugging_in_PHP/error_example.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Debugging_in_PHP/error_log.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Debugging_in_PHP/set_error_reporting_at_run_time.php",
+		"/C/xampp/htdocs/Algorithm/recursion.html",
+		"/C/xampp/htdocs/Algorithm/objet.html",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/comment.php",
+		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction/script.js",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/photo.php",
+		"/C/xampp/htdocs/Object-Oriented-PHP/OOP-Concept/ControllingAccesstoProperties/GenerateAnimalProtected.php",
 		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/database_object.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/user.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/functions.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/login.php",
-		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/upload.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/arrays.php",
+		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript/print.sublime-snippet",
+		"/C/xampp/htdocs/JavascriptCodeStorage/JavaScriptBasic/JavaScriptBasic/public_html/CreateOwnObjectsWithConstructiveFunctions.html",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/read_folder_subfolder.php",
+		"/C/xampp/htdocs/JavascriptCodeStorage/AlgorithminJS/recursion.html",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/photograph.php",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/ArrayFunctions.php",
+		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions/this-keyword.html",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/session.php",
 		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/list_photos.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/delete_photo.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/index.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/index.php",
+		"/C/xampp/htdocs/JavascriptCodeStorage/AlgorithminJS/RepititionConstructs.html",
+		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/arrays.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/photo_upload.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/user.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/test.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/functions.php",
+		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/upload.php",
+		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/login.php",
 		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/initialize.php",
 		"/C/xampp/htdocs/JavascriptCodeStorage/JavaScriptsProject/SnakeGame/snake.html",
 		"/C/xampp/htdocs/JavascriptCodeStorage/JavaScriptsProject/SnakeGame/snake.js",
@@ -650,15 +675,12 @@
 		"/F/Web Programming/PHP/PHP Video Tutorial/phpinfo.php",
 		"/C/xampp/htdocs/PhPCodeStorage/Advance_PHP/array_functions.php",
 		"/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/venuetravel.html",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/session.php",
 		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/databases.php",
 		"/F/Web Programming/PHP/BBS-Project-Code/ISL Projects/gtgcrm/app/config/database.php",
 		"/F/Web Programming/PHP/BBS-Project-Code/ISL Projects/govt-payroll/app/Controller/EmployeesController.php",
 		"/I/Laravel Training Resource/_Laravel_Workthrough/L4 7. - FORM ALL IN ONE.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/index.php",
 		"/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/index.html",
 		"/E/Web Programming/JavaScript/Lynda - javascript_ Enhancing the DOM/Exercise Files/02/dom/artists.html",
-		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction/script.js",
 		"/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction/index.html",
 		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/Sum_of_1_100.php",
 		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
@@ -740,27 +762,7 @@
 		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/11/03/SESSION2.PHP",
 		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/11/04/MANAGE_SESSION_DB.PHP",
 		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/RTFM/INDEX.PHP",
-		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/03/11/SOLUTION_A_PHP.PHP",
-		"/F/Web Programming/PHP/PHP Video Tutorial/lynda.com - Accessing Databases with Object-Oriented PHP Tutorial/Exercise Files/ch02/02_03/pdo_loop.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/debugging_troubleshooting.sublime-project",
-		"/C/Users/Mainul Hasan/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/at_operator.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/try_catch.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/includes/photograph.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/delete_photo.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/photo_upload.php",
-		"/C/xampp/htdocs/PhPCodeStorage/PHP-Rookie/return_boolean_inside_conditional_op.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/lynda.com - Accessing Databases with Object-Oriented PHP Tutorial/Exercise Files/styles/styles.css",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter06/06_13_photo_gallery-final/includes/database_object.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter07/07_13_photo_gallery/includes/database_object.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter12/12_04_photo_gallery/includes/photograph.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/index.php",
-		"/C/xampp/htdocs/PhPCodeStorage/photo_gallery/public/admin/test.php",
-		"/F/Web Programming/PHP/PHP Video Tutorial/Lynda - PHP with MySQL Beyond the Basics/ExerciseFiles/Exercise Files/Exercise Files/Chapter09/09_01_photo_gallery/includes/user.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/mainul-post-notice/mainul-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/mainul-post-notice/class-mainul-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/mainul-post-notice.php",
-		"/C/xampp/htdocs/wordpress/wp-content/plugins/new-post-notice/class-mainul-post-notice.php"
+		"/F/Web Programming/PHP/PHP Video Tutorial/PHP PROGRAMMING BASICS [thething/WORKFILES/03/11/SOLUTION_A_PHP.PHP"
 	],
 	"find":
 	{
@@ -779,6 +781,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"abot",
+			"write",
+			"print",
+			"readFolder",
+			"n",
+			"\");\n",
+			"get_called_class",
+			"print",
 			"+",
 			"EMPTY",
 			"empty",
@@ -893,71 +903,62 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/xampp/htdocs/JavascriptCodeStorage/Funtions/SimpleFuction/script.js",
-					"semi_transient": true,
+					"file": "/C/xampp/htdocs/PhPCodeStorage/Debugging_in_PHP/handaling_fatal_error.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2467,
+						"buffer_size": 178,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2235,
-								2235
+								171,
+								171
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
+							"auto_complete": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -967,12 +968,22 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1770.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1100,8 +1111,8 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 287.0,
+	"side_bar_visible": true,
+	"side_bar_width": 165.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

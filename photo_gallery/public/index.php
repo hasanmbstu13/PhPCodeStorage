@@ -11,6 +11,11 @@
 <?php foreach ($photos as $photo): ?>
   <div style="float: left; margin-left: 20px;">
 	<a href="photo.php?id=<?php echo $photo->id; ?>">
+  	   <!-- here .. is not required in the source because images
+  	   folder and index page in the same directory -->
+  	   <!-- The smaller version of the image shown in the photo list
+  	   If we want to larger version then we need create another 
+  	   file in our project this file is photo.php -->
   	   <img src="<?php echo $photo->image_path(); ?>" width="200" />
 	</a>
   	<p><?php echo $photo->caption; ?> </p>
