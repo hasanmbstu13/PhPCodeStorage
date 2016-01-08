@@ -19,7 +19,7 @@ $address_residence->city_name = 'Townsville';
 $address_residence->subdivision_name = 'State';
 // $address->postal_code = '12345';
 $address_residence->country_name = 'United States of America';
-$address_residence->address_type_id = 1;
+// $address_residence->address_type_id = 1;
 echo $address_residence;
 echo '<tt><pre>'.var_export($address_residence,TRUE).'</pre></tt>';
 // echo '<h2>Instantiating Address</h2>';
@@ -49,7 +49,7 @@ echo '<tt><pre>'.var_export($address_residence,TRUE).'</pre></tt>';
 // Now create a new address object with an array of properties and values.
 echo '<h2>Testing Address __construct with an array</h2>';
 // address object this time with an array is as a property
-$address_2 = new Address(array(
+$address_business = new AddressBusiness(array(
 	'street_address_1' => '123 Phony Ave',
 	'city_name' => 'Villageland',
 	'subdivision_name'=>'Region',
@@ -57,7 +57,8 @@ $address_2 = new Address(array(
 	'country_name'=>'Canada',
 	'time_created'=>'123156'
 	));
-echo $address_2;
+echo $address_business;
+echo '<tt><pre>'.var_export($address_business,TRUE).'</pre></tt>';
 
 
 // echo '<tt><pre>' . var_export($address_2, TRUE) . '</pre></tt>';

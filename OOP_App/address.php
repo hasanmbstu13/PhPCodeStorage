@@ -3,7 +3,7 @@
 /**
  * Physical address. 
  */
-class Address {
+abstract class Address {
   const ADDRESS_TYPE_RESIDENCE = 1;
   const ADDRESS_TYPE_BUSINESS = 2;
   const ADDRESS_TYPE_PARK     = 3;
@@ -46,6 +46,7 @@ class Address {
   // Constructor
   // array $data optional array of property names and values.
   function __construct($data = array()) {
+    $this->_init();
     $this->_time_created = time();
     // Sanity check ensuring that the argument is really an array
     // if not trigger an error and fail.
@@ -103,10 +104,10 @@ class Address {
    */
   function __set($name, $value) {
     // Only set valid address_type_id.
-    if ('address_type_id' === $name){
-      $this->_setAddressTypeId($value);
-      return;
-    }
+    // if ('address_type_id' === $name){
+    //   $this->_setAddressTypeId($value);
+    //   return;
+    // }
     // Allow anything to set the postal code.
     if ('postal_code' == $name) {
       $this->$name = $value;
@@ -123,6 +124,9 @@ class Address {
   function __toString() {
     return $this->display();
   }
+
+  // Force extending classes to implement init mehtod.
+  abstract protected function _init();
 
   /**
    * Guess the postal code given the subdivision and city name.
