@@ -16,7 +16,8 @@ class Database {
 	}
 
 	public function __construct() {
-		$this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS);
+		// $this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS);
+		$this->connection = mysqli_connect('localhost', 'root', '','demo');
 		// Error handling.
 		if(mysqli_connect_error()) {
 			trigger_error('Failed to connect to MySQli: '.mysqli_connect_error(),E_USER_ERROR);

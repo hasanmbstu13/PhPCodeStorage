@@ -1,5 +1,5 @@
 <?php
-
+// require 'database.php';
 /**
  * Physical address. 
  */
@@ -81,6 +81,8 @@ class Address {
     // Postal code lookup if unset.
     if (!$this->_postal_code) {
       $this->_postal_code = $this->_postal_code_guess();
+      // echo 'Hi';
+      // echo $this->_postal_code; exit;
     }
     
     // Attempt to return a protected property by name.
@@ -100,6 +102,11 @@ class Address {
    * @param mixed $value 
    */
   function __set($name, $value) {
+    // Only set valid address_type_id.
+    if ('address_type_id' === $name){
+      $this->_setAddressTypeId($value);
+      return;
+    }
     // Allow anything to set the postal code.
     if ('postal_code' == $name) {
       $this->$name = $value;
@@ -123,7 +130,32 @@ class Address {
    * @return string 
    */
   protected function _postal_code_guess() {
-    return 'LOOKUP';
+    // return 'LOOKUP';
+    $db = Database::getInstance();
+    $mysqli = $db->getConnection();
+
+    $sql_query = 'SELECT postal_code ';
+    $sql_query .= 'FROM location ';
+
+    // $city_name = $mysqli->mysqli_real_escape_string($this->city_name);
+    $city_name = mysqli_real_escape_string($mysqli,$this->city_name);
+    // $sql_query .= 'WHERE city_name = "'.$this->city_name.'" ';
+    $sql_query .= 'WHERE city_name = "'.$city_name.'" ';
+
+    $subdivision_name = mysqli_real_escape_string($mysqli,$this->subdivision_name);
+    $sql_query .= 'AND subdivision_name = "'.$subdivision_name.'"';
+
+    // echo $sql_query; exit;
+
+    $result = mysqli_query($mysqli,$sql_query);
+
+    // var_dump($result); exit;
+
+    if($row = mysqli_fetch_assoc($result)) {
+      // echo $row['postal_code'];
+      // exit;
+      return $row['postal_code'];
+    }
   }
   
   /**
@@ -155,4 +187,11 @@ class Address {
     return array_key_exists($address_type_id, self::$valid_address_types);
   }
 
+  // If valid set the address type id
+  // param int $address_type_id
+  protected function _setAddressTypeId($address_type_id){
+    if (self::isValidAddressTypeId($address_type_id)) {
+      $this->_address_type_id = $address_type_id;
+    }
+  }
 }
