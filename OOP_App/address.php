@@ -3,7 +3,7 @@
 /**
  * Physical address. 
  */
-abstract class Address {
+abstract class Address implements Model{
   const ADDRESS_TYPE_RESIDENCE = 1;
   const ADDRESS_TYPE_BUSINESS = 2;
   const ADDRESS_TYPE_PARK     = 3;
@@ -43,6 +43,13 @@ abstract class Address {
   protected $_time_created;
   protected $_time_updated;
   
+  function __clone() {
+    // $this->_time_created = 12345;
+    $this->_time_created = time();
+    // $this->_time_updated = 67890;
+    $this->_time_updated = NULL;
+  }
+
   // Constructor
   // array $data optional array of property names and values.
   function __construct($data = array()) {
@@ -198,4 +205,14 @@ abstract class Address {
       $this->_address_type_id = $address_type_id;
     }
   }
+
+  /**
+   * load an address
+   * @param  int $address_id 
+   */
+  final public static function load($address_id){}
+  /**
+   * Save an Address
+   */
+  final public function save() {}
 }

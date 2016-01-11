@@ -2,7 +2,7 @@
 require_once("config.php");
 // MySQli database; only one connection is allowed.
 class Database {
-	private $_conneciton;
+	private $_connection;
 	// Store the single instance.
 	private static $_instance;
 
@@ -17,7 +17,7 @@ class Database {
 
 	public function __construct() {
 		// $this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS);
-		$this->connection = mysqli_connect('localhost', 'root', '','demo');
+		$this->_connection = mysqli_connect('localhost', 'root', '','demo');
 		// Error handling.
 		if(mysqli_connect_error()) {
 			trigger_error('Failed to connect to MySQli: '.mysqli_connect_error(),E_USER_ERROR);
@@ -29,7 +29,7 @@ class Database {
 
 	// Get the mysqli connection
 	public function getConnection() {
-		return $this->connection;
+		return $this->_connection;
 	}
 
 }
