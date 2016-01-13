@@ -19,6 +19,7 @@
     <th>Caption</th>
     <th>Size</th>
     <th>Type</th>
+    <th>Comments</th>
     <th>&nbsp;</th>
   </tr>
 <?php foreach($photos as $photo): ?>
@@ -28,6 +29,17 @@
     <td><?php echo $photo->caption; ?></td>
     <td><?php echo $photo->size_as_text(); ?></td>
     <td><?php echo $photo->type; ?></td>
+    <td>
+      <a href="comments.php?id=<?php echo $photo->id;?>">
+      <?php 
+        // Here find the all comments in array 
+       // then we count the array
+      // bring all the comments as an array then we will count them
+        // echo count($photo->comments()); 
+        echo $photo->total_comments_on_a_photo(); 
+      ?>
+      </a>
+    </td>
     <td><a href="delete_photo.php?id=<?php echo $photo->id; ?>">Delete</a></td>
   </tr>
 <?php endforeach; ?>

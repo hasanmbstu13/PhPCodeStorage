@@ -16,6 +16,12 @@
 	// after make sure we find the photograph
 	// Then we ready to do form processing
 
+	// We do this following in this section 
+	// but it little slow down the processing 
+	// because it goes into the database and run a query that makes the site slow down
+
+	// $comments = Comment::find_comments_on($photo->id);
+	
 	if(isset($_POST['submit'])){
 		// If form submission fail anyway
 		// then we prepopulate the form with this value
@@ -33,6 +39,10 @@
 		if($new_comment && $new_comment->save()){
 			// comment saved
 			// No message needed; seeing the comment is proof enough.
+			// Important! we could just let the page render from here.
+			// But then if the page is reloaded, the form will try
+			// to resubmit the comment. So redirect istead:
+			redirect_to("photo.php?id={$photo->id}");
 		} else {
 			// Failed
 			$message = "There was an error that prevented the comment from being saved.";
@@ -44,6 +54,13 @@
 		$author="";
 		$body="";
 	}
+	// <!-- Displaying the comments need two steps processing
+	// First we need to get all the comments
+	// Put them in a array and assign to them in a variable 
+	// Then display the array by looping through the array
+	// -->
+	// $comments = Comment::find_comments_on($photo->id);
+	$comments = $photo->comments();
  ?>
 <?php include_layout_template('header.php'); ?>
 
@@ -52,7 +69,24 @@
 	<img src="<?php echo $photo->image_path();?>"/>
 	<p><?php echo $photo->caption; ?></p>
 </div>
-
+<div id="comments">
+	<?php foreach ($comments as $comment): ?>
+		<div class="comment" style="margin-bottom: 2em;">
+			<div class="author">
+				<?php echo htmlentities($comment->author); ?> wrote:
+			</div>
+			<div class="body">
+				<?php echo strip_tags($comment->body,'<strong><em><p>'); ?>
+			</div>
+			<div class="meta-info" style="font-size: 0.8em;">
+				<?php //echo datetime_to_text($comment->created); ?>
+	      		<?php echo datetime_to_text($comment->created); ?>
+				<?php //echo $comment->created; ?>
+			</div>
+		</div>
+	<?php endforeach; ?>
+	<?php if(empty($comments)){ echo "No comments."; } ?>
+</div>
 <!-- after show the photo list all of the comments that belongs to the photo -->
 <!-- list comments -->
 <div id="comment-form">

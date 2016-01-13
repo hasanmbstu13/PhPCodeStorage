@@ -67,6 +67,21 @@ class User extends DatabaseObject {
     return $object_array;
   }
 
+  public static function count_all() {
+  	global $database;
+  	$sql = "SELECT COUNT(*) FROM ".self::$table_name;
+  	$result_set = $database->query($sql);
+  	$row = $database->fetch_array($result_set);
+  	// Here the returned array looks like
+  	/*Array
+  	(
+  	    [0] => 1
+  	    [COUNT(*)] => 1
+  	)*/
+  	// The array_shift() function removes the first element from an array, and returns the value of the removed element.
+  	return array_shift($row);
+  }
+
 	private static function instantiate($record) {
 		// Could check that $record exists and is an array
     // $object = new User();

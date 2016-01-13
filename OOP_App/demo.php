@@ -104,6 +104,11 @@ echo '<h2>Testing typecasting to an object witho only value not array</h2>';
 $test_object = (object) 123456;
 echo '<tt><pre>'.var_export($test_object,TRUE).'</pre></tt>';
 
+echo '<h2>Loading from database</h2>';
+$address_db = Address::load(1);
+echo '<tt><pre>'.var_export($address_db,TRUE).'</pre></tt>';
+
+
 // echo '<tt><pre>' . var_export($address_2, TRUE) . '</pre></tt>';
 // echo $address_2->display();
 

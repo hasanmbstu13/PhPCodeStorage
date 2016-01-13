@@ -10,6 +10,7 @@
 
 	function redirect_to($location = NULL){
 		if($location != NULL){
+			// echo header("Location: " . $location);
 			header("Location: " . $location);
 			exit;
 		}
@@ -59,6 +60,12 @@
 			echo "Could not open lof file for writing.";
 
 		}
+	}
+
+	// Convert time into more nicer version.
+	function datetime_to_text($datetime=""){
+		$unixdatetime = strtotime($datetime);
+		return strftime("%B %d, %Y at %I:%M %p", $unixdatetime);
 	}
 
 	//passwprd: GRANT ALL PRIVILEGES ON photo_gallery.* TO 'gallery'@'localhost' IDENTIFIED BY 'php0TL123';

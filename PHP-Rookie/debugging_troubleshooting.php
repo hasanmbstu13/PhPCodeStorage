@@ -79,5 +79,52 @@
  	say_hello_to('Everyone');
   ?>
 
+  <?php 
+
+	// Pass Boolean TRUE to the print_r
+  	// The only difference is that instead of using print_r() to output to the page, we pass the Boolean “True” argument, 
+  	// which suppresses output at the same time that the value of $a is assigned to $b, and then we echo $b.
+	$a = array( "Drink"=> "Soda", "Candy"=>"Chicklets",
+	         "Foods"=>array("Rice", "Bread", "Meat",
+	         "Fruits"=>array("Red"=>"Strawberry","Yellow"=>"Banana","Blue"=>"Grapes")),
+	         "Music Styles"=>array("Soft"=>"Jazz", "Heavy"=>"Rock", "Soulful"=>"Blues"));
+	echo "<pre>";
+	$b = print_r($a,True);
+	echo $b;
+	echo "</pre>";
+
+	// var_export() is very much like print_r(), except that what it returns is actually valid PHP code.
+	$a = array( "Drink"=> "Soda", "Candy"=>"Chicklets",
+	            "Foods"=>array("Rice", "Bread", "Meat",
+	            "Fruits"=>array("Red"=>"Strawberry","Yellow"=>"Banana","Blue"=>"Grapes")),
+	            "Music Styles"=>array("Soft"=>"Jazz", "Heavy"=>"Rock", "Soulful"=>"Blues"));
+	echo "<pre>";
+	var_export($a);
+	echo "</pre>";
+
+
+	$a = array(
+	"Drink"=> "Soda",
+	"Candy"=>"Chicklets",
+	"Foods"=>array(
+	     "Rice",
+	     "Bread",
+	     "Meat",
+	     "Fruits"=>array(       
+	           "Red"=>"Strawberry",
+	           "Yellow"=>"Banana",
+	           "Blue"=>"Grapes")
+	            ),
+	     "Music Styles"=>array(
+	                   "Soft"=>"Jazz",
+	                    "Heavy"=>"Rock",
+	                    "Soulful"=>"Blues"));
+	echo "<pre>";
+	var_dump($a);
+	echo "</pre>";
+	 
+
+  ?>
+
 </body>
 </html>

@@ -44,6 +44,19 @@
 			$sql .= " ORDER BY created ASC";
 			return self::find_by_sql($sql);
 		}
+
+		public static function total_comments($photo_id=0){
+			global $database;
+			$sql = 	"SELECT COUNT(*) AS TOTAL FROM ".self::$table_name;
+			// $sql = 	"SELECT COUNT(*) FROM ".self::$table_name;
+			$sql .= " WHERE photograph_id=".$database->escape_value($photo_id);
+			$result = $database->query($sql);
+			$count = $database->fetch_array($result);
+			// var_dump($count);
+			// echo $count['TOTAL'];
+			// print_r($count);//exit;
+			return $count['TOTAL'];
+		}
 		
 		// Common Database Methods
 		public static function find_all() {
@@ -65,6 +78,21 @@
 				$object_array[] = self::instantiate($row);
 			}
 			return $object_array;
+		}
+
+		public static function count_all() {
+			global $database;
+			$sql = "SELECT COUNT(*) FROM ".self::$table_name;
+			$result_set = $database->query($sql);
+			$row = $database->fetch_array($result_set);
+			// Here the returned array looks like
+			/*Array
+			(
+			    [0] => 1
+			    [COUNT(*)] => 1
+			)*/
+			// The array_shift() function removes the first element from an array, and returns the value of the removed element.
+			return array_shift($row);
 		}
 
 		private static function instantiate($record) {
@@ -119,6 +147,10 @@
 			return $clean_attributes;
 		}
 
+		public function save() {
+			  // A new record won't have an id yet.
+			  return isset($this->id) ? $this->update() : $this->create();
+		}
 		public function create() {
 			global $database;
 				// Don't forget your SQL syntax and good habits:

@@ -7,6 +7,7 @@
 	if(isset($_POST['submit'])){
 		//Process the form
 		$menu_name = mysql_prep($_POST["menu_name"]);
+		// $menu_name = $_POST["menu_name"];
 		$position = (int) $_POST["position"];
 		$visible = (int) $_POST["visible"];
 
@@ -26,7 +27,8 @@
 		$query .= "menu_name, position, visible";
 		$query .= ") VALUES (";
 		$query .= " '{$menu_name}', {$position}, {$visible}";
-		$query .= ")";	  
+		$query .= ")";	 
+		echo $query;exit; 
 		$result = mysqli_query($connection, $query);
 		//echo $query; exit;
 		if($result){

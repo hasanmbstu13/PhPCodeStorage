@@ -69,7 +69,9 @@ abstract class Address implements Model{
       // Special case for protected properties.
       if (in_array($name, array(
         'time_created',
-        'time_updated'
+        'time_updated',
+        'address_id',
+        'address_type_id'
         ))) {
          $name = '_'.$name;
       }
@@ -210,7 +212,36 @@ abstract class Address implements Model{
    * load an address
    * @param  int $address_id 
    */
-  final public static function load($address_id){}
+  final public static function load($address_id){
+    $db = Database::getInstance();
+    $mysqli = $db->getConnection();
+
+    // $sql_query  = 'SELECT address.* ';
+    $sql_query  = 'SELECT * ';
+    $sql_query .= 'FROM address ';
+    $sql_query .= 'WHERE address_id = "'.(int) $address_id.'"';
+    $result = $mysqli->query($sql_query);
+    // Retrieving Objects from the database
+    // if($row = $result->fetch_object()) {
+    if($row = $result->fetch_assoc()) {
+      // var_dump($row);
+      // exit;
+      return self::getInstance($row['address_type_id'],$row);
+    }
+  }
+
+  /**
+   * Given an address_type_id, return an instance of that subclass
+   * @param  int $address_type_id 
+   * @param  array  $data            
+   * @return Address subclass                  
+   */
+  final public static function getInstance($address_type_id, $data = array()){
+    $class_name = 'Address'.self::$valid_address_types[$address_type_id];
+    // var_dump($class_name);exit;
+    return new $class_name($data);
+  }
+
   /**
    * Save an Address
    */
