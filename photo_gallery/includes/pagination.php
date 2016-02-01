@@ -1,7 +1,7 @@
 <?php 
 	
 	// This is a helper class to make paginating
-	// records easy.
+   // records easy.
 	class Pagination {
 
 		public $current_page;
