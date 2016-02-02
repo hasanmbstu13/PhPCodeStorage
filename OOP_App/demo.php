@@ -105,8 +105,15 @@ $test_object = (object) 123456;
 echo '<tt><pre>'.var_export($test_object,TRUE).'</pre></tt>';
 
 echo '<h2>Loading from database</h2>';
-$address_db = Address::load(1);
-echo '<tt><pre>'.var_export($address_db,TRUE).'</pre></tt>';
+try {
+	$address_db = Address::load(0);
+	echo '<tt><pre>'.var_export($address_db,TRUE).'</pre></tt>';
+}
+// Once caught, we can optionally take further action.
+// In this case, rendering the message that was included in the thrown exception is sufficient.
+catch(ExceptionAddress $e) {
+	echo $e;
+}
 
 
 // echo '<tt><pre>' . var_export($address_2, TRUE) . '</pre></tt>';

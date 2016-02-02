@@ -21,7 +21,7 @@
     $id = $current_page["id"];
     $menu_name = mysql_prep($_POST["menu_name"]);
     $position = (int) $_POST["position"];
-    $visible = (int) $_POST["visible"];
+    // $visible = (int) $_POST["visible"];
     $content = mysql_prep($_POST["content"]);
 
     //validations
@@ -36,7 +36,8 @@
     $query  = "UPDATE pages SET ";
     $query .= "menu_name = '{$menu_name}', "; 
     $query .= "position = {$position}, ";
-    $query .= "visible = {$visible}, ";
+    // $query .= "visible = {$visible}, ";
+    $query .= "visible = {$_POST["visible"]}, ";
     $query .= "content = '{$content}' ";
     $query .= "WHERE id = {$id} ";
     $query .= "LIMIT 1";//it is going to only one that is for safetyness    
