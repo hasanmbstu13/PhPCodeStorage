@@ -18,7 +18,7 @@ $GLOBALS['config'] = array(
 	)
 );
 
-// Including file in this is efficient because if we change the file name then it will give fatal error
+// Including file directly is inefficient because if we change the file name then it will give fatal error
 // require_once 'classes/Config.php';
 // require_once 'classes/Cookie.php';
 // require_once 'classes/DB.php';
