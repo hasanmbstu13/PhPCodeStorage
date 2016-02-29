@@ -24,4 +24,90 @@ class DB {
 		return self::$_instance;
 	}
 
+	public function query($sql, $params = array()) {
+		// We can execute multiple queries one after another
+		// so we should reset the error avoiding previous queries error
+		$this->_error = false;
+		if($this->_query = $this->_pdo->prepare($sql)) {
+			// Check whether params has value or not
+			// and also check its an array
+			// bind value
+			$x = 1;
+			if(count($params)) {
+				foreach ($params as $param) {
+					// bind value
+					// $x is position we can use key as pos
+					// for simplicity here we use a variale named $x
+					$this->_query->bindValue($x, $param);
+					$x++;
+				}
+			}
+
+			// execute the query
+			if($this->_query->execute()) {
+				// If execution is successful
+				// Then we should store the results
+				$this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ);
+				$this->_count = $this->_query->rowCount();
+			} else {
+				$this->_error = true;
+			}
+		}
+
+		return $this;
+	}
+
+	public function action($action, $table, $where = array()) {
+		// here 3 for field,operator & value
+		if(count($where) === 3) {
+			$operators = array('=', '<', '>', '<=', '>=');
+
+			$field 		= $where[0];
+			$operator 	= $where[1];
+			$value 		= $where[2];
+
+			// Check passed operator is in operators or not
+			if(in_array($operator, $operators)) {
+		 		// $sql = "SELECT * FROM users WHERE username = 'Alex'";
+				$sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+
+				if(!$this->query($sql, array($value))->error()) {
+					// When query executed successfully then we should return current object
+				   //  because we allows to result set
+					return $this;	
+				}
+			}
+
+		}
+		return false;
+	}
+
+	public function get($table, $where) {
+		return $this->action('SELECT *', $table, $where);
+	}
+
+	public function delete($table, $where) {
+		return $this->action('DELETE', $table, $where);
+	}
+
+	// by default return false
+	// return true after executing query() method if query execution is failed
+	// then else block executed and return true
+	public function error() {
+		return $this->_error;
+	}
+
+	public function count() {
+		return $this->_count;
+	}
+
+	public function results() {
+		return $this->_results;
+	}
+
+	public function first() {
+		// return $this->_results[0];
+		// Or
+		return $this->results()[0];
+	}
 }

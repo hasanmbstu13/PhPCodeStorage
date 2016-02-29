@@ -33,8 +33,27 @@ require_once 'core/init.php';
 // $db = new DB();
 // $db = new DB();
 
-DB::getInstance();
-DB::getInstance();
-DB::getInstance();
-DB::getInstance();
-DB::getInstance();
+// DB::getInstance();
+// DB::getInstance();
+// DB::getInstance();
+// DB::getInstance();
+// DB::getInstance();
+
+// $user = DB::getInstance()->query("SELECT username FROM users WHERE username = ?", array('alex'));
+// $user = DB::getInstance()->get('users', array('username', '=', 'alex'));
+$user = DB::getInstance()->query("SELECT * FROM users");
+
+// var_dump($user);
+
+if(!$user->count()) {
+	echo 'No user';
+} else {
+	echo $user->first()->username;
+	// instead of using foreach loop
+	// echo $user->results()[0]->username;
+	// foreach($user->results() as $user) {
+	// 	echo $user->username, '<br>';
+	// }
+	// var_dump($user->results());
+	// echo 'OK!';
+}
