@@ -1,6 +1,12 @@
 <?php 
 require_once 'core/init.php';
 
+if(Session::exists('success')) {
+	echo Session::flash('success');
+}
+
+exit;
+
 // So in this way we need more code in public page
 // Instead we use helper method
 // $users = DB::getInstance()->query('SELECT username FROM users');
@@ -41,14 +47,27 @@ require_once 'core/init.php';
 
 // $user = DB::getInstance()->query("SELECT username FROM users WHERE username = ?", array('alex'));
 // $user = DB::getInstance()->get('users', array('username', '=', 'alex'));
-$user = DB::getInstance()->query("SELECT * FROM users");
+// $user = DB::getInstance()->query("SELECT * FROM users");
 
+$user = DB::getInstance()->update('users', 3, array(
+	'password' => 'newPassword',
+	'name'	   => 'Mainul Hasan'
+));
+// exit;
+$user = DB::getInstance()->insert('users', array(
+	'username' => 'Dale',
+	'password' => 'password',
+	'salt'	   => 'salt'
+));
+
+// exit;
 // var_dump($user);
 
 if(!$user->count()) {
 	echo 'No user';
 } else {
-	echo $user->first()->username;
+	// return the first element
+	// echo $user->first()->username;
 	// instead of using foreach loop
 	// echo $user->results()[0]->username;
 	// foreach($user->results() as $user) {
