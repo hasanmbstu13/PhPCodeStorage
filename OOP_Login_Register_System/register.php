@@ -43,19 +43,25 @@
 				// header('Location: index.php');
 				$user = new User();
 
-				echo $salt = Hash::salt(32);
-				die();
+				 $salt = Hash::salt(32);
+				// echo $salt = Hash::salt(32);
+				// die();
 				
 				try {
 
 					$user->create(array(
-						'username' => '',
-						'password' => '',
-						'salt' => '',
-						'name' => '',
-						'joined' => '',
-						'group' => ''
+						'username' => Input::get('username'),
+						'password' => Hash::make(Input::get('password'), $salt),
+						'salt' => $salt,
+						'name' => Input::get('name'),
+						'joined' => date('Y-m-d H:i:s'),
+						'group' => 1
 					));
+
+					Session::flash('home', 'You have been registered and can now log in!');
+					// header('Location: index.php');
+					// Redirect::to('index.php');
+					Redirect::to(404);
 
 				} catch(Exception $e) {
 					die($e->getMessage());

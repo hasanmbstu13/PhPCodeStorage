@@ -4,6 +4,7 @@ class Session {
 		return (isset($_SESSION[$name])) ? true : false;
 	}
 
+	// Set session value
 	public static function put($name, $value) {
 		return $_SESSION[$name] = $value;
 	}

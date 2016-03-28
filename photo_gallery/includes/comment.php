@@ -197,7 +197,7 @@
 					// $sql .= "last_name='".$database->escape_value($this->last_name) ."'";
 			$sql .= " WHERE id=". $database->escape_value($this->id);
 			$database->query($sql);
-			return ($database->affeected_rows() == 1) ? true : false;
+			return ($database->affected_rows() == 1) ? true : false;
 		}
 
 		public function delete() {
@@ -210,7 +210,7 @@
 			$sql .= " WHERE id=".$database->escape_value($this->id);
 			$sql .= " LIMIT 1";
 			$database->query($sql);
-			return ($database->affeected_rows() == 1) ? true : false;
+			return ($database->affected_rows() == 1) ? true : false;
 
 					// NB: After deleting, the instance of User still
 					// exists, even though the database entry does not.

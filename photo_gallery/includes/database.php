@@ -74,7 +74,7 @@ class MySQLDatabase {
 	}
 
 	// how many rows are affected in last time
-	public function affeected_rows(){
+	public function affected_rows(){
 		return mysql_affected_rows($this->connection);
 	}
 

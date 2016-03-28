@@ -9,3 +9,11 @@ function shout ($message){
 shout(function(){
   return "Hello world";
 });
+
+echo "<br />";
+
+// Use create_function
+$greeting = create_function('', 'echo "Hello World!";');
+ 
+// Call function
+$greeting();

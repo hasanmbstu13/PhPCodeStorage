@@ -1,6 +1,10 @@
 <?php 
 require_once 'core/init.php';
 
+if(Session::exists('home')) {
+	echo '<p>'.Session::flash('home').'</p>';
+}
+
 if(Session::exists('success')) {
 	echo Session::flash('success');
 }
