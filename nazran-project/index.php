@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Al-Quran</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
@@ -47,11 +47,11 @@
 
 		<div class="row comment-box">
 			<div class="col-md-6">
-	           <textarea name="comment" class="form-control" placeholder="Comment Box" id="comment"></textarea>
+	           <textarea name="text_suraa_ayat_a" class="form-control" placeholder="Comment Box" id="text_suraa_ayat_a"></textarea>
 			</div>
 
 			<div class="col-md-6">
-	           <textarea name="comment" class="form-control" placeholder="Comment Box" id="comment"></textarea>
+	           <textarea name="text_surab_ayat_b" class="form-control" placeholder="Comment Box" id="text_surab_ayat_b"></textarea>
 			</div>
 		</div>
 
@@ -60,7 +60,7 @@
 
 		    <div class="col-md-4">
 		        <div class="input-group">
-		            <span class="serial-text">Serial Number</span> <input type="text" class="form-control" /> 
+		            <span class="serial-text">Serial Number</span> <input type="text" name="serial-num" id="serial-num" class="form-control" /> 
 		        </div>
 		    </div>
 
@@ -69,51 +69,15 @@
 
 		<div class="row">
 			<label>Comments</label>
-	        <textarea name="comment" class="form-control" placeholder="Comment Box" id="comment"></textarea>
+	        <textarea name="comments" class="form-control" placeholder="Comment Box" id="comments"></textarea>
 		</div>
 
 		<div class="row">
 			<label>Notes</label>
-	        <textarea name="comment" class="form-control" placeholder="Comment Box" id="comment"></textarea>
+	        <textarea name="notes" class="form-control" placeholder="Comment Box" id="notes"></textarea>
 		</div>
 
 	</div>
-	<!-- <script type="text/javascript" src="main.js"></script> -->
-	<script type="text/javascript">
-		$(document).ready(function(){
-
-			function get_data(id = '', suraa_no){
-				$.ajax({
-						async: false,
-						cache: false,
-						type : 'POST',
-						url	 : 'response.php',
-						data : {
-							suraa_no : suraa_no
-						},
-						success: function(response){
-							$(id).html(response) ;
-							$(id).selectpicker('refresh');
-							return false; 
-						}
-				}); 
-			}
-
-			function change_suraa(){
-			   var suraa_no = $("#suraa").val();
-			   get_data('#ayat-sura-a', suraa_no);
-			   
-			}
-
-			function change_surab(){
-			   var suraa_no = $("#surab").val();
-			   get_data('#ayat-sura-b', suraa_no);
-			   
-			}
-
-		  $("#suraa").change(change_suraa);
-		  $("#surab").change(change_surab);
-		});
-	</script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

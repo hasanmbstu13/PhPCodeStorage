@@ -1,110 +1,118 @@
-$(document).ready(function(){
-      $("#country").val('{{$selected_country}}');
+  $(document).ready(function(){
 
-      function ajax_setup(){
-       $.ajaxSetup({
-          headers: {
-             'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
-          }
-       });
-      }
-
-      function get_data(url='', id=''){
-       jQuery.ajax({
-          async: true,
+    function get_data(id = '', suraa_no, result_box_id){
+      $.ajax({
+          async: false,
           cache: false,
-          dataType: 'text',
-          url: url,
-          success: function(response) 
-          {
-             $(id).html(response) ;
-             $(id).selectpicker('refresh');
-             return false; 
+          type : 'POST',
+          url  : 'response.php',
+          data : {
+            suraa_no : suraa_no
+          },
+          success: function(response){
+            $(id).html(response) ;
+            $(id).selectpicker('refresh');
+            $(result_box_id).val('');
+            $("#serial-num").val('');
+            $("#comments").val('');
+            $("#notes").val('');
+            return false; 
           }
-       });
-      }
+      }); 
+    }
 
-      function change_country(){
-         var country_id = $("#country").val();
+    function change_suraa(){
+       var suraa_no = $("#suraa").val();
+       get_data('#ayat-sura-a', suraa_no, '#text_suraa_ayat_a');
+       
+    }
 
-         var url = "{{ route('getstate',':country_id') }}";
-         url = url.replace(':country_id', country_id);
+    function change_surab(){
+       var suraa_no = $("#surab").val();
+       get_data('#ayat-sura-b', suraa_no, "#text_surab_ayat_b");
+       
+    }
 
-        ajax_setup();
-        get_data(url, '#state');
+    $("#suraa").change(change_suraa);
+    $("#surab").change(change_surab);
+  });
 
-         
-      }
+  function get_ayat_text(id = '', suraa_no, ayat_no){
+    $.ajax({
+        async: false,
+        cache: false,
+        type : 'POST',
+        url  : 'response.php',
+        data : {
+          suraa_no : suraa_no,
+          ayat_no  : ayat_no
+        },
+        success: function(response){
+          $(id).val(response) ;
+          return false; 
+        }
+    }); 
+  }
 
-      function change_state(){
-         var state_id = $("#state").val();
+  function get_seriral_notes_comments(serial_no_box_id = '', note_box_id = '', comment_box_id = '', sura_a, ayat_a, sura_b, ayat_b){
+    $.ajax({
+        async: false,
+        cache: false,
+        type : 'POST',
+        url  : 'response.php',
+        data : {
+          sura_a : sura_a,
+          ayat_a : ayat_a,
+          sura_b : sura_b,
+          ayat_b : ayat_b
+        },
+        success: function(response){
+          if(response){
+            var response = JSON.parse(response);
+            $(serial_no_box_id).val(response.serial_no);
+            $(comment_box_id).val(response.comments);
+            $(note_box_id).val(response.notes);
+          } else {
+            $(serial_no_box_id).val('');
+            $(comment_box_id).val('');
+            $(note_box_id).val('');
+          }
+          
+          return false; 
+        }
+    }); 
+  }
 
-         if(isNaN(state_id) && state_id == 'other'){ 
-            if(!($('.state').find('.other_state').length > 0)) {               
-               $('.state').append("<input name='other_state' type='text' class='form-control other_state' placeholder = 'Enter a state' />"); 
-            
-            }else if($('.state').find('.other_state').length > 0){
-               $('.state').find('.other_state').remove();
-            }
-            // return;
+  function fill_notes_comment_boxes(){
+    if(
+      $('#suraa').val() 
+      && $("#ayat-sura-a").val() 
+      && $('#surab').val() 
+      && $("#ayat-sura-b").val()
+    ) {
+      var sura_a = $('#suraa').val();
+      var ayat_a = $('#ayat-sura-a').val();
+      var sura_b = $('#surab').val();
+      var ayat_b = $('#ayat-sura-b').val();
 
-         }
+      get_seriral_notes_comments('#serial-num', '#notes', '#comments', sura_a, ayat_a, sura_b, ayat_b)
+    }
+  }
+  
+  $("#ayat-sura-a").on('change', function(){
+    if($('#suraa').val()){
+      var sura_no = $('#suraa').val();
+      var ayat_no = $('#ayat-sura-a').val();
+      get_ayat_text("#text_suraa_ayat_a", sura_no, ayat_no);
+      fill_notes_comment_boxes();
+    }
+  })
 
-        
-
-         var url = "{{ route('getcity',':state_id') }}";
-         url = url.replace(':state_id', state_id);
-
-         ajax_setup();
-         get_data(url, '#city');
-
-      }
-
-      function change_city(){
-         var city_id = $("#city").val();
-
-         if(isNaN(city_id) && city_id == 'other'){ 
-             if(!($('.city').find('.other_city').length > 0)) {              
-               $('.city').append("<input name='other_city' type='text' class='form-control other_city' placeholder = 'Enter a City' />"); 
-              
-              }else if($('.city').find('.other_city').length > 0){
-                  $('.city').find('.other_city').remove();
-               }
-            // return;
-
-         }
-
-        
-
-         var url = "{{ route('getsuburb',':city_id') }}";
-         url = url.replace(':city_id', city_id);
-
-         ajax_setup();
-         get_data(url, '#suburb');
-
-      }
-
-      
-      function change_suburb(){
-         var suburb_id = $("#suburb").val();
-
-         if(isNaN(suburb_id) && suburb_id == 'other'){  
-            if(!($('.suburb').find('.other_suburb').length > 0)) {            
-               $('.suburb').append("<input name='other_suburb' type='text' class='form-control other_suburb' placeholder = 'Enter a suburb' />"); 
-            }
-            return;
-
-         }
-
-         if($('.suburb').find('.other_suburb').length > 0){
-            $('.suburb').find('.other_suburb').remove();
-         }
-
-      }
-
-
-      $( "#country" ).change(change_country);
-      $( "#state" ).change(change_state);
-      $( "#city" ).change(change_city);
-      $("#suburb").change(change_suburb);
-});
+  $("#ayat-sura-b").on('change', function(){
+    if($('#surab').val()){
+      var sura_no = $('#surab').val();
+      var ayat_no = $('#ayat-sura-b').val();
+      get_ayat_text("#text_surab_ayat_b", sura_no, ayat_no);
+      fill_notes_comment_boxes();
+    }
+  })
