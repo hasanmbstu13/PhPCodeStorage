@@ -3,13 +3,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Al-Quran</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="plugins/bootstrap-select/dist/css/bootstrap-select.min.css">
-	<script type="text/javascript" src="plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
 </head>
 <body>
 	<div class="container wrapper">
@@ -78,6 +74,9 @@
 		</div>
 
 	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
