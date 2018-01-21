@@ -28,29 +28,53 @@ class IndexController extends BaseController
 
     public function postPayment()
     {
+        $input = Input::all();
+        $items = array();
+        $sub_total = 0;
+
+        if(isset($input['products'])) {
+            foreach ($input['products'] as $key => $product) {
+                $item = new Item();
+                $item->setName($product) // item name
+                    ->setCurrency('USD')
+                    ->setQuantity($input['quantity'][$key])
+                    ->setPrice($input['price'][$key]); // unit price
+
+                $sub_total += $input['price'][$key] * $input['quantity'][$key];
+                $items[] = $item;
+            }
+        }
+
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
-        $item_1 = new Item();
-        $item_1->setName('Item 1') // item name
-            ->setCurrency('USD')
-            ->setQuantity(2)
-            ->setPrice('15'); // unit price
-        $item_2 = new Item();
-        $item_2->setName('Item 2')
-            ->setCurrency('USD')
-            ->setQuantity(4)
-            ->setPrice('7');
-        $item_3 = new Item();
-        $item_3->setName('Item 3')
-            ->setCurrency('USD')
-            ->setQuantity(1)
-            ->setPrice('20');
+
+
+        // $item_1 = new Item();
+        // $item_1->setName('Item 1') // item name
+        //     ->setCurrency('USD')
+        //     ->setQuantity(2)
+        //     ->setPrice('15'); // unit price
+
+        // $item_2 = new Item();
+        // $item_2->setName('Item 2')
+        //     ->setCurrency('USD')
+        //     ->setQuantity(4)
+        //     ->setPrice('7');
+        // $item_3 = new Item();
+        // $item_3->setName('Item 3')
+        //     ->setCurrency('USD')
+        //     ->setQuantity(1)
+        //     ->setPrice('20');
+
+
         // add item to list
         $item_list = new ItemList();
-        $item_list->setItems(array($item_1, $item_2, $item_3));
+        // $item_list->setItems(array($item_1, $item_2, $item_3));
+        $item_list->setItems($items);
         $amount = new Amount();
         $amount->setCurrency('USD')
-            ->setTotal(78);
+            ->setTotal($sub_total);
+            // ->setTotal(78);
         $transaction = new Transaction();
         $transaction->setAmount($amount)
             ->setItemList($item_list)

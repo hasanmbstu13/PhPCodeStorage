@@ -20,19 +20,37 @@
 <body>
 	<div class="payment-container">
 		<h2 class="header">Pay for something</h2>
-
-		<form action="" method="" autocomplete="off">
+		{{ Form::open(array('url' => 'payment')) }}
+		{{-- <form action="" method="" autocomplete="off"> --}}
 			<label for="item">
-				Product
-				<input class="text-box" type="text" name="product">
+				Product1
+				<input class="text-box" type="text" name="products[]">
 			</label>
 			<label for="amount">
 				Price
-				<input class="text-box" type="text" name="price">
+				<input class="text-box" type="text" name="price[]">
+			</label>
+			<label for="quantity">
+				quantity
+				<input class="text-box" type="text" name="quantity[]">
+			</label>
+			<label for="item">
+				Product2
+				<input class="text-box" type="text" name="products[]">
+			</label>
+			<label for="amount">
+				Price
+				<input class="text-box" type="text" name="price[]">
+			</label>
+			<label for="quantity">
+				quantity
+				<input class="text-box" type="text" name="quantity[]">
 			</label>
 
 			<input class="pay-btn" type="submit" name="pay" value="Pay">
-		</form>
+        {{ Form::close() }}
+
+		{{-- </form> --}}
 
 		<p>You'll be taken to PayPal to complete your payment.</p>
 	</div>
